@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "minGap": 2.54,
+  "componentCount": 49,
+  "withBBox": 49,
+  "skippedNonParts": 104,
+  "overlaps": null,
+  "tightSpacing": null,
+  "pinCoincidences": null,
+  "measurementUnit": "mm",
+  "coordinateUnit": "0.01inch",
+  "anchorGridRaw": 5,
+  "anchorGridUnit": "0.01inch",
+  "zoneCheckStatus": "not-configured",
+  "outOfSheet": [
+    {
+      "a": "C26",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 85,
+      "y": 15
+    },
+    {
+      "a": "C40",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 175,
+      "y": 15
+    },
+    {
+      "a": "C41",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 265,
+      "y": 15
+    },
+    {
+      "a": "C47",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 355,
+      "y": 15
+    },
+    {
+      "a": "C55",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 175,
+      "y": -65
+    },
+    {
+      "a": "C57",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 355,
+      "y": -65
+    },
+    {
+      "a": "C59",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 445,
+      "y": -65
+    },
+    {
+      "a": "CN2",
+      "overlapX": 0,
+      "overlapY": 26.035,
+      "type": "out-of-sheet",
+      "x": 625,
+      "y": -65
+    },
+    {
+      "a": "CN4",
+      "overlapX": 0,
+      "overlapY": 26.035,
+      "type": "out-of-sheet",
+      "x": 715,
+      "y": -65
+    },
+    {
+      "a": "L21",
+      "overlapX": 0,
+      "overlapY": 19.6723,
+      "type": "out-of-sheet",
+      "x": 805,
+      "y": -65
+    },
+    {
+      "a": "L22",
+      "overlapX": 0,
+      "overlapY": 19.56308,
+      "type": "out-of-sheet",
+      "x": 895,
+      "y": -65
+    },
+    {
+      "a": "R14",
+      "overlapX": 0,
+      "overlapY": 20.955000000000002,
+      "type": "out-of-sheet",
+      "x": 985,
+      "y": -65
+    },
+    {
+      "a": "R16",
+      "overlapX": 0,
+      "overlapY": 20.955000000000002,
+      "type": "out-of-sheet",
+      "x": 1075,
+      "y": -65
+    },
+    {
+      "a": "R17",
+      "overlapX": 0,
+      "overlapY": 41.275,
+      "type": "out-of-sheet",
+      "x": 85,
+      "y": -145
+    },
+    {
+      "a": "R19",
+      "overlapX": 0,
+      "overlapY": 41.275,
+      "type": "out-of-sheet",
+      "x": 175,
+      "y": -145
+    },
+    {
+      "a": "R20",
+      "overlapX": 0,
+      "overlapY": 41.275,
+      "type": "out-of-sheet",
+      "x": 265,
+      "y": -145
+    },
+    {
+      "a": "TP1",
+      "overlapX": 0,
+      "overlapY": 40.005,
+      "type": "out-of-sheet",
+      "x": 445,
+      "y": -145
+    }
+  ],
+  "sheetCheckStatus": "checked",
+  "pinEps": 0,
+  "summary": "strict=false: 49 components (49 with bbox): 0 overlap, 0 tight (\u003c2.54mm), 0 pin-coincidence, 0 off-grid, 17 out-of-sheet, 0 unchecked-bbox, 0 unchecked-pins, 0 unproven-pins, 0 invalid-geometry; zoneCheck=not-configured sheetCheck=checked"
+}

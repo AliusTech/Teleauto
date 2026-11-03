@@ -1,0 +1,1812 @@
+{
+  "id": "req_12660",
+  "ok": true,
+  "result": {
+    "passed": false,
+    "summary": {
+      "floatingPins": 1,
+      "componentsWithFloating": 1,
+      "geomNetMismatches": 0,
+      "netMarkerMismatches": 0,
+      "multiNetWires": 1,
+      "wireCrossings": 0,
+      "wireOverPins": 0,
+      "zeroLengthWires": 0,
+      "danglingWires": 0,
+      "duplicateNetMarkers": 0,
+      "titleblockOverlaps": 0,
+      "markerOverlaps": 48,
+      "missingPartitions": 2,
+      "redundantNetMarkers": 0,
+      "foldedNetLabels": 0,
+      "reversedNetFlags": 0,
+      "polarityConventionOutliers": 0,
+      "total": 66
+    },
+    "findings": [
+      {
+        "type": "multi-net-wire",
+        "level": "warn",
+        "wirePrimitiveId": "24f94b9ba10be0de",
+        "nets": [
+          "BATTERY",
+          "BATTERY_5V"
+        ],
+        "count": 2,
+        "message": "导线有多个网络名: BATTERY、BATTERY_5V"
+      },
+      {
+        "type": "floating-pin",
+        "level": "warn",
+        "designator": "R15",
+        "primitiveId": "8497e1ab22401012",
+        "pins": [
+          "2"
+        ],
+        "pinDetails": [
+          {
+            "number": "2",
+            "name": "2",
+            "x": 825,
+            "y": 570
+          }
+        ],
+        "count": 1,
+        "message": "1 个引脚悬空(无导线连接,未打 NC 标识)"
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "C27",
+        "primitiveId": "02c650862f4829c6",
+        "message": "C27(part) 与 PCB_1N9(netport) 视觉重叠 11.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "02c650862f4829c6",
+          "71e45049465d0600"
+        ],
+        "bbox": {
+          "minX": 169.5,
+          "minY": 561.5,
+          "maxX": 180.5,
+          "maxY": 578.5
+        },
+        "other": {
+          "primitiveId": "71e45049465d0600",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 129.5,
+            "minY": 564.5,
+            "maxX": 210.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 11,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "143fd1ad7fc3cc58",
+        "markerNet": "PCB_1N13",
+        "message": "PCB_1N13(netport) 与 1.0_5V(netflag) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "143fd1ad7fc3cc58",
+          "e08dc1de27f1d283"
+        ],
+        "bbox": {
+          "minX": 134.5,
+          "minY": 644.5,
+          "maxX": 221.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "e08dc1de27f1d283",
+          "componentType": "netflag",
+          "net": "1.0_5V",
+          "bbox": {
+            "minX": 204.5,
+            "minY": 644.5,
+            "maxX": 210.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "16c15a6464f374ad",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N14(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "16c15a6464f374ad",
+          "6607496428bdda1a"
+        ],
+        "bbox": {
+          "minX": 714.5,
+          "minY": 568.5,
+          "maxX": 735.5,
+          "maxY": 590.5
+        },
+        "other": {
+          "primitiveId": "6607496428bdda1a",
+          "componentType": "netport",
+          "net": "PCB_1N14",
+          "bbox": {
+            "minX": 703.5,
+            "minY": 574.5,
+            "maxX": 790.5,
+            "maxY": 585.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "16c15a6464f374ad",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 R12(part) 视觉重叠 11.00×6.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "16c15a6464f374ad",
+          "a1e4d2270718f3ab"
+        ],
+        "bbox": {
+          "minX": 714.5,
+          "minY": 568.5,
+          "maxX": 735.5,
+          "maxY": 590.5
+        },
+        "other": {
+          "primitiveId": "a1e4d2270718f3ab",
+          "componentType": "part",
+          "designator": "R12",
+          "bbox": {
+            "minX": 704.5,
+            "minY": 565.5,
+            "maxX": 725.5,
+            "maxY": 574.5
+          }
+        },
+        "overlapX": 11,
+        "overlapY": 6
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "274f6567ccd12e2a",
+        "markerNet": "BATTERY_5V",
+        "message": "BATTERY_5V(netflag) 与 GND(netflag) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "274f6567ccd12e2a",
+          "ab75473e9347338e"
+        ],
+        "bbox": {
+          "minX": 759.5,
+          "minY": 564.5,
+          "maxX": 765.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "ab75473e9347338e",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 745.5,
+            "minY": 559.5,
+            "maxX": 783,
+            "maxY": 582
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "2c5a44ab69f087b4",
+        "markerNet": "USB_5V",
+        "message": "USB_5V(netflag) 与 5V(netflag) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "2c5a44ab69f087b4",
+          "43cea6652a87618f"
+        ],
+        "bbox": {
+          "minX": 304.5,
+          "minY": 644.5,
+          "maxX": 310.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "43cea6652a87618f",
+          "componentType": "netflag",
+          "net": "5V",
+          "bbox": {
+            "minX": 293,
+            "minY": 644.5,
+            "maxX": 315.5,
+            "maxY": 662
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "4567ce188a88e915",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N9(netport) 视觉重叠 18.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "4567ce188a88e915",
+          "716fcd3b732d2bad"
+        ],
+        "bbox": {
+          "minX": 565.5,
+          "minY": 639.5,
+          "maxX": 603,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "716fcd3b732d2bad",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 584.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "4567ce188a88e915",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 USB_DP(netport) 视觉重叠 12.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "4567ce188a88e915",
+          "d719c2f4e21db874"
+        ],
+        "bbox": {
+          "minX": 565.5,
+          "minY": 639.5,
+          "maxX": 603,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "d719c2f4e21db874",
+          "componentType": "netport",
+          "net": "USB_DP",
+          "bbox": {
+            "minX": 590.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 12.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "4567ce188a88e915",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N9(netport) 视觉重叠 10.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "4567ce188a88e915",
+          "e31bb493aa4ab57c"
+        ],
+        "bbox": {
+          "minX": 565.5,
+          "minY": 639.5,
+          "maxX": 603,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "e31bb493aa4ab57c",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 494.5,
+            "minY": 644.5,
+            "maxX": 575.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "48bef7286d88750c",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 GND(netflag) 视觉重叠 24.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "48bef7286d88750c",
+          "f1e645ff8d1535bf"
+        ],
+        "bbox": {
+          "minX": 584.5,
+          "minY": 564.5,
+          "maxX": 671.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "f1e645ff8d1535bf",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 647,
+            "minY": 559.5,
+            "maxX": 684.5,
+            "maxY": 582
+          }
+        },
+        "overlapX": 24.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "48bef7286d88750c",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 PCB_1N94(netport) 视觉重叠 81.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "48bef7286d88750c",
+          "f9d77b8dd67e2259"
+        ],
+        "bbox": {
+          "minX": 584.5,
+          "minY": 564.5,
+          "maxX": 671.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "f9d77b8dd67e2259",
+          "componentType": "netport",
+          "net": "PCB_1N94",
+          "bbox": {
+            "minX": 578.5,
+            "minY": 564.5,
+            "maxX": 665.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 81,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "48bef7286d88750c",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 R11(part) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "48bef7286d88750c",
+          "fcbe03658b3b22d2"
+        ],
+        "bbox": {
+          "minX": 584.5,
+          "minY": 564.5,
+          "maxX": 671.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "fcbe03658b3b22d2",
+          "componentType": "part",
+          "designator": "R11",
+          "bbox": {
+            "minX": 614.5,
+            "minY": 564.5,
+            "maxX": 635.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5795ccca1dfed7db",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 GND(netflag) 视觉重叠 10.00×6.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "5795ccca1dfed7db",
+          "68be478908aa4704"
+        ],
+        "bbox": {
+          "minX": 659.5,
+          "minY": 634.5,
+          "maxX": 740.5,
+          "maxY": 645.5
+        },
+        "other": {
+          "primitiveId": "68be478908aa4704",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 730.5,
+            "minY": 639.5,
+            "maxX": 768,
+            "maxY": 662
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 6
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5795ccca1dfed7db",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 GND(netflag) 视觉重叠 33.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "5795ccca1dfed7db",
+          "99db73e520e0bd32"
+        ],
+        "bbox": {
+          "minX": 659.5,
+          "minY": 634.5,
+          "maxX": 740.5,
+          "maxY": 645.5
+        },
+        "other": {
+          "primitiveId": "99db73e520e0bd32",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 655.5,
+            "minY": 629.5,
+            "maxX": 693,
+            "maxY": 652
+          }
+        },
+        "overlapX": 33.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5795ccca1dfed7db",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 U1(part) 视觉重叠 31.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "5795ccca1dfed7db",
+          "f3c83c95d83426f3"
+        ],
+        "bbox": {
+          "minX": 659.5,
+          "minY": 634.5,
+          "maxX": 740.5,
+          "maxY": 645.5
+        },
+        "other": {
+          "primitiveId": "f3c83c95d83426f3",
+          "componentType": "part",
+          "designator": "U1",
+          "bbox": {
+            "minX": 704.5,
+            "minY": 629.5,
+            "maxX": 735.5,
+            "maxY": 680.5
+          }
+        },
+        "overlapX": 31,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5924a442859a7b68",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 USB_DN(netport) 视觉重叠 17.50×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "5924a442859a7b68",
+          "6009ea5ab458234f"
+        ],
+        "bbox": {
+          "minX": 385.5,
+          "minY": 639.5,
+          "maxX": 423,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "6009ea5ab458234f",
+          "componentType": "netport",
+          "net": "USB_DN",
+          "bbox": {
+            "minX": 405.5,
+            "minY": 654.5,
+            "maxX": 480.5,
+            "maxY": 665.5
+          }
+        },
+        "overlapX": 17.5,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5924a442859a7b68",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 5V(netflag) 视觉重叠 20.00×17.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "5924a442859a7b68",
+          "774ea80718f2ccdf"
+        ],
+        "bbox": {
+          "minX": 385.5,
+          "minY": 639.5,
+          "maxX": 423,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "774ea80718f2ccdf",
+          "componentType": "netflag",
+          "net": "5V",
+          "bbox": {
+            "minX": 383,
+            "minY": 644.5,
+            "maxX": 405.5,
+            "maxY": 662
+          }
+        },
+        "overlapX": 20,
+        "overlapY": 17.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5c562d7234f7f921",
+        "markerNet": "3V3",
+        "message": "3V3(netflag) 与 IN_5V(netflag) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "5c562d7234f7f921",
+          "8cbcdba24cd7aa4c"
+        ],
+        "bbox": {
+          "minX": 304.5,
+          "minY": 564.5,
+          "maxX": 333,
+          "maxY": 582
+        },
+        "other": {
+          "primitiveId": "8cbcdba24cd7aa4c",
+          "componentType": "netflag",
+          "net": "IN_5V",
+          "bbox": {
+            "minX": 314.5,
+            "minY": 564.5,
+            "maxX": 320.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5c562d7234f7f921",
+        "markerNet": "3V3",
+        "message": "3V3(netflag) 与 PCB_1N6(netport) 视觉重叠 18.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "5c562d7234f7f921",
+          "8dcb5179a5e045d6"
+        ],
+        "bbox": {
+          "minX": 304.5,
+          "minY": 564.5,
+          "maxX": 333,
+          "maxY": 582
+        },
+        "other": {
+          "primitiveId": "8dcb5179a5e045d6",
+          "componentType": "netport",
+          "net": "PCB_1N6",
+          "bbox": {
+            "minX": 314.5,
+            "minY": 564.5,
+            "maxX": 395.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "5c562d7234f7f921",
+        "markerNet": "3V3",
+        "message": "3V3(netflag) 与 PCB_1N10(netport) 视觉重叠 2.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "5c562d7234f7f921",
+          "be78e10e503c905c"
+        ],
+        "bbox": {
+          "minX": 304.5,
+          "minY": 564.5,
+          "maxX": 333,
+          "maxY": 582
+        },
+        "other": {
+          "primitiveId": "be78e10e503c905c",
+          "componentType": "netport",
+          "net": "PCB_1N10",
+          "bbox": {
+            "minX": 219.5,
+            "minY": 564.5,
+            "maxX": 306.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 2,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "6607496428bdda1a",
+        "markerNet": "PCB_1N14",
+        "message": "PCB_1N14(netport) 与 GND(netflag) 视觉重叠 37.50×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "6607496428bdda1a",
+          "ab75473e9347338e"
+        ],
+        "bbox": {
+          "minX": 703.5,
+          "minY": 574.5,
+          "maxX": 790.5,
+          "maxY": 585.5
+        },
+        "other": {
+          "primitiveId": "ab75473e9347338e",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 745.5,
+            "minY": 559.5,
+            "maxX": 783,
+            "maxY": 582
+          }
+        },
+        "overlapX": 37.5,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "68be478908aa4704",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N10(netport) 视觉重叠 31.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "68be478908aa4704",
+          "e2e0e76c3c0015f8"
+        ],
+        "bbox": {
+          "minX": 730.5,
+          "minY": 639.5,
+          "maxX": 768,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "e2e0e76c3c0015f8",
+          "componentType": "netport",
+          "net": "PCB_1N10",
+          "bbox": {
+            "minX": 674.5,
+            "minY": 644.5,
+            "maxX": 761.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 31,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "68be478908aa4704",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N13(netport) 视觉重叠 10.00×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "68be478908aa4704",
+          "e91cd26d78d83186"
+        ],
+        "bbox": {
+          "minX": 730.5,
+          "minY": 639.5,
+          "maxX": 768,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "e91cd26d78d83186",
+          "componentType": "netport",
+          "net": "PCB_1N13",
+          "bbox": {
+            "minX": 653.5,
+            "minY": 654.5,
+            "maxX": 740.5,
+            "maxY": 665.5
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "68be478908aa4704",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 U1(part) 视觉重叠 5.00×22.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "68be478908aa4704",
+          "f3c83c95d83426f3"
+        ],
+        "bbox": {
+          "minX": 730.5,
+          "minY": 639.5,
+          "maxX": 768,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "f3c83c95d83426f3",
+          "componentType": "part",
+          "designator": "U1",
+          "bbox": {
+            "minX": 704.5,
+            "minY": 629.5,
+            "maxX": 735.5,
+            "maxY": 680.5
+          }
+        },
+        "overlapX": 5,
+        "overlapY": 22.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "R9",
+        "primitiveId": "68defcd4e50be4cc",
+        "message": "R9(part) 与 PCB_1N9(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "68defcd4e50be4cc",
+          "716fcd3b732d2bad"
+        ],
+        "bbox": {
+          "minX": 614.5,
+          "minY": 644.5,
+          "maxX": 635.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "716fcd3b732d2bad",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 584.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "R9",
+        "primitiveId": "68defcd4e50be4cc",
+        "message": "R9(part) 与 USB_DP(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "68defcd4e50be4cc",
+          "d719c2f4e21db874"
+        ],
+        "bbox": {
+          "minX": 614.5,
+          "minY": 644.5,
+          "maxX": 635.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "d719c2f4e21db874",
+          "componentType": "netport",
+          "net": "USB_DP",
+          "bbox": {
+            "minX": 590.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "U13",
+        "primitiveId": "6a05acaa7e9dd459",
+        "message": "U13(part) 与 PCB_1N6(netport) 视觉重叠 11.00×6.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "6a05acaa7e9dd459",
+          "b286b99aa411e6c7"
+        ],
+        "bbox": {
+          "minX": 39.5,
+          "minY": 719.5,
+          "maxX": 110.5,
+          "maxY": 770.5
+        },
+        "other": {
+          "primitiveId": "b286b99aa411e6c7",
+          "componentType": "netport",
+          "net": "PCB_1N6",
+          "bbox": {
+            "minX": 99.5,
+            "minY": 764.5,
+            "maxX": 180.5,
+            "maxY": 775.5
+          }
+        },
+        "overlapX": 11,
+        "overlapY": 6
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "C30",
+        "primitiveId": "6e00eb2754d0acc9",
+        "message": "C30(part) 与 PCB_1N6(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "6e00eb2754d0acc9",
+          "8dcb5179a5e045d6"
+        ],
+        "bbox": {
+          "minX": 344.5,
+          "minY": 561.5,
+          "maxX": 365.5,
+          "maxY": 578.5
+        },
+        "other": {
+          "primitiveId": "8dcb5179a5e045d6",
+          "componentType": "netport",
+          "net": "PCB_1N6",
+          "bbox": {
+            "minX": 314.5,
+            "minY": 564.5,
+            "maxX": 395.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "716fcd3b732d2bad",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 GND(netflag) 视觉重叠 10.00×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "716fcd3b732d2bad",
+          "99db73e520e0bd32"
+        ],
+        "bbox": {
+          "minX": 584.5,
+          "minY": 644.5,
+          "maxX": 665.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "99db73e520e0bd32",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 655.5,
+            "minY": 629.5,
+            "maxX": 693,
+            "maxY": 652
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "716fcd3b732d2bad",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 USB_DP(netport) 视觉重叠 75.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "716fcd3b732d2bad",
+          "d719c2f4e21db874"
+        ],
+        "bbox": {
+          "minX": 584.5,
+          "minY": 644.5,
+          "maxX": 665.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "d719c2f4e21db874",
+          "componentType": "netport",
+          "net": "USB_DP",
+          "bbox": {
+            "minX": 590.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 75,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "71e45049465d0600",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 GND(netflag) 视觉重叠 5.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "71e45049465d0600",
+          "a36ff9637728ac11"
+        ],
+        "bbox": {
+          "minX": 129.5,
+          "minY": 564.5,
+          "maxX": 210.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "a36ff9637728ac11",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 205.5,
+            "minY": 559.5,
+            "maxX": 243,
+            "maxY": 582
+          }
+        },
+        "overlapX": 5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "71e45049465d0600",
+        "markerNet": "PCB_1N9",
+        "message": "PCB_1N9(netport) 与 BATTERY_5V(netflag) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "71e45049465d0600",
+          "d39079079665d0f2"
+        ],
+        "bbox": {
+          "minX": 129.5,
+          "minY": 564.5,
+          "maxX": 210.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "d39079079665d0f2",
+          "componentType": "netflag",
+          "net": "BATTERY_5V",
+          "bbox": {
+            "minX": 129.5,
+            "minY": 564.5,
+            "maxX": 135.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "7dbe9362db7cd458",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 GND(netflag) 视觉重叠 37.50×6.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "7dbe9362db7cd458",
+          "ab75473e9347338e"
+        ],
+        "bbox": {
+          "minX": 703.5,
+          "minY": 554.5,
+          "maxX": 790.5,
+          "maxY": 565.5
+        },
+        "other": {
+          "primitiveId": "ab75473e9347338e",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 745.5,
+            "minY": 559.5,
+            "maxX": 783,
+            "maxY": 582
+          }
+        },
+        "overlapX": 37.5,
+        "overlapY": 6
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "8cbcdba24cd7aa4c",
+        "markerNet": "IN_5V",
+        "message": "IN_5V(netflag) 与 PCB_1N6(netport) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "8cbcdba24cd7aa4c",
+          "8dcb5179a5e045d6"
+        ],
+        "bbox": {
+          "minX": 314.5,
+          "minY": 564.5,
+          "maxX": 320.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "8dcb5179a5e045d6",
+          "componentType": "netport",
+          "net": "PCB_1N6",
+          "bbox": {
+            "minX": 314.5,
+            "minY": 564.5,
+            "maxX": 395.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "8dcb5179a5e045d6",
+        "markerNet": "PCB_1N6",
+        "message": "PCB_1N6(netport) 与 GND(netflag) 视觉重叠 18.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "8dcb5179a5e045d6",
+          "d1eba272c6dcbdc5"
+        ],
+        "bbox": {
+          "minX": 314.5,
+          "minY": 564.5,
+          "maxX": 395.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "d1eba272c6dcbdc5",
+          "componentType": "netflag",
+          "net": "GND",
+          "bbox": {
+            "minX": 377,
+            "minY": 559.5,
+            "maxX": 414.5,
+            "maxY": 582
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "R7",
+        "primitiveId": "8ed34b762ae2d889",
+        "message": "R7(part) 与 PCB_1N9(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "8ed34b762ae2d889",
+          "e31bb493aa4ab57c"
+        ],
+        "bbox": {
+          "minX": 524.5,
+          "minY": 644.5,
+          "maxX": 545.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "e31bb493aa4ab57c",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 494.5,
+            "minY": 644.5,
+            "maxX": 575.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "94c91753d9776f17",
+        "markerNet": "BATTERY_5V",
+        "message": "BATTERY_5V(netflag) 与 PCB_1N94(netport) 视觉重叠 2.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "94c91753d9776f17",
+          "fb4cdcbf63258d8d"
+        ],
+        "bbox": {
+          "minX": 484.5,
+          "minY": 564.5,
+          "maxX": 490.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "fb4cdcbf63258d8d",
+          "componentType": "netport",
+          "net": "PCB_1N94",
+          "bbox": {
+            "minX": 488.5,
+            "minY": 564.5,
+            "maxX": 575.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 2,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "970efa4b161ad560",
+        "markerNet": "BATTERY_5V",
+        "message": "BATTERY_5V(netflag) 与 PCB_1N94(netport) 视觉重叠 6.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "970efa4b161ad560",
+          "fb4cdcbf63258d8d"
+        ],
+        "bbox": {
+          "minX": 489.5,
+          "minY": 564.5,
+          "maxX": 495.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "fb4cdcbf63258d8d",
+          "componentType": "netport",
+          "net": "PCB_1N94",
+          "bbox": {
+            "minX": 488.5,
+            "minY": 564.5,
+            "maxX": 575.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 6,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "99db73e520e0bd32",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 USB_DP(netport) 视觉重叠 10.00×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "99db73e520e0bd32",
+          "d719c2f4e21db874"
+        ],
+        "bbox": {
+          "minX": 655.5,
+          "minY": 629.5,
+          "maxX": 693,
+          "maxY": 652
+        },
+        "other": {
+          "primitiveId": "d719c2f4e21db874",
+          "componentType": "netport",
+          "net": "USB_DP",
+          "bbox": {
+            "minX": 590.5,
+            "minY": 644.5,
+            "maxX": 665.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 10,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "99db73e520e0bd32",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N10(netport) 视觉重叠 18.50×7.50 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "99db73e520e0bd32",
+          "e2e0e76c3c0015f8"
+        ],
+        "bbox": {
+          "minX": 655.5,
+          "minY": 629.5,
+          "maxX": 693,
+          "maxY": 652
+        },
+        "other": {
+          "primitiveId": "e2e0e76c3c0015f8",
+          "componentType": "netport",
+          "net": "PCB_1N10",
+          "bbox": {
+            "minX": 674.5,
+            "minY": 644.5,
+            "maxX": 761.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 7.5
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "a1056acb5cbcf147",
+        "markerNet": "3V3",
+        "message": "3V3(netflag) 与 PCB_1N9(netport) 视觉重叠 18.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "a1056acb5cbcf147",
+          "e31bb493aa4ab57c"
+        ],
+        "bbox": {
+          "minX": 484.5,
+          "minY": 644.5,
+          "maxX": 513,
+          "maxY": 662
+        },
+        "other": {
+          "primitiveId": "e31bb493aa4ab57c",
+          "componentType": "netport",
+          "net": "PCB_1N9",
+          "bbox": {
+            "minX": 494.5,
+            "minY": 644.5,
+            "maxX": 575.5,
+            "maxY": 655.5
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "a36ff9637728ac11",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N10(netport) 视觉重叠 23.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "a36ff9637728ac11",
+          "be78e10e503c905c"
+        ],
+        "bbox": {
+          "minX": 205.5,
+          "minY": 559.5,
+          "maxX": 243,
+          "maxY": 582
+        },
+        "other": {
+          "primitiveId": "be78e10e503c905c",
+          "componentType": "netport",
+          "net": "PCB_1N10",
+          "bbox": {
+            "minX": 219.5,
+            "minY": 564.5,
+            "maxX": 306.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 23.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "be78e10e503c905c",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 C29(part) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "be78e10e503c905c",
+          "f8992da7691e75b8"
+        ],
+        "bbox": {
+          "minX": 219.5,
+          "minY": 564.5,
+          "maxX": 306.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "f8992da7691e75b8",
+          "componentType": "part",
+          "designator": "C29",
+          "bbox": {
+            "minX": 254.5,
+            "minY": 561.5,
+            "maxX": 275.5,
+            "maxY": 578.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "e2e0e76c3c0015f8",
+        "markerNet": "PCB_1N10",
+        "message": "PCB_1N10(netport) 与 U1(part) 视觉重叠 31.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "e2e0e76c3c0015f8",
+          "f3c83c95d83426f3"
+        ],
+        "bbox": {
+          "minX": 674.5,
+          "minY": 644.5,
+          "maxX": 761.5,
+          "maxY": 655.5
+        },
+        "other": {
+          "primitiveId": "f3c83c95d83426f3",
+          "componentType": "part",
+          "designator": "U1",
+          "bbox": {
+            "minX": 704.5,
+            "minY": 629.5,
+            "maxX": 735.5,
+            "maxY": 680.5
+          }
+        },
+        "overlapX": 31,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "e91cd26d78d83186",
+        "markerNet": "PCB_1N13",
+        "message": "PCB_1N13(netport) 与 U1(part) 视觉重叠 31.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "e91cd26d78d83186",
+          "f3c83c95d83426f3"
+        ],
+        "bbox": {
+          "minX": 653.5,
+          "minY": 654.5,
+          "maxX": 740.5,
+          "maxY": 665.5
+        },
+        "other": {
+          "primitiveId": "f3c83c95d83426f3",
+          "componentType": "part",
+          "designator": "U1",
+          "bbox": {
+            "minX": 704.5,
+            "minY": 629.5,
+            "maxX": 735.5,
+            "maxY": 680.5
+          }
+        },
+        "overlapX": 31,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "designator": "R10",
+        "primitiveId": "ea5068c03cb79b8a",
+        "message": "R10(part) 与 PCB_1N94(netport) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "part",
+        "primitiveIds": [
+          "ea5068c03cb79b8a",
+          "fb4cdcbf63258d8d"
+        ],
+        "bbox": {
+          "minX": 524.5,
+          "minY": 564.5,
+          "maxX": 545.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "fb4cdcbf63258d8d",
+          "componentType": "netport",
+          "net": "PCB_1N94",
+          "bbox": {
+            "minX": 488.5,
+            "minY": 564.5,
+            "maxX": 575.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "f1e645ff8d1535bf",
+        "markerNet": "GND",
+        "message": "GND(netflag) 与 PCB_1N94(netport) 视觉重叠 18.50×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netflag",
+        "primitiveIds": [
+          "f1e645ff8d1535bf",
+          "f9d77b8dd67e2259"
+        ],
+        "bbox": {
+          "minX": 647,
+          "minY": 559.5,
+          "maxX": 684.5,
+          "maxY": 582
+        },
+        "other": {
+          "primitiveId": "f9d77b8dd67e2259",
+          "componentType": "netport",
+          "net": "PCB_1N94",
+          "bbox": {
+            "minX": 578.5,
+            "minY": 564.5,
+            "maxX": 665.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 18.5,
+        "overlapY": 11
+      },
+      {
+        "type": "marker-overlap",
+        "level": "warn",
+        "primitiveId": "f9d77b8dd67e2259",
+        "markerNet": "PCB_1N94",
+        "message": "PCB_1N94(netport) 与 R11(part) 视觉重叠 21.00×11.00 — 换方向/offset 或 stagger",
+        "componentType": "netport",
+        "primitiveIds": [
+          "f9d77b8dd67e2259",
+          "fcbe03658b3b22d2"
+        ],
+        "bbox": {
+          "minX": 578.5,
+          "minY": 564.5,
+          "maxX": 665.5,
+          "maxY": 575.5
+        },
+        "other": {
+          "primitiveId": "fcbe03658b3b22d2",
+          "componentType": "part",
+          "designator": "R11",
+          "bbox": {
+            "minX": 614.5,
+            "minY": 564.5,
+            "maxX": 635.5,
+            "maxY": 575.5
+          }
+        },
+        "overlapX": 21,
+        "overlapY": 11
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R9",
+        "primitiveId": "2e3e770f496d4da0",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "2e3e770f496d4da0",
+          "716fcd3b732d2bad"
+        ],
+        "bbox": {
+          "minX": 615,
+          "minY": 655,
+          "maxX": 626.4153900146484,
+          "maxY": 665
+        },
+        "overlapX": 11.415390014648438,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R9",
+        "primitiveId": "2e3e770f496d4da0",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "2e3e770f496d4da0",
+          "d719c2f4e21db874"
+        ],
+        "bbox": {
+          "minX": 615,
+          "minY": 655,
+          "maxX": 626.4153900146484,
+          "maxY": 665
+        },
+        "overlapX": 11.415390014648438,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-wire-overlap",
+        "level": "warn",
+        "designator": "R9",
+        "primitiveId": "2e3e770f496d4da0",
+        "wirePrimitiveId": "58e97ee40c71e3be",
+        "message": "wire crosses Designator text bbox",
+        "bbox": {
+          "minX": 615,
+          "minY": 655,
+          "maxX": 626.4153900146484,
+          "maxY": 665
+        }
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R11",
+        "primitiveId": "46ff28c815f95001",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "46ff28c815f95001",
+          "48bef7286d88750c"
+        ],
+        "bbox": {
+          "minX": 615,
+          "minY": 575,
+          "maxX": 630.7190551757812,
+          "maxY": 585
+        },
+        "overlapX": 15.71905517578125,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R11",
+        "primitiveId": "46ff28c815f95001",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "46ff28c815f95001",
+          "f9d77b8dd67e2259"
+        ],
+        "bbox": {
+          "minX": 615,
+          "minY": 575,
+          "maxX": 630.7190551757812,
+          "maxY": 585
+        },
+        "overlapX": 15.71905517578125,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R12",
+        "primitiveId": "70cb77cddd7d2f64",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "70cb77cddd7d2f64",
+          "6607496428bdda1a"
+        ],
+        "bbox": {
+          "minX": 705,
+          "minY": 575,
+          "maxX": 721.3818206787109,
+          "maxY": 585
+        },
+        "overlapX": 16.381820678710938,
+        "overlapY": 10
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R12",
+        "primitiveId": "70cb77cddd7d2f64",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "70cb77cddd7d2f64",
+          "16c15a6464f374ad"
+        ],
+        "bbox": {
+          "minX": 705,
+          "minY": 575,
+          "maxX": 721.3818206787109,
+          "maxY": 585
+        },
+        "overlapX": 6.8818206787109375,
+        "overlapY": 10
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R10",
+        "primitiveId": "902c1ce58c1cbfcf",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "902c1ce58c1cbfcf",
+          "fb4cdcbf63258d8d"
+        ],
+        "bbox": {
+          "minX": 525,
+          "minY": 575,
+          "maxX": 536.0618438720703,
+          "maxY": 581.75
+        },
+        "overlapX": 11.061843872070312,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "C27",
+        "primitiveId": "978708ce757f72c8",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "978708ce757f72c8",
+          "77ccffe071229a91"
+        ],
+        "bbox": {
+          "minX": 170,
+          "minY": 580,
+          "maxX": 186.38182067871094,
+          "maxY": 590
+        },
+        "overlapX": 16.381820678710938,
+        "overlapY": 0.022499968750253174
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R7",
+        "primitiveId": "a19557bcfb494b72",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "a19557bcfb494b72",
+          "e31bb493aa4ab57c"
+        ],
+        "bbox": {
+          "minX": 525,
+          "minY": 655,
+          "maxX": 536.4153900146484,
+          "maxY": 665
+        },
+        "overlapX": 11.415390014648438,
+        "overlapY": 0.5
+      },
+      {
+        "type": "designator-wire-overlap",
+        "level": "warn",
+        "designator": "R7",
+        "primitiveId": "a19557bcfb494b72",
+        "wirePrimitiveId": "58e97ee40c71e3be",
+        "message": "wire crosses Designator text bbox",
+        "bbox": {
+          "minX": 525,
+          "minY": 655,
+          "maxX": 536.4153900146484,
+          "maxY": 665
+        }
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "R5",
+        "primitiveId": "acbbb92c9a428052",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "acbbb92c9a428052",
+          "6009ea5ab458234f"
+        ],
+        "bbox": {
+          "minX": 435,
+          "minY": 655,
+          "maxX": 446.41539001464844,
+          "maxY": 665
+        },
+        "overlapX": 11.415390014648438,
+        "overlapY": 10
+      },
+      {
+        "type": "designator-overlap",
+        "level": "warn",
+        "designator": "C20",
+        "primitiveId": "e12cc0bf9ea53d5e",
+        "message": "Designator overlaps body/marker/title/another designator; non-designator properties excluded",
+        "primitiveIds": [
+          "e12cc0bf9ea53d5e",
+          "423c742b3c117c89"
+        ],
+        "bbox": {
+          "minX": 80,
+          "minY": 580,
+          "maxX": 96.38182067871094,
+          "maxY": 590
+        },
+        "overlapX": 16.381820678710938,
+        "overlapY": 5.5
+      },
+      {
+        "type": "designator-wire-overlap",
+        "level": "warn",
+        "designator": "R15",
+        "primitiveId": "f2adce1795d638ac",
+        "wirePrimitiveId": "113782e1fc0014e3",
+        "message": "wire crosses Designator text bbox",
+        "bbox": {
+          "minX": 795,
+          "minY": 575,
+          "maxX": 811.3818206787109,
+          "maxY": 585
+        }
+      },
+      {
+        "type": "missing-partition",
+        "level": "warn",
+        "count": 23,
+        "message": "23 个器件的页没有功能分区框 — 铁律#15:`sch zones set` → `sch zone-draw`(整纸版式 `--mode partition`);交付前必须有"
+      },
+      {
+        "type": "missing-titleblock",
+        "level": "warn",
+        "count": 3,
+        "message": "图签未填:Name(图纸标题)、Drawed(设计者)、Description(图纸说明) — 交付图必须能认领(`sch titleblock --data '{\"Name\":\"…\",\"Drawed\":\"…\"}'`)"
+      }
+    ]
+  },
+  "type": "response",
+  "version": "v1"
+}

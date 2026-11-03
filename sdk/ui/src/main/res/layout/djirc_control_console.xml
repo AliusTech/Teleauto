@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 控制首页(设计稿 home.html,基准 1280×720px→×0.6):状态栏 / 三列控制台 / dock -->
+<tech.alius.rc.ui.TeleautoControlConsoleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootShell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dashboardContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <tech.alius.rc.ui.TeleautoStatusBarView
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/djirc_ui_top_bar_height" />
+
+        <!-- 控制台六区：共享预制 ABS 九宫格材质，不在运行时生成阴影。 -->
+        <LinearLayout
+            android:id="@+id/dashboardConsole"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/djirc_ui_dashboard_page_inset"
+            android:paddingTop="@dimen/djirc_ui_dashboard_top_inset"
+            android:paddingEnd="@dimen/djirc_ui_dashboard_page_inset"
+            android:paddingBottom="@dimen/djirc_ui_dashboard_bottom_inset">
+
+            <!-- 左列:拨轮 / 左摇杆 / 当前机型左侧硬件按键 -->
+            <LinearLayout
+                android:id="@+id/dashboardLeftColumn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="420"
+                android:orientation="vertical">
+
+                <tech.alius.rc.ui.TeleautoCenteringDialView
+                    android:id="@+id/dialLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/djirc_ui_dashboard_dial_to_stick_gap" />
+
+                <tech.alius.rc.ui.TeleautoJoystickView
+                    android:id="@+id/stickLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="左摇杆" />
+
+                <tech.alius.rc.ui.TeleautoHardwarePanelLayout
+                    android:id="@+id/zoneLeftControls"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/djirc_ui_dashboard_section_gap"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <tech.alius.rc.ui.TeleautoHardwareControlsView
+                        android:id="@+id/specialControlsLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <tech.alius.rc.ui.TeleautoSlideLockView
+                        android:id="@+id/slideLock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </tech.alius.rc.ui.TeleautoHardwarePanelLayout>
+            </LinearLayout>
+
+            <!-- 中列:图传与设备状态区 -->
+            <LinearLayout
+                android:id="@+id/dashboardCenterColumn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/djirc_ui_dashboard_section_gap"
+                android:layout_weight="920"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/zoneC1"
+                    android:paddingTop="@dimen/djirc_ui_console_media_top_inset"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/deviceEmptyState"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/Widget.TeleautoRC.EmptyIcon"
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:contentDescription="设备"
+                            android:src="@drawable/ic_device_ground_rover" />
+
+                        <TextView
+                            style="@style/Widget.TeleautoRC.EmptyTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="尚未创建设备" />
+
+                        <TextView
+                            style="@style/Widget.TeleautoRC.EmptyDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="创建目标设备后进入控制首页" />
+
+                        <Button
+                            style="@style/Widget.TeleautoRC.Button"
+                            android:id="@+id/createDeviceButton"
+                            android:layout_width="156dp"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="18dp"
+                            android:focusable="true"
+                            android:text="创建新设备" />
+                    </LinearLayout>
+
+                    <tech.alius.rc.ui.TeleautoVideoFrameLayout
+                        android:id="@+id/videoViewportAnchor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <tech.alius.rc.ui.TeleautoDeviceTypeCoverView
+                        android:id="@+id/deviceTypeCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <!-- 中央凸起状态台：协议状态内容与无数据品牌占位共享容器。 -->
+                    <tech.alius.rc.ui.TeleautoStatusPlatformView
+                        android:id="@+id/centralFlexibleSpace"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/djirc_ui_dashboard_section_gap">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/djirc_ui_dashboard_card_inset">
+                    <tech.alius.rc.ui.TeleautoDeviceStatusView
+                        style="@style/Widget.TeleautoRC.Status"
+                        android:id="@+id/controlledDeviceStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="@dimen/djirc_ui_dashboard_content_gap"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="被控设备 · 电量 —"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/targetDeviceSession"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="@dimen/djirc_ui_dashboard_content_gap"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <tech.alius.rc.ui.TeleautoDeviceSummaryView
+                            android:id="@+id/targetDeviceSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                        </LinearLayout>
+
+                        <tech.alius.rc.ui.TeleautoLogoView
+                            android:id="@+id/targetWaitingLogo"
+                            android:layout_width="@dimen/djirc_ui_dashboard_logo_width"
+                            android:layout_height="@dimen/djirc_ui_dashboard_logo_height"
+                            android:layout_gravity="center"
+                            android:contentDescription="Alius"
+                            android:visibility="gone" />
+                    </tech.alius.rc.ui.TeleautoStatusPlatformView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 右列:拨轮 / 右摇杆 / 当前机型右侧硬件按键 -->
+            <LinearLayout
+                android:id="@+id/dashboardRightColumn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/djirc_ui_dashboard_section_gap"
+                android:layout_weight="420"
+                android:orientation="vertical">
+
+                <tech.alius.rc.ui.TeleautoCenteringDialView
+                    android:id="@+id/dialRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/djirc_ui_dashboard_dial_to_stick_gap" />
+
+                <tech.alius.rc.ui.TeleautoJoystickView
+                    android:id="@+id/stickRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="右摇杆" />
+
+                <tech.alius.rc.ui.TeleautoHardwarePanelLayout
+                    android:id="@+id/zoneR2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/djirc_ui_dashboard_section_gap"
+                    android:layout_weight="1">
+                    <tech.alius.rc.ui.TeleautoHardwareControlsView
+                        android:id="@+id/specialControlsRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <tech.alius.rc.ui.TeleautoContinuousDialView
+                        android:id="@+id/freeDialRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </tech.alius.rc.ui.TeleautoHardwarePanelLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <tech.alius.rc.ui.TeleautoDeviceManagementView
+        android:id="@+id/deviceCreationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:visibility="gone" />
+
+    <!-- 单一图传层:普通与放大状态共用同一 TextureView/Surface。 -->
+    <View
+        style="@style/Widget.TeleautoRC.Overlay.Video"
+        android:id="@+id/videoFullscreenBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <tech.alius.rc.ui.TeleautoVideoPresentationView
+        android:id="@+id/videoPresentation"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone">
+
+        <tech.alius.rc.ui.TeleautoVideoView
+            android:id="@+id/videoSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <tech.alius.rc.ui.TeleautoVideoHudView
+            android:id="@+id/videoScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <tech.alius.rc.ui.TeleautoUsbInsertGuideView
+            android:id="@+id/usbInsertGuide"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:translationY="-24dp"
+            android:visibility="gone" />
+    </tech.alius.rc.ui.TeleautoVideoPresentationView>
+
+    <!-- BLE HID 模式实时控制器页面(遮盖层,保留原样) -->
+    <FrameLayout
+        style="@style/Widget.TeleautoRC.Overlay.Hid"
+        android:id="@+id/hidOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone">
+
+        <tech.alius.rc.ui.TeleautoJoystickMonitorView
+            android:id="@+id/joystickMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/Widget.TeleautoRC.Button"
+                android:id="@+id/hidResetPairBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textStyle="bold"
+                android:text="重置配对" />
+
+            <Button
+                style="@style/Widget.TeleautoRC.Button.Danger"
+                android:id="@+id/hidExitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="2dp"
+                android:textStyle="bold"
+                android:text="退出 BLE HID" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/djirc_ui_bg_status_neutral"
+            android:padding="3dp"
+            android:orientation="vertical">
+
+                <tech.alius.rc.ui.TeleautoBinaryStatusView
+                    style="@style/Widget.TeleautoRC.Status"
+                    android:id="@+id/hidLinkStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="① 蓝牙连接 · 未连接"
+                    android:textStyle="bold" />
+
+                <tech.alius.rc.ui.TeleautoBinaryStatusView
+                    style="@style/Widget.TeleautoRC.Status"
+                    android:id="@+id/hidChannelStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="② Input 通路 · 未连接"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Widget.TeleautoRC.ErrorBanner"
+            android:id="@+id/hidErrorBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+</tech.alius.rc.ui.TeleautoControlConsoleLayout>

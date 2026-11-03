@@ -1,0 +1,557 @@
+{
+  "additionalPngAssets" : [
+    {
+      "name" : "mode_logo",
+      "path" : "png\/mode_logo.png",
+      "usage" : "alpha mask, independent runtime tint"
+    },
+    {
+      "name" : "cyberbrick",
+      "path" : "png\/cyberbrick.png",
+      "usage" : "user-provided type icon"
+    }
+  ],
+  "assets" : [
+    {
+      "height" : 356,
+      "name" : "joystick_well_left",
+      "png" : "png\/joystick_well_left.png",
+      "referenceBounds" : [
+        30,
+        154,
+        354,
+        356
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 355
+    },
+    {
+      "height" : 356,
+      "name" : "joystick_well_right",
+      "png" : "png\/joystick_well_right.png",
+      "referenceBounds" : [
+        1202,
+        154,
+        354,
+        356
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 355
+    },
+    {
+      "fixedCapsPx" : [
+        20,
+        11,
+        20,
+        11
+      ],
+      "height" : 33,
+      "name" : "dial_track",
+      "ninePatch" : "android-ninepatch\/dial_track.9.png",
+      "png" : "png\/dial_track.png",
+      "referenceBounds" : [
+        33,
+        104,
+        344,
+        33
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 345
+    },
+    {
+      "fixedCapsPx" : [
+        14,
+        7,
+        14,
+        7
+      ],
+      "height" : 22,
+      "name" : "trim_track",
+      "ninePatch" : "android-ninepatch\/trim_track.9.png",
+      "png" : "png\/trim_track.png",
+      "referenceBounds" : [
+        87,
+        463,
+        241,
+        22
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 242
+    },
+    {
+      "fixedCapsPx" : [
+        20,
+        11,
+        20,
+        11
+      ],
+      "height" : 33,
+      "name" : "continuous_track",
+      "ninePatch" : "android-ninepatch\/continuous_track.9.png",
+      "png" : "png\/continuous_track.png",
+      "referenceBounds" : [
+        1208,
+        848,
+        330,
+        33
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 331
+    },
+    {
+      "fixedCapsPx" : [
+        26,
+        24,
+        26,
+        24
+      ],
+      "height" : 72,
+      "name" : "lock_track",
+      "ninePatch" : "android-ninepatch\/lock_track.9.png",
+      "png" : "png\/lock_track.png",
+      "referenceBounds" : [
+        30,
+        844,
+        349,
+        72
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 350
+    },
+    {
+      "fixedCapsPx" : [
+        18,
+        18,
+        18,
+        18
+      ],
+      "height" : 496,
+      "name" : "video_frame",
+      "ninePatch" : "android-ninepatch\/video_frame.9.png",
+      "png" : "png\/video_frame.png",
+      "referenceBounds" : [
+        417,
+        143,
+        753,
+        496
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 754
+    },
+    {
+      "fixedCapsPx" : [
+        8,
+        8,
+        8,
+        8
+      ],
+      "height" : 69,
+      "name" : "top_bar",
+      "ninePatch" : "android-ninepatch\/top_bar.9.png",
+      "png" : "png\/top_bar.png",
+      "referenceBounds" : [
+        0,
+        0,
+        1586,
+        69
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 1585
+    },
+    {
+      "fixedCapsPx" : [
+        20,
+        20,
+        20,
+        20
+      ],
+      "height" : 71,
+      "name" : "key_raised",
+      "ninePatch" : "android-ninepatch\/key_raised.9.png",
+      "png" : "png\/key_raised.png",
+      "referenceBounds" : [
+        236,
+        569,
+        143,
+        71
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 144
+    },
+    {
+      "height" : 85,
+      "name" : "round_raised",
+      "png" : "png\/round_raised.png",
+      "referenceBounds" : [
+        49,
+        562,
+        82,
+        85
+      ],
+      "source" : "master-normal.png",
+      "upscaled" : false,
+      "width" : 83
+    },
+    {
+      "fixedCapsPx" : [
+        20,
+        20,
+        20,
+        20
+      ],
+      "height" : 71,
+      "name" : "key_pressed",
+      "ninePatch" : "android-ninepatch\/key_pressed.9.png",
+      "png" : "png\/key_pressed.png",
+      "referenceBounds" : [
+        236,
+        569,
+        143,
+        71
+      ],
+      "source" : "master-pressed.png",
+      "upscaled" : false,
+      "width" : 144
+    },
+    {
+      "height" : 85,
+      "name" : "round_pressed",
+      "png" : "png\/round_pressed.png",
+      "referenceBounds" : [
+        49,
+        562,
+        82,
+        85
+      ],
+      "source" : "master-pressed.png",
+      "upscaled" : false,
+      "width" : 83
+    },
+    {
+      "height" : 20,
+      "name" : "dial_thumb",
+      "png" : "png\/dial_thumb.png",
+      "referenceBounds" : [
+        184,
+        111,
+        46,
+        20
+      ],
+      "source" : "reference.png",
+      "upscaled" : false,
+      "width" : 46
+    },
+    {
+      "height" : 40,
+      "name" : "stick_pointer",
+      "png" : "png\/stick_pointer.png",
+      "referenceBounds" : [
+
+      ],
+      "source" : "clean native circle matching svg\/stick_pointer.svg",
+      "upscaled" : false,
+      "width" : 40
+    },
+    {
+      "height" : 71,
+      "name" : "lock_thumb_raised",
+      "png" : "png\/lock_thumb_raised.png",
+      "referenceBounds" : [
+
+      ],
+      "source" : "nine-slice key_raised",
+      "upscaled" : false,
+      "width" : 82
+    },
+    {
+      "height" : 71,
+      "name" : "lock_thumb_pressed",
+      "png" : "png\/lock_thumb_pressed.png",
+      "referenceBounds" : [
+
+      ],
+      "source" : "nine-slice key_pressed",
+      "upscaled" : false,
+      "width" : 82
+    },
+    {
+      "height" : 992,
+      "name" : "background",
+      "png" : "png\/background.png",
+      "referenceBounds" : [
+
+      ],
+      "source" : "background-master.png",
+      "upscaled" : false,
+      "width" : 1586
+    },
+    {
+      "fixedCapsPx" : [
+        20,
+        20,
+        20,
+        20
+      ],
+      "height" : 73,
+      "name" : "center_menu_selected",
+      "ninePatch" : "android-ninepatch\/center_menu_selected.9.png",
+      "png" : "png\/center_menu_selected.png",
+      "referenceBounds" : [
+        16,
+        107,
+        252,
+        73
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 252
+    },
+    {
+      "fixedCapsPx" : [
+        24,
+        24,
+        24,
+        24
+      ],
+      "height" : 78,
+      "name" : "center_tab_normal",
+      "ninePatch" : "android-ninepatch\/center_tab_normal.9.png",
+      "png" : "png\/center_tab_normal.png",
+      "referenceBounds" : [
+        329,
+        230,
+        228,
+        78
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 228
+    },
+    {
+      "fixedCapsPx" : [
+        24,
+        24,
+        24,
+        24
+      ],
+      "height" : 80,
+      "name" : "center_tab_selected",
+      "ninePatch" : "android-ninepatch\/center_tab_selected.9.png",
+      "png" : "png\/center_tab_selected.png",
+      "referenceBounds" : [
+        1276,
+        229,
+        235,
+        80
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 235
+    },
+    {
+      "fixedCapsPx" : [
+        34,
+        34,
+        34,
+        34
+      ],
+      "height" : 319,
+      "name" : "center_card_selected",
+      "ninePatch" : "android-ninepatch\/center_card_selected.9.png",
+      "png" : "png\/center_card_selected.png",
+      "referenceBounds" : [
+        327,
+        372,
+        293,
+        319
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 293
+    },
+    {
+      "fixedCapsPx" : [
+        34,
+        34,
+        34,
+        34
+      ],
+      "height" : 319,
+      "name" : "center_card_normal",
+      "ninePatch" : "android-ninepatch\/center_card_normal.9.png",
+      "png" : "png\/center_card_normal.png",
+      "referenceBounds" : [
+        634,
+        372,
+        293,
+        319
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 293
+    },
+    {
+      "fixedCapsPx" : [
+        24,
+        24,
+        24,
+        24
+      ],
+      "height" : 74,
+      "name" : "center_action_normal",
+      "ninePatch" : "android-ninepatch\/center_action_normal.9.png",
+      "png" : "png\/center_action_normal.png",
+      "referenceBounds" : [
+        994,
+        860,
+        255,
+        74
+      ],
+      "source" : "control-center-master.png",
+      "upscaled" : false,
+      "width" : 255
+    },
+    {
+      "height" : 71,
+      "name" : "lock_thumb_small",
+      "png" : "png\/lock_thumb_small.png",
+      "referenceBounds" : [
+
+      ],
+      "source" : "key_raised with fixed corners",
+      "upscaled" : false,
+      "width" : 82
+    }
+  ],
+  "constraints" : [
+    "No baked labels or channel values",
+    "No continuous dial number",
+    "Joystick and centering dials are hardware-only",
+    "Left and right footer align to a common bottom inset",
+    "Do not stretch joystick wells independently on x\/y; their fixed trim grooves are part of the plate"
+  ],
+  "controlCenter" : {
+    "cardNormal" : "center_card_normal",
+    "cardSelected" : "center_card_selected",
+    "icons" : "independent type-specific layers",
+    "menuFocus" : "independent thin outline, no solid fill",
+    "menuNormal" : "transparent",
+    "menuPressed" : "key_pressed",
+    "menuSelected" : "center_menu_selected",
+    "tabNormal" : "center_tab_normal",
+    "tabSelected" : "center_tab_selected",
+    "virtualDevices" : [
+      "Xbox",
+      "Joystick",
+      "CyberBrick"
+    ]
+  },
+  "modeBranding" : {
+    "logo" : "svg\/mode_logo.svg",
+    "logoTint" : "runtime",
+    "modeColors" : "awaiting user color mapping",
+    "statusText" : "runtime text, separate tint"
+  },
+  "referenceCanvas" : [
+    1586,
+    992
+  ],
+  "screenLock" : {
+    "cancel" : "release either key, disconnect or lose input: reset progress",
+    "durationStatus" : "proposed preview default",
+    "holdDurationMs" : 2000,
+    "lockedAppearance" : "amber overlay and lock icon; text remains independent",
+    "lockGesture" : "slide thumb to end",
+    "progress" : "elapsed simultaneous hold \/ duration",
+    "thumb" : "png\/lock_thumb_small.png",
+    "touchUnlock" : false,
+    "unlockGesture" : "physical C1 + C2 held simultaneously"
+  },
+  "states" : {
+    "keys" : {
+      "pressed" : "key_pressed",
+      "released" : "key_raised; fade rim light independently",
+      "rest" : "key_raised"
+    },
+    "lockThumb" : {
+      "pressed" : "lock_thumb_pressed",
+      "rest" : "lock_thumb_raised"
+    },
+    "roundKeys" : {
+      "pressed" : "round_pressed",
+      "rest" : "round_raised"
+    }
+  },
+  "vectorAssets" : [
+    {
+      "color" : "currentColor",
+      "name" : "chevron_right",
+      "path" : "svg\/chevron_right.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "fullscreen",
+      "path" : "svg\/fullscreen.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "joystick",
+      "path" : "svg\/joystick.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "joystick_grid",
+      "path" : "svg\/joystick_grid.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "lock",
+      "path" : "svg\/lock.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "mode_logo",
+      "path" : "svg\/mode_logo.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "pause",
+      "path" : "svg\/pause.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "return_home",
+      "path" : "svg\/return_home.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "settings",
+      "path" : "svg\/settings.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "stick_pointer",
+      "path" : "svg\/stick_pointer.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "unlock",
+      "path" : "svg\/unlock.svg"
+    },
+    {
+      "color" : "currentColor",
+      "name" : "xbox",
+      "path" : "svg\/xbox.svg"
+    }
+  ],
+  "version" : "crater-v2"
+}

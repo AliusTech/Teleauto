@@ -1,0 +1,8 @@
+{
+  "pages": {
+    "POWER": "baseline/POWER.json",
+    "MCU": "baseline/MCU.json",
+    "VTX": "baseline/VTX.json",
+    "LoRa": "LoRa-after-reload.json"
+  }
+}

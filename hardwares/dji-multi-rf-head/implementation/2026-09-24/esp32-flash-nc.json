@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "requireFullExecution": true,
+  "meta": {
+    "name": "ESP32-C3FH4 internal flash pins: explicit external NC",
+    "project": "c15f2ba144e644eca844ab18ebaf753e",
+    "doc": "6da79bf818384203"
+  },
+  "defaults": {"timeoutSec": 90, "retry": 0, "continueOnError": false},
+  "steps": [
+    {
+      "id": "internal-flash-pins-nc",
+      "action": "schematic.pin.set_no_connect",
+      "payload": {
+        "designator": "U3",
+        "pins": ["19", "20", "21", "22", "23", "24"],
+        "noConnected": true
+      }
+    }
+  ]
+}

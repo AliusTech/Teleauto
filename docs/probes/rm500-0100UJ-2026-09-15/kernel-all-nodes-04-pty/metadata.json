@@ -1,0 +1,24 @@
+{
+  "serial": "455LJ1710100UJ",
+  "model": "ag501",
+  "label": "baseline",
+  "repeat": 1,
+  "source": "kernel",
+  "started_utc": "2026-09-14T18:52:36.399878+00:00",
+  "duration_requested_seconds": 180,
+  "firmware": "DJI/ag501/ag501:7.1.2/V01.00.00.38/38:user/release-keys",
+  "device_uptime_start": "1725.25 10103.43",
+  "status": "captured",
+  "physical_operation_confirmed": true,
+  "note": "User confirmed operation. Mixed sequence; per-button timestamps not separately marked. PTY output is line buffered. No target mapping verified.",
+  "duration_actual_seconds": 180.23731133300316,
+  "ended_utc": "2026-09-14T18:55:36.685728+00:00",
+  "requested_sequence": [
+    "c1",
+    "c2",
+    "pause",
+    "rth",
+    "switch",
+    "sticks"
+  ]
+}

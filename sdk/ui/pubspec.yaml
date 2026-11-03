@@ -1,0 +1,71 @@
+name: teleauto_ui
+description: Shared Flutter controls, layouts, assets and themes for Teleauto SDK.
+version: 0.1.0
+publish_to: none
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - src/main/assets/fonts/SourceHanSans-LICENSE.txt
+    - src/main/assets/materials/crater-v2/png/
+    - src/main/assets/materials/crater-v2/svg/
+    - src/main/assets/icons/alius-logo.svg
+    - src/main/assets/icons/auth.svg
+    - src/main/assets/icons/close.svg
+    - src/main/assets/icons/device-airship.svg
+    - src/main/assets/icons/device-coaxial-helicopter.svg
+    - src/main/assets/icons/device-decarotor.svg
+    - src/main/assets/icons/device-dodecarotor.svg
+    - src/main/assets/icons/device-fixed-wing.svg
+    - src/main/assets/icons/device-flapping-wing.svg
+    - src/main/assets/icons/device-free-balloon.svg
+    - src/main/assets/icons/device-gamepad.svg
+    - src/main/assets/icons/device-generic-aircraft.svg
+    - src/main/assets/icons/device-generic-multirotor.svg
+    - src/main/assets/icons/device-ground-rover.svg
+    - src/main/assets/icons/device-helicopter.svg
+    - src/main/assets/icons/device-hexarotor.svg
+    - src/main/assets/icons/device-humanoid.svg
+    - src/main/assets/icons/device-joystick.svg
+    - src/main/assets/icons/device-kite.svg
+    - src/main/assets/icons/device-octorotor.svg
+    - src/main/assets/icons/device-parafoil.svg
+    - src/main/assets/icons/device-quadrotor.svg
+    - src/main/assets/icons/device-quadruped.svg
+    - src/main/assets/icons/device-remote-controller.svg
+    - src/main/assets/icons/device-rocket.svg
+    - src/main/assets/icons/device-submarine.svg
+    - src/main/assets/icons/device-surface-boat.svg
+    - src/main/assets/icons/device-tricopter.svg
+    - src/main/assets/icons/device-vtol-fixedrotor.svg
+    - src/main/assets/icons/device-vtol-gyrodyne.svg
+    - src/main/assets/icons/device-vtol-tailsitter-duorotor.svg
+    - src/main/assets/icons/device-vtol-tailsitter-quadrotor.svg
+    - src/main/assets/icons/device-vtol-tailsitter.svg
+    - src/main/assets/icons/device-vtol-tiltrotor.svg
+    - src/main/assets/icons/device-vtol-tiltwing.svg
+    - src/main/assets/icons/lock.svg
+    - src/main/assets/icons/pause.svg
+    - src/main/assets/icons/return_home.svg
+    - src/main/assets/icons/settings.svg
+    - src/main/assets/icons/timer.svg
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: src/main/assets/fonts/inter_regular.otf
+        - asset: src/main/assets/fonts/inter_bold.otf
+          weight: 700
+    - family: SourceHanSans
+      fonts:
+        - asset: src/main/assets/fonts/source_han_sans_sc_regular.otf
+        - asset: src/main/assets/fonts/source_han_sans_sc_bold.otf
+          weight: 700

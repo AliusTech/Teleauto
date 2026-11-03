@@ -1,0 +1,8 @@
+.*
+!.gitignore
+*.iml
+*.class
+*.log
+/build/
+/coverage/
+/pubspec.lock

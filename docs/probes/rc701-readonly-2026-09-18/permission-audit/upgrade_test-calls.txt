@@ -1,0 +1,1140 @@
+_start @ a004: _start_main
+_start_main @ a044: a044: 940025cf     	bl	0x13780 <__libc_init@plt>
+main @ a070: get_test_upgrade_commands
+main @ a084: a084: 940025c3     	bl	0x13790 <strrchr@plt>
+main @ a0b8: a0b8: 940025ba     	bl	0x137a0 <strcmp@plt>
+main @ a0cc: a0cc: 940025b5     	bl	0x137a0 <strcmp@plt>
+main @ a0e0: a0e0: 940025b0     	bl	0x137a0 <strcmp@plt>
+main @ a100: a100: 940025ac     	bl	0x137b0 <puts@plt>
+main @ a15c: a15c: 94002599     	bl	0x137c0 <realloc@plt>
+main @ a170: a170: 94002598     	bl	0x137d0 <strndup@plt>
+main @ a274: a274: 9400254b     	bl	0x137a0 <strcmp@plt>
+main @ a290: a290: 94002548     	bl	0x137b0 <puts@plt>
+main @ a29c: a29c: 94002545     	bl	0x137b0 <puts@plt>
+main @ a2b4: print_help_with_tab
+main @ a2c4: a2c4: 94002547     	bl	0x137e0 <printf@plt>
+main @ a2d4: a2d4: 94002543     	bl	0x137e0 <printf@plt>
+main @ a2e8: a2e8: 9400253e     	bl	0x137e0 <printf@plt>
+main @ a308: a308: 94002526     	bl	0x137a0 <strcmp@plt>
+main @ a320: a320: 94002524     	bl	0x137b0 <puts@plt>
+main @ a32c: a32c: 94002521     	bl	0x137b0 <puts@plt>
+main @ a430: a430: 940024dc     	bl	0x137a0 <strcmp@plt>
+main @ a458: a458: 940024d2     	bl	0x137a0 <strcmp@plt>
+main @ a51c: a51c: 940024b5     	bl	0x137f0 <malloc@plt>
+main @ a528: a528: 940024b6     	bl	0x13800 <strlen@plt>
+main @ a538: a538: 940024b2     	bl	0x13800 <strlen@plt>
+main @ a558: a558: 940024a6     	bl	0x137f0 <malloc@plt>
+main @ a5f4: a5f4: 94002487     	bl	0x13810 <strcpy@plt>
+main @ a5f8: a5f8: 94002482     	bl	0x13800 <strlen@plt>
+main @ a60c: a60c: 94002485     	bl	0x13820 <strcat@plt>
+main @ a61c: a61c: 94002479     	bl	0x13800 <strlen@plt>
+main @ a654: a654: 9400244f     	bl	0x13790 <strrchr@plt>
+main @ a6cc: a6cc: 94002459     	bl	0x13830 <fprintf@plt>
+main @ a6d8: a6d8: 94002436     	bl	0x137b0 <puts@plt>
+main @ a6fc: print_help_with_tab
+main @ a718: a718: 94002432     	bl	0x137e0 <printf@plt>
+main @ a728: a728: 9400242e     	bl	0x137e0 <printf@plt>
+main @ a73c: a73c: 94002429     	bl	0x137e0 <printf@plt>
+main @ a744: a744: 9400243f     	bl	0x13840 <exit@plt>
+main @ a74c: a74c: 9400243d     	bl	0x13840 <exit@plt>
+main @ a76c: a76c: 94002439     	bl	0x13850 <fwrite@plt>
+main @ a7b0: a7b0: 94002420     	bl	0x13830 <fprintf@plt>
+main @ a7d4: a7d4: 94002417     	bl	0x13830 <fprintf@plt>
+main @ a7dc: a7dc: 94002419     	bl	0x13840 <exit@plt>
+main @ a7ec: a7ec: 940023f1     	bl	0x137b0 <puts@plt>
+main @ a810: print_help_with_tab
+main @ a82c: a82c: 940023ed     	bl	0x137e0 <printf@plt>
+main @ a83c: a83c: 940023e9     	bl	0x137e0 <printf@plt>
+main @ a850: a850: 940023e4     	bl	0x137e0 <printf@plt>
+main @ a858: a858: 940023fa     	bl	0x13840 <exit@plt>
+main @ a860: a860: 94002400     	bl	0x13860 <free@plt>
+main @ a868: a868: 940023fe     	bl	0x13860 <free@plt>
+main @ a888: a888: 940023f2     	bl	0x13850 <fwrite@plt>
+main @ a890: a890: 940023ec     	bl	0x13840 <exit@plt>
+main @ a894: client_init
+main @ a8b0: client_deinit
+main @ a8b8: a8b8: 940023e2     	bl	0x13840 <exit@plt>
+main @ a8d4: a8d4: 940023d7     	bl	0x13830 <fprintf@plt>
+main @ a8dc: a8dc: 940023d9     	bl	0x13840 <exit@plt>
+main @ a8f8: a8f8: 940023ce     	bl	0x13830 <fprintf@plt>
+main @ a904: a904: 940023ab     	bl	0x137b0 <puts@plt>
+main @ a928: print_help_with_tab
+main @ a958: a958: 940023b6     	bl	0x13830 <fprintf@plt>
+main @ a964: a964: 94002393     	bl	0x137b0 <puts@plt>
+main @ a97c: print_help_with_tab
+main @ a98c: a98c: 94002395     	bl	0x137e0 <printf@plt>
+main @ a99c: a99c: 94002391     	bl	0x137e0 <printf@plt>
+main @ a9b0: a9b0: 9400238c     	bl	0x137e0 <printf@plt>
+main @ a9b8: a9b8: 940023a2     	bl	0x13840 <exit@plt>
+print_help_with_tab @ aa58: aa58: 94002386     	bl	0x13870 <snprintf@plt>
+print_help_with_tab @ aa70: aa70: 9400235c     	bl	0x137e0 <printf@plt>
+print_help_with_tab @ aa9c: aa9c: 94002379     	bl	0x13880 <putchar@plt>
+print_help_with_tab @ aab4: aab4: 9400234b     	bl	0x137e0 <printf@plt>
+print_help_with_tab @ aadc: aadc: 94002341     	bl	0x137e0 <printf@plt>
+print_help_with_tab @ ab08: ab08: 9400235e     	bl	0x13880 <putchar@plt>
+print_help_with_tab @ ab20: ab20: 94002330     	bl	0x137e0 <printf@plt>
+print_help_with_tab @ ab2c: ab2c: 94002355     	bl	0x13880 <putchar@plt>
+print_help_with_tab @ ab4c: ab4c: 94002325     	bl	0x137e0 <printf@plt>
+print_help_with_tab @ ab54: ab54: 9400232b     	bl	0x13800 <strlen@plt>
+print_help_with_tab @ ab68: ab68: 9400234a     	bl	0x13890 <strncat@plt>
+print_help_with_tab @ ab90: print_help_with_tab
+print_help_with_tab @ aba4: aba4: 94002337     	bl	0x13880 <putchar@plt>
+print_help_with_tab @ abd4: abd4: 94002333     	bl	0x138a0 <__stack_chk_fail@plt>
+no_func @ ac04: ac04: 940022eb     	bl	0x137b0 <puts@plt>
+no_func @ ac2c: ac2c: 940022ed     	bl	0x137e0 <printf@plt>
+not_realise @ ac70: ac70: 940022d0     	bl	0x137b0 <puts@plt>
+not_realise @ ac98: ac98: 940022d2     	bl	0x137e0 <printf@plt>
+client_init_communication @ acf8: acf8: 940022ee     	bl	0x138b0 <memset@plt>
+client_init_communication @ ad08: ad08: 940022ea     	bl	0x138b0 <memset@plt>
+client_init_communication @ ad1c: ad1c: 940022e5     	bl	0x138b0 <memset@plt>
+client_init_communication @ ad38: ad38: 940022e2     	bl	0x138c0 <up_logi@plt>
+client_init_communication @ ad3c: ad3c: 940022e5     	bl	0x138d0 <duss_sketch_get_config_file_name@plt>
+client_init_communication @ ad44: get_client_domain_str
+client_init_communication @ ad4c: get_client_role_str
+client_init_communication @ ad64: ad64: 940022df     	bl	0x138e0 <duss_mb_create_route_table@plt>
+client_init_communication @ ada0: ada0: 940022c8     	bl	0x138c0 <up_logi@plt>
+client_init_communication @ add4: add4: 940022c7     	bl	0x138f0 <duss_event_create_client@plt>
+client_init_communication @ ae04: ae04: 940022bf     	bl	0x13900 <duss_event_start_client@plt>
+client_init_communication @ ae2c: ae2c: 940022b9     	bl	0x13910 <duss_mb_destroy_route_table@plt>
+client_init_communication @ ae48: ae48: 940022b6     	bl	0x13920 <duss_osal_mutex_create@plt>
+client_init_communication @ ae70: ae70: 940022b0     	bl	0x13930 <up_loge@plt>
+client_init_communication @ aeb4: aeb4: 9400227f     	bl	0x138b0 <memset@plt>
+client_init_communication @ aebc: aebc: 94002279     	bl	0x138a0 <__stack_chk_fail@plt>
+client_deinit_communication @ aed4: aed4: 9400229b     	bl	0x13940 <duss_event_destroy_client@plt>
+client_deinit_communication @ aef8: aef8: 9400228e     	bl	0x13930 <up_loge@plt>
+client_deinit_communication @ af04: af04: 94002293     	bl	0x13950 <duss_osal_mutex_destroy@plt>
+client_send_with_ack @ af58: af58: 94002256     	bl	0x138b0 <memset@plt>
+client_send_with_ack @ af68: af68: 94002252     	bl	0x138b0 <memset@plt>
+client_send_with_ack @ af94: af94: 94002267     	bl	0x13930 <up_loge@plt>
+client_send_with_ack @ afa8: afa8: 94002242     	bl	0x138b0 <memset@plt>
+client_send_with_ack @ afbc: afbc: 9400223d     	bl	0x138b0 <memset@plt>
+client_send_with_ack @ afe8: afe8: 9400225e     	bl	0x13960 <memcpy@plt>
+client_send_with_ack @ b004: b004: 9400225b     	bl	0x13970 <duss_event_send_sync@plt>
+client_send_with_ack @ b028: b028: 94002242     	bl	0x13930 <up_loge@plt>
+client_send_with_ack @ b06c: b06c: 9400223d     	bl	0x13960 <memcpy@plt>
+client_send_with_ack @ b078: b078: 9400220a     	bl	0x138a0 <__stack_chk_fail@plt>
+client_send @ b0b0: b0b0: 94002200     	bl	0x138b0 <memset@plt>
+client_send @ b0d4: b0d4: 94002217     	bl	0x13930 <up_loge@plt>
+client_send @ b0e8: b0e8: 940021f2     	bl	0x138b0 <memset@plt>
+client_send @ b110: b110: 94002214     	bl	0x13960 <memcpy@plt>
+client_send @ b120: b120: 94002218     	bl	0x13980 <duss_event_send@plt>
+client_send @ b144: b144: 940021fb     	bl	0x13930 <up_loge@plt>
+client_send @ b170: b170: 940021cc     	bl	0x138a0 <__stack_chk_fail@plt>
+client_communication_event_cb_regist @ b1a4: b1a4: 940021fb     	bl	0x13990 <duss_osal_mutex_lock@plt>
+client_communication_event_cb_regist @ b1c0: b1c0: 940021f8     	bl	0x139a0 <duss_osal_mutex_unlock@plt>
+client_communication_event_cb_regist @ b1e4: b1e4: 940021d3     	bl	0x13930 <up_loge@plt>
+common_callback @ b23c: b23c: 9400219d     	bl	0x138b0 <memset@plt>
+common_callback @ b24c: b24c: 94002199     	bl	0x138b0 <memset@plt>
+common_callback @ b274: b274: 94002193     	bl	0x138c0 <up_logi@plt>
+common_callback @ b2a4: b2a4: 940021bb     	bl	0x13990 <duss_osal_mutex_lock@plt>
+common_callback @ b2c0: b2c0: 940021b8     	bl	0x139a0 <duss_osal_mutex_unlock@plt>
+common_callback @ b2dc: b2dc: 940021b5     	bl	0x139b0 <upgrade_strncpy@plt>
+common_callback @ b310: b310: 94002194     	bl	0x13960 <memcpy@plt>
+common_callback @ b344: b344: 9400217b     	bl	0x13930 <up_loge@plt>
+common_callback @ b36c: b36c: 94002171     	bl	0x13930 <up_loge@plt>
+common_callback @ b3a0: b3a0: 94002188     	bl	0x139c0 <duss_event_resp_data_without_retcode@plt>
+common_callback @ b3c8: b3c8: 9400215a     	bl	0x13930 <up_loge@plt>
+common_callback @ b3ec: b3ec: 94002151     	bl	0x13930 <up_loge@plt>
+common_callback @ b428: b428: 9400211e     	bl	0x138a0 <__stack_chk_fail@plt>
+load_default_config @ b4a0: b4a0: 94002104     	bl	0x138b0 <memset@plt>
+load_default_config @ b4a4: b4a4: 9400210b     	bl	0x138d0 <duss_sketch_get_config_file_name@plt>
+load_default_config @ b4b0: b4b0: 94002148     	bl	0x139d0 <duss_access_file@plt>
+load_default_config @ b4d0: b4d0: 94002144     	bl	0x139e0 <duss_load_file@plt>
+load_default_config @ b4e8: b4e8: 94002132     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b4f0: b4f0: 94002140     	bl	0x139f0 <cJSON_Parse@plt>
+load_default_config @ b504: b504: 9400213f     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b514: b514: 9400213f     	bl	0x13a10 <cJSON_Print@plt>
+load_default_config @ b524: b524: 94002137     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b534: b534: 94002133     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b548: b548: 9400212e     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b554: b554: 94002133     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b568: b568: 94002112     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b578: b578: 94002122     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b584: b584: 94002127     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b598: b598: 94002106     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b5a8: b5a8: 94002116     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b5b4: b5b4: 9400211b     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b5c8: b5c8: 940020fa     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b5d8: b5d8: 9400210a     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b5ec: b5ec: 94002105     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b5f8: b5f8: 9400210a     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b60c: b60c: 940020e9     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b61c: b61c: 940020f9     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b628: b628: 940020fe     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b63c: b63c: 940020dd     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b64c: b64c: 940020ed     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b658: b658: 940020f2     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b66c: b66c: 940020d1     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b67c: b67c: 940020e1     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+load_default_config @ b688: b688: 940020e6     	bl	0x13a20 <is_json_item_str_available@plt>
+load_default_config @ b69c: b69c: 940020c5     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b6ec: b6ec: 940020b1     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b734: b734: 9400209f     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b73c: b73c: 940020bd     	bl	0x13a30 <upgrade_info_init@plt>
+load_default_config @ b780: b780: 9400206c     	bl	0x13930 <up_loge@plt>
+load_default_config @ b7c0: b7c0: 9400207c     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b7dc: b7dc: 94002075     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b7f8: b7f8: 9400206e     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b814: b814: 94002067     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b830: b830: 94002060     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b84c: b84c: 94002059     	bl	0x139b0 <upgrade_strncpy@plt>
+load_default_config @ b854: b854: 94002013     	bl	0x138a0 <__stack_chk_fail@plt>
+load_client_local_cfg @ b8c0: b8c0: 94001ffc     	bl	0x138b0 <memset@plt>
+load_client_local_cfg @ b8d0: b8d0: 94001ff8     	bl	0x138b0 <memset@plt>
+load_client_local_cfg @ b8e4: b8e4: 94002057     	bl	0x13a40 <upgrade_info_get_tag@plt>
+load_client_local_cfg @ b918: b918: 94001fea     	bl	0x138c0 <up_logi@plt>
+load_client_local_cfg @ b930: b930: 94002020     	bl	0x139b0 <upgrade_strncpy@plt>
+load_client_local_cfg @ b944: b944: 9400203f     	bl	0x13a40 <upgrade_info_get_tag@plt>
+load_client_local_cfg @ b974: b974: 94001fd3     	bl	0x138c0 <up_logi@plt>
+load_client_local_cfg @ b98c: b98c: 94002031     	bl	0x13a50 <upgrade_info_get_int_tag@plt>
+load_client_local_cfg @ b9c4: b9c4: 94001fbf     	bl	0x138c0 <up_logi@plt>
+load_client_local_cfg @ b9dc: b9dc: 94001fc1     	bl	0x138e0 <duss_mb_create_route_table@plt>
+load_client_local_cfg @ b9fc: b9fc: 94001f79     	bl	0x137e0 <printf@plt>
+load_client_local_cfg @ ba04: ba04: 94001f9f     	bl	0x13880 <putchar@plt>
+load_client_local_cfg @ ba28: ba28: 9400200e     	bl	0x13a60 <up_logf@plt>
+load_client_local_cfg @ ba48: ba48: 94001fda     	bl	0x139b0 <upgrade_strncpy@plt>
+load_client_local_cfg @ ba7c: ba7c: 94001fa5     	bl	0x13910 <duss_mb_destroy_route_table@plt>
+load_client_local_cfg @ ba94: ba94: 94001f93     	bl	0x138e0 <duss_mb_create_route_table@plt>
+load_client_local_cfg @ bab4: bab4: 94001f4b     	bl	0x137e0 <printf@plt>
+load_client_local_cfg @ babc: babc: 94001f71     	bl	0x13880 <putchar@plt>
+load_client_local_cfg @ bae0: bae0: 94001fe0     	bl	0x13a60 <up_logf@plt>
+load_client_local_cfg @ bb04: bb04: 94001f83     	bl	0x13910 <duss_mb_destroy_route_table@plt>
+load_client_local_cfg @ bb34: bb34: 94001f5b     	bl	0x138a0 <__stack_chk_fail@plt>
+config_test_id @ bb78: bb78: 94001f4e     	bl	0x138b0 <memset@plt>
+config_test_id @ bbb0: bbb0: 94001fb0     	bl	0x13a70 <getopt_long@plt>
+config_test_id @ bbd0: bbd0: 94001fac     	bl	0x13a80 <upgrade_info_del_tag@plt>
+config_test_id @ bbdc: bbdc: 94001fa9     	bl	0x13a80 <upgrade_info_del_tag@plt>
+config_test_id @ bbe8: bbe8: 94001fa6     	bl	0x13a80 <upgrade_info_del_tag@plt>
+config_test_id @ bc04: bc04: 94001eeb     	bl	0x137b0 <puts@plt>
+config_test_id @ bc2c: bc2c: 94001f2d     	bl	0x138e0 <duss_mb_create_route_table@plt>
+config_test_id @ bc44: bc44: 94001ee7     	bl	0x137e0 <printf@plt>
+config_test_id @ bc50: bc50: 94001f30     	bl	0x13910 <duss_mb_destroy_route_table@plt>
+config_test_id @ bc60: bc60: 94001ee0     	bl	0x137e0 <printf@plt>
+config_test_id @ bc70: bc70: 94001f88     	bl	0x13a90 <strtol@plt>
+config_test_id @ bc8c: bc8c: 94001f85     	bl	0x13aa0 <upgrade_info_set_tag@plt>
+config_test_id @ bca0: bca0: 94001f80     	bl	0x13aa0 <upgrade_info_set_tag@plt>
+config_test_id @ bcb4: bcb4: 94001f7f     	bl	0x13ab0 <upgrade_info_set_int_tag@plt>
+config_test_id @ bcc4: bcc4: 94001ec7     	bl	0x137e0 <printf@plt>
+config_test_id @ bcd8: bcd8: 94001ec2     	bl	0x137e0 <printf@plt>
+config_test_id @ bd14: bd14: 94001eb3     	bl	0x137e0 <printf@plt>
+config_test_id @ bd20: bd20: 94001ee0     	bl	0x138a0 <__stack_chk_fail@plt>
+set_log_chnl_to_android_log @ bd30: bd30: 14001f64     	b	0x13ac0 <duss_log_control@plt>
+test_result_print @ bdf0: bdf0: 94001ee8     	bl	0x13990 <duss_osal_mutex_lock@plt>
+test_result_print @ be30: be30: 94001f28     	bl	0x13ad0 <vsnprintf@plt>
+test_result_print @ be60: be60: 94001e84     	bl	0x13870 <snprintf@plt>
+test_result_print @ be64: be64: 94001f1f     	bl	0x13ae0 <__errno@plt>
+test_result_print @ be7c: be7c: 94001f1d     	bl	0x13af0 <fopen@plt>
+test_result_print @ becc: becc: 94001f0d     	bl	0x13b00 <get_time_str_ymdms@plt>
+test_result_print @ beec: beec: 94001e61     	bl	0x13870 <snprintf@plt>
+test_result_print @ bef4: bef4: 94001e43     	bl	0x13800 <strlen@plt>
+test_result_print @ bf08: bf08: 94001f02     	bl	0x13b10 <fwrite_unlocked@plt>
+test_result_print @ bf14: bf14: 94001e3b     	bl	0x13800 <strlen@plt>
+test_result_print @ bf44: bf44: 94001ec7     	bl	0x13a60 <up_logf@plt>
+test_result_print @ bf4c: bf4c: 94001ef5     	bl	0x13b20 <fclose@plt>
+test_result_print @ bf54: bf54: 94001e43     	bl	0x13860 <free@plt>
+test_result_print @ bf5c: bf5c: 94001e15     	bl	0x137b0 <puts@plt>
+test_result_print @ bf7c: bf7c: 94001eb9     	bl	0x13a60 <up_logf@plt>
+test_result_print @ bf8c: bf8c: 94001ee9     	bl	0x13b30 <strerror@plt>
+test_result_print @ bfb0: bfb0: 94001eac     	bl	0x13a60 <up_logf@plt>
+test_result_print @ bfb8: bfb8: 94001e7a     	bl	0x139a0 <duss_osal_mutex_unlock@plt>
+test_result_print @ bfe4: bfe4: 94001e2f     	bl	0x138a0 <__stack_chk_fail@plt>
+test_result_clear @ c038: c038: 94001e56     	bl	0x13990 <duss_osal_mutex_lock@plt>
+test_result_clear @ c068: c068: 94001e02     	bl	0x13870 <snprintf@plt>
+test_result_clear @ c06c: c06c: 94001e9d     	bl	0x13ae0 <__errno@plt>
+test_result_clear @ c07c: c07c: 94001eb1     	bl	0x13b40 <remove@plt>
+test_result_clear @ c088: c088: 94001eaa     	bl	0x13b30 <strerror@plt>
+test_result_clear @ c0b8: c0b8: 94001e02     	bl	0x138c0 <up_logi@plt>
+test_result_clear @ c0c0: c0c0: 94001e38     	bl	0x139a0 <duss_osal_mutex_unlock@plt>
+test_result_clear @ c0e8: c0e8: 94001dee     	bl	0x138a0 <__stack_chk_fail@plt>
+save_cmd_for_reboot @ c124: c124: 94001db7     	bl	0x13800 <strlen@plt>
+save_cmd_for_reboot @ c14c: c14c: 94001e81     	bl	0x13b50 <strstr@plt>
+save_cmd_for_reboot @ c168: c168: 94001e7e     	bl	0x13b60 <calloc@plt>
+save_cmd_for_reboot @ c178: c178: 94001da6     	bl	0x13810 <strcpy@plt>
+save_cmd_for_reboot @ c1a0: c1a0: 94001e30     	bl	0x13a60 <up_logf@plt>
+save_cmd_for_reboot @ c1b0: c1b0: 94001d94     	bl	0x13800 <strlen@plt>
+save_cmd_for_reboot @ c1c0: c1c0: 94001d90     	bl	0x13800 <strlen@plt>
+save_cmd_for_reboot @ c1f8: c1f8: 94001d82     	bl	0x13800 <strlen@plt>
+save_cmd_for_reboot @ c208: c208: 94001d86     	bl	0x13820 <strcat@plt>
+save_cmd_for_reboot @ c23c: c23c: 94001da1     	bl	0x138c0 <up_logi@plt>
+save_cmd_for_reboot @ c248: c248: 94001e4a     	bl	0x13b70 <up_hex_dump@plt>
+save_cmd_for_reboot @ c258: c258: 94001e16     	bl	0x13ab0 <upgrade_info_set_int_tag@plt>
+save_cmd_for_reboot @ c26c: c26c: 94001e45     	bl	0x13b80 <upgrade_info_save_block@plt>
+save_cmd_for_reboot @ c278: c278: 94001d7a     	bl	0x13860 <free@plt>
+load_saved_cmd @ c2c8: c2c8: 94001de2     	bl	0x13a50 <upgrade_info_get_int_tag@plt>
+load_saved_cmd @ c2e8: c2e8: 94001dde     	bl	0x13a60 <up_logf@plt>
+load_saved_cmd @ c300: c300: 94001e18     	bl	0x13b60 <calloc@plt>
+load_saved_cmd @ c31c: c31c: 94001e1d     	bl	0x13b90 <upgrade_info_read_block@plt>
+load_saved_cmd @ c33c: c33c: 94001dc9     	bl	0x13a60 <up_logf@plt>
+load_saved_cmd @ c348: c348: 94001dce     	bl	0x13a80 <upgrade_info_del_tag@plt>
+load_saved_cmd @ c364: c364: 94001dbf     	bl	0x13a60 <up_logf@plt>
+load_saved_cmd @ c370: c370: 94001dc4     	bl	0x13a80 <upgrade_info_del_tag@plt>
+load_saved_cmd @ c380: c380: 94001dc0     	bl	0x13a80 <upgrade_info_del_tag@plt>
+load_saved_cmd @ c3a8: c3a8: 94001dfe     	bl	0x13ba0 <upgrade_info_del_block@plt>
+load_saved_cmd @ c3c8: c3c8: 94001da6     	bl	0x13a60 <up_logf@plt>
+load_saved_cmd @ c3d0: c3d0: 94001d24     	bl	0x13860 <free@plt>
+load_saved_cmd @ c418: c418: 94001d2a     	bl	0x138c0 <up_logi@plt>
+load_saved_cmd @ c424: c424: 94001dd3     	bl	0x13b70 <up_hex_dump@plt>
+load_saved_cmd @ c42c: c42c: 94001cf5     	bl	0x13800 <strlen@plt>
+load_saved_cmd @ c44c: c44c: 94001dc1     	bl	0x13b50 <strstr@plt>
+load_saved_cmd @ c458: c458: 94001dd6     	bl	0x13bb0 <system@plt>
+load_saved_cmd @ c460: c460: 94001d00     	bl	0x13860 <free@plt>
+load_saved_cmd @ c468: c468: 94001d0e     	bl	0x138a0 <__stack_chk_fail@plt>
+client_deinit @ c47c: c47c: 94001d81     	bl	0x13a80 <upgrade_info_del_tag@plt>
+client_deinit @ c488: c488: 94001dc6     	bl	0x13ba0 <upgrade_info_del_block@plt>
+client_deinit @ c498: c498: 94001cf2     	bl	0x13860 <free@plt>
+client_deinit @ c4a8: c4a8: 14001d2a     	b	0x13950 <duss_osal_mutex_destroy@plt>
+client_init_log @ c4d0: c4d0: 94001cb8     	bl	0x137b0 <puts@plt>
+client_init_log @ c520: c520: 94001da8     	bl	0x13bc0 <duss_sketch_initialize@plt>
+client_init_log @ c534: c534: 94001d63     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c544: c544: 94001d5f     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c554: c554: 94001d5b     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c564: c564: 94001d57     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c574: c574: 94001d53     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c584: c584: 94001d4f     	bl	0x13ac0 <duss_log_control@plt>
+client_init_log @ c58c: c58c: 94001d91     	bl	0x13bd0 <upgrade_set_log_tag@plt>
+client_init_log @ c5a8: c5a8: 94001cc6     	bl	0x138c0 <up_logi@plt>
+client_init_log @ c5dc: c5dc: 94001c81     	bl	0x137e0 <printf@plt>
+client_init_log @ c5e4: c5e4: 94001c97     	bl	0x13840 <exit@plt>
+client_init_log @ c5e8: c5e8: 94001cae     	bl	0x138a0 <__stack_chk_fail@plt>
+client_init @ c614: c614: 94001d53     	bl	0x13b60 <calloc@plt>
+client_init @ c624: client_init_log
+client_init @ c62c: load_default_config
+client_init @ c638: load_client_local_cfg
+client_init @ c660: c660: 94001c98     	bl	0x138c0 <up_logi@plt>
+client_init @ c67c: c67c: 94001ca9     	bl	0x13920 <duss_osal_mutex_create@plt>
+client_init @ c6a0: c6a0: 94001cf0     	bl	0x13a60 <up_logf@plt>
+client_init @ c6c0: c6c0: 94001c9c     	bl	0x13930 <up_loge@plt>
+client_init @ c6e8: c6e8: 94001c6e     	bl	0x138a0 <__stack_chk_fail@plt>
+upgrade_parse_single_md_params_handle @ c71c: c71c: 94001cb9     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c730: c730: 94001cb4     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c754: c754: 94001c13     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ c768: c768: 94001c92     	bl	0x139b0 <upgrade_strncpy@plt>
+upgrade_parse_single_md_params_handle @ c798: c798: 94001c86     	bl	0x139b0 <upgrade_strncpy@plt>
+upgrade_parse_single_md_params_handle @ c7b4: c7b4: 94001cab     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ c7c4: c7c4: 94001c8f     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c7d8: c7d8: 94001c8a     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c7e4: c7e4: 94001c8f     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c7fc: c7fc: 94001be9     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ c810: c810: 94001be4     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ c82c: c82c: 94001c75     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c838: c838: 94001c7a     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c844: c844: 94001ce7     	bl	0x13be0 <str_to_v1_host_id@plt>
+upgrade_parse_single_md_params_handle @ c858: c858: 94001c6a     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c864: c864: 94001c6f     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c870: c870: 94001cdc     	bl	0x13be0 <str_to_v1_host_id@plt>
+upgrade_parse_single_md_params_handle @ c8d4: c8d4: 94001c4b     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c8e0: c8e0: 94001c50     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c8ec: c8ec: 94001cbd     	bl	0x13be0 <str_to_v1_host_id@plt>
+upgrade_parse_single_md_params_handle @ c900: c900: 94001c40     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c90c: c90c: 94001c45     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c918: c918: 94001cb6     	bl	0x13bf0 <up_module_sec_type_to_id@plt>
+upgrade_parse_single_md_params_handle @ c92c: c92c: 94001c35     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ c938: c938: 94001c3a     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ c950: c950: 94001b94     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ c964: c964: 94001b8f     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ ca18: ca18: 94001bfa     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ ca24: ca24: 94001bff     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ ca3c: ca3c: 94001b59     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ ca50: ca50: 94001b54     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ caa4: caa4: 94001bd7     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cab0: cab0: 94001bdc     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cac8: cac8: 94001b36     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cadc: cadc: 94001b31     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cb30: cb30: 94001bb4     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cb3c: cb3c: 94001bb9     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cb54: cb54: 94001b13     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cb68: cb68: 94001b0e     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cbbc: cbbc: 94001b91     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cbc8: cbc8: 94001b96     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cbe0: cbe0: 94001af0     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cbf4: cbf4: 94001aeb     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cc2c: cc2c: 94001b8d     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ cc70: cc70: 94001b64     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cc7c: cc7c: 94001b69     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cc94: cc94: 94001ac3     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cca8: cca8: 94001abe     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cce0: cce0: 94001b60     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ cd00: cd00: 94001b40     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cd0c: cd0c: 94001b45     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cd24: cd24: 94001a9f     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cd38: cd38: 94001a9a     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cd8c: cd8c: 94001b1d     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cd98: cd98: 94001b22     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cdb0: cdb0: 94001a7c     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ cdc4: cdc4: 94001a77     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ ce18: ce18: 94001afa     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ ce24: ce24: 94001aff     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ ce3c: ce3c: 94001a59     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ ce50: ce50: 94001a54     	bl	0x137a0 <strcmp@plt>
+upgrade_parse_single_md_params_handle @ ce78: ce78: 94001afa     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ ce9c: ce9c: 94001af1     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ ceb8: ceb8: 94001ad2     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cec4: cec4: 94001ad7     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ ced8: ced8: 94001b4a     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ ceec: ceec: 94001ac5     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cef8: cef8: 94001aca     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cf0c: cf0c: 94001b3d     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ cf20: cf20: 94001ab8     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cf34: cf34: 94001ab3     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cf48: cf48: 94001aae     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ cf54: cf54: 94001ab3     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ cf68: cf68: 94001b26     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ cfb8: cfb8: 94001aaa     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d028: d028: 94001a8e     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d050: d050: 94001a84     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d068: d068: 94001a66     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d074: d074: 94001a6b     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d088: d088: 94001ade     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d0ac: d0ac: 94001a6d     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d0c0: d0c0: 94001a50     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d0d4: d0d4: 94001a4b     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d0e0: d0e0: 94001a50     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d0f4: d0f4: 94001ac3     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d114: d114: 94001a53     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d13c: d13c: 94001a49     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d154: d154: 94001a2b     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d160: d160: 94001a30     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d174: d174: 94001aa3     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d198: d198: 94001a32     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d1b0: d1b0: 94001a14     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d1c4: d1c4: 94001a0f     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d1d0: d1d0: 94001a14     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d1e4: d1e4: 94001a87     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d204: d204: 94001a17     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d22c: d22c: 94001a0d     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d244: d244: 940019ef     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d250: d250: 940019f4     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d264: d264: 94001a67     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d288: d288: 940019f6     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d29c: d29c: 940019d9     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d2b0: d2b0: 940019d4     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d2bc: d2bc: 940019d9     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d2d0: d2d0: 94001a4c     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d2f0: d2f0: 940019dc     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d31c: d31c: 940019d1     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d334: d334: 940019b3     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d340: d340: 940019b8     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d354: d354: 94001a2b     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d378: d378: 940019ba     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d38c: d38c: 9400199d     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d3a4: d3a4: 94001997     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d3b0: d3b0: 9400199c     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d3c4: d3c4: 94001a0f     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d3e4: d3e4: 9400199f     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d408: d408: 94001996     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d41c: d41c: 94001979     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d428: d428: 9400197e     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d43c: d43c: 940019f1     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d460: d460: 94001980     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d474: d474: 94001963     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d488: d488: 9400195e     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d494: d494: 94001963     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d4a8: d4a8: 940019d6     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d4c8: d4c8: 94001966     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d4ec: d4ec: 9400195d     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d500: d500: 94001940     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d50c: d50c: 94001945     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d520: d520: 940019b8     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d544: d544: 94001947     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d558: d558: 9400192a     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d56c: d56c: 94001925     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d578: d578: 9400192a     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d58c: d58c: 9400199d     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d5ac: d5ac: 9400192d     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d5d0: d5d0: 94001924     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d5e4: d5e4: 94001907     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d5f0: d5f0: 9400190c     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d604: d604: 9400197f     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d628: d628: 9400190e     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d63c: d63c: 940018f1     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d648: d648: 940018f6     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d65c: d65c: 94001969     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d680: d680: 940018f8     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d694: d694: 940018db     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+upgrade_parse_single_md_params_handle @ d6a0: d6a0: 940018e0     	bl	0x13a20 <is_json_item_str_available@plt>
+upgrade_parse_single_md_params_handle @ d6b4: d6b4: 94001953     	bl	0x13c00 <strtoul@plt>
+upgrade_parse_single_md_params_handle @ d6d4: d6d4: 940018e3     	bl	0x13a60 <up_logf@plt>
+upgrade_parse_single_md_params_handle @ d754: d754: 9400185b     	bl	0x138c0 <up_logi@plt>
+check_module_detail_is_need @ d77c: d77c: 940018a1     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+check_module_detail_is_need @ d78c: d78c: 9400189d     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+check_module_detail_is_need @ d798: d798: 940018a2     	bl	0x13a20 <is_json_item_str_available@plt>
+check_module_detail_is_need @ d7ac: d7ac: 94001919     	bl	0x13c10 <strncmp@plt>
+check_module_detail_is_need @ d804: d804: 94001897     	bl	0x13a60 <up_logf@plt>
+prase_json @ d868: d868: 9400187e     	bl	0x13a60 <up_logf@plt>
+prase_json @ d870: d870: 94001858     	bl	0x139d0 <duss_access_file@plt>
+prase_json @ d890: d890: 94001874     	bl	0x13a60 <up_logf@plt>
+prase_json @ d8dc: d8dc: 94001841     	bl	0x139e0 <duss_load_file@plt>
+prase_json @ d8e8: d8e8: 94001842     	bl	0x139f0 <cJSON_Parse@plt>
+prase_json @ d8fc: d8fc: 94001841     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+prase_json @ d90c: d90c: 9400183d     	bl	0x13a00 <cJSON_GetObjectItem@plt>
+prase_json @ d918: d918: 940018c2     	bl	0x13c20 <cJSON_GetArraySize@plt>
+prase_json @ d948: d948: 940018ba     	bl	0x13c30 <cJSON_GetArrayItem@plt>
+prase_json @ d958: check_module_detail_is_need
+prase_json @ d968: upgrade_parse_single_md_params_handle
+prase_json @ d990: d990: 94001834     	bl	0x13a60 <up_logf@plt>
+prase_json @ d9b0: d9b0: 9400182c     	bl	0x13a60 <up_logf@plt>
+prase_json @ d9d4: d9d4: 94001823     	bl	0x13a60 <up_logf@plt>
+prase_json @ d9ec: d9ec: 94001895     	bl	0x13c40 <print_cJSON_content@plt>
+prase_json @ d9f8: d9f8: 94001896     	bl	0x13c50 <cJSON_Delete@plt>
+prase_json @ da34: da34: 9400180b     	bl	0x13a60 <up_logf@plt>
+prase_json @ da50: da50: 94001804     	bl	0x13a60 <up_logf@plt>
+prase_json @ da68: da68: 94001796     	bl	0x138c0 <up_logi@plt>
+prase_json @ da70: da70: 9400178c     	bl	0x138a0 <__stack_chk_fail@plt>
+single_module_upgrading_test_entry @ dac0: dac0: 9400177c     	bl	0x138b0 <memset@plt>
+single_module_upgrading_test_entry @ dacc: set_log_chnl_to_android_log
+single_module_upgrading_test_entry @ dae4: test_result_print
+single_module_upgrading_test_entry @ db04: test_result_print
+single_module_upgrading_test_entry @ db1c: db1c: 94001769     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_entry @ db30: db30: 94001760     	bl	0x138b0 <memset@plt>
+single_module_upgrading_test_entry @ db54: db54: 94001797     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ dc10: dc10: 94001768     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ dc20: test_result_print
+single_module_upgrading_test_entry @ dc3c: dc3c: 9400178d     	bl	0x13a70 <getopt_long@plt>
+single_module_upgrading_test_entry @ dc70: dc70: 94001750     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ dc80: test_result_print
+single_module_upgrading_test_entry @ dc98: test_result_print
+single_module_upgrading_test_entry @ dcb4: dcb4: 9400173f     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ dcc4: test_result_print
+single_module_upgrading_test_entry @ dcec: dcec: 9400175d     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ dcfc: dcfc: 940017d9     	bl	0x13c60 <upgrade_str_to_version@plt>
+single_module_upgrading_test_entry @ dd1c: test_result_print
+single_module_upgrading_test_entry @ dd38: dd38: 9400171e     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ dd48: test_result_print
+single_module_upgrading_test_entry @ dd60: dd60: 940017c4     	bl	0x13c70 <strdup@plt>
+single_module_upgrading_test_entry @ dd78: dd78: 940017c2     	bl	0x13c80 <strsep@plt>
+single_module_upgrading_test_entry @ dd90: dd90: 94001684     	bl	0x137a0 <strcmp@plt>
+single_module_upgrading_test_entry @ dda4: dda4: 9400167f     	bl	0x137a0 <strcmp@plt>
+single_module_upgrading_test_entry @ ddc4: ddc4: 94001727     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ dde8: dde8: 940017a6     	bl	0x13c80 <strsep@plt>
+single_module_upgrading_test_entry @ ddf0: ddf0: 9400177c     	bl	0x13be0 <str_to_v1_host_id@plt>
+single_module_upgrading_test_entry @ de10: de10: 940016ac     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_entry @ de28: de28: 94001796     	bl	0x13c80 <strsep@plt>
+single_module_upgrading_test_entry @ de44: de44: 9400178f     	bl	0x13c80 <strsep@plt>
+single_module_upgrading_test_entry @ de54: de54: 94001763     	bl	0x13be0 <str_to_v1_host_id@plt>
+single_module_upgrading_test_entry @ de60: de60: 94001760     	bl	0x13be0 <str_to_v1_host_id@plt>
+single_module_upgrading_test_entry @ de88: de88: 9400168e     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_entry @ deb0: deb0: 940016ec     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ ded4: ded4: 940016e3     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ dee0: dee0: 94001660     	bl	0x13860 <free@plt>
+single_module_upgrading_test_entry @ df04: df04: 940016d7     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ df28: df28: 940016ce     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ df78: df78: 9400161a     	bl	0x137e0 <printf@plt>
+single_module_upgrading_test_entry @ df80: df80: 94001640     	bl	0x13880 <putchar@plt>
+single_module_upgrading_test_entry @ df98: df98: 940016b2     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ dfc4: dfc4: 940016a7     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ dff8: dff8: 9400169a     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e008: e008: 9400166a     	bl	0x139b0 <upgrade_strncpy@plt>
+single_module_upgrading_test_entry @ e018: prase_json
+single_module_upgrading_test_entry @ e030: e030: 940015ec     	bl	0x137e0 <printf@plt>
+single_module_upgrading_test_entry @ e038: e038: 94001612     	bl	0x13880 <putchar@plt>
+single_module_upgrading_test_entry @ e050: e050: 94001684     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e064: e064: 940015df     	bl	0x137e0 <printf@plt>
+single_module_upgrading_test_entry @ e06c: e06c: 94001605     	bl	0x13880 <putchar@plt>
+single_module_upgrading_test_entry @ e08c: e08c: 940015d5     	bl	0x137e0 <printf@plt>
+single_module_upgrading_test_entry @ e094: e094: 940015fb     	bl	0x13880 <putchar@plt>
+single_module_upgrading_test_entry @ e0ac: e0ac: 9400166d     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e0c4: e0c4: 940015c7     	bl	0x137e0 <printf@plt>
+single_module_upgrading_test_entry @ e0cc: e0cc: 940015ed     	bl	0x13880 <putchar@plt>
+single_module_upgrading_test_entry @ e108: e108: 94001656     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e128: e128: 9400164e     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e14c: e14c: 94001645     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e154: test_result_print
+single_module_upgrading_test_entry @ e1b0: e1b0: 9400162c     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e21c: save_cmd_for_reboot
+single_module_upgrading_test_entry @ e244: e244: 94001607     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e268: e268: 9400168a     	bl	0x13c90 <duss_osal_msgq_create@plt>
+single_module_upgrading_test_entry @ e288: e288: 940015f6     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e2a8: e2a8: 940015ee     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e2b8: client_init_communication
+single_module_upgrading_test_entry @ e2dc: e2dc: 940015e1     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e2e4: e2e4: 9400166f     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+single_module_upgrading_test_entry @ e2fc: client_communication_event_cb_regist
+single_module_upgrading_test_entry @ e324: e324: 940015cf     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e328: client_deinit_communication
+single_module_upgrading_test_entry @ e330: e330: 9400165c     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+single_module_upgrading_test_entry @ e35c: e35c: 940015c1     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e368: single_module_upgrading_test_wait_finish
+single_module_upgrading_test_entry @ e390: single_module_upgrading_check_last_upgrade
+single_module_upgrading_test_entry @ e3a0: single_module_upgrading_test_wait_finish
+single_module_upgrading_test_entry @ e3c4: test_result_clear
+single_module_upgrading_test_entry @ e3d8: e3d8: 94001536     	bl	0x138b0 <memset@plt>
+single_module_upgrading_test_entry @ e3e8: e3e8: 94001532     	bl	0x138b0 <memset@plt>
+single_module_upgrading_test_entry @ e410: e410: 94001554     	bl	0x13960 <memcpy@plt>
+single_module_upgrading_test_entry @ e420: get_upcenter_id
+single_module_upgrading_test_entry @ e458: e458: 9400151a     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_entry @ e464: client_send_with_ack
+single_module_upgrading_test_entry @ e494: test_result_print
+single_module_upgrading_test_entry @ e4ac: e4ac: 9400156d     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e4e0: e4e0: 94001560     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e4f0: e4f0: 940015a0     	bl	0x13b70 <up_hex_dump@plt>
+single_module_upgrading_test_entry @ e510: e510: 940014ec     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_entry @ e554: e554: 94001543     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e574: e574: 9400153b     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e580: e580: 9400157c     	bl	0x13b70 <up_hex_dump@plt>
+single_module_upgrading_test_entry @ e59c: e59c: 94001531     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e5a8: single_module_upgrading_test_wait_finish
+single_module_upgrading_test_entry @ e5d4: e5d4: 940015b7     	bl	0x13cb0 <duss_osal_task_sleep@plt>
+single_module_upgrading_test_entry @ e5f0: e5f0: 9400151c     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_entry @ e5fc: e5fc: 9400155d     	bl	0x13b70 <up_hex_dump@plt>
+single_module_upgrading_test_entry @ e608: e608: 940014a6     	bl	0x138a0 <__stack_chk_fail@plt>
+module_upgrade_test_client_event_handle @ e67c: e67c: 940014f9     	bl	0x13a60 <up_logf@plt>
+module_upgrade_test_client_event_handle @ e6c4: e6c4: 940014e7     	bl	0x13a60 <up_logf@plt>
+module_upgrade_test_client_event_handle @ e6d0: e6d0: 94001528     	bl	0x13b70 <up_hex_dump@plt>
+module_upgrade_test_client_event_handle @ e704: single_module_upgrading_status_push_event_handle
+single_module_upgrading_check_last_upgrade @ e740: e740: 9400145c     	bl	0x138b0 <memset@plt>
+single_module_upgrading_check_last_upgrade @ e75c: e75c: 94001559     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+single_module_upgrading_check_last_upgrade @ e778: test_result_print
+single_module_upgrading_check_last_upgrade @ e790: e790: 940014b4     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_check_last_upgrade @ e7a4: e7a4: 9400154b     	bl	0x13cd0 <duss_osal_msgq_send@plt>
+single_module_upgrading_check_last_upgrade @ e7c8: e7c8: 940014a6     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_check_last_upgrade @ e7f8: e7f8: 9400142a     	bl	0x138a0 <__stack_chk_fail@plt>
+single_module_upgrading_test_wait_finish @ e848: e848: 9400141a     	bl	0x138b0 <memset@plt>
+single_module_upgrading_test_wait_finish @ e858: e858: 94001522     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ e880: e880: 94001518     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ e8a8: e8a8: 9400150e     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ e8cc: e8cc: 94001465     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_test_wait_finish @ e974: e974: 940014d3     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+single_module_upgrading_test_wait_finish @ e990: e990: 940013cc     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ e998: e998: 940014d6     	bl	0x13cf0 <upgrade_sleep_sec@plt>
+single_module_upgrading_test_wait_finish @ e9a0: e9a0: 940014d0     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ e9b0: e9b0: 940014cc     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ ea08: ea08: 940013ae     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ ea28: ea28: 940013a6     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ ea70: ea70: 94001394     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ ead8: ead8: 9400137a     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ eb28: eb28: 94001476     	bl	0x13d00 <up_logw@plt>
+single_module_upgrading_test_wait_finish @ eb60: eb60: 94001358     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ eb84: eb84: 94001457     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+single_module_upgrading_test_wait_finish @ ebb8: ebb8: 94001342     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_test_wait_finish @ ebe0: ebe0: 94001354     	bl	0x13930 <up_loge@plt>
+single_module_upgrading_test_wait_finish @ ec4c: ec4c: 94001339     	bl	0x13930 <up_loge@plt>
+single_module_upgrading_test_wait_finish @ ec94: ec94: 9400140b     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+single_module_upgrading_test_wait_finish @ eca0: eca0: 94001300     	bl	0x138a0 <__stack_chk_fail@plt>
+single_module_upgrading_test @ eca8: single_module_upgrading_test_entry
+single_module_upgrading_test_continue @ ecb0: single_module_upgrading_test_entry
+single_module_upgrading_status_push_event_handle @ ed0c: ed0c: 940012ed     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_status_push_event_handle @ ed20: ed20: 940013ec     	bl	0x13cd0 <duss_osal_msgq_send@plt>
+single_module_upgrading_status_push_event_handle @ ed48: ed48: 94001346     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_status_push_event_handle @ ed78: ed78: 940012d2     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_status_push_event_handle @ ed98: test_result_print
+single_module_upgrading_status_push_event_handle @ edb8: edb8: 9400132a     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_status_push_event_handle @ edd0: test_result_print
+single_module_upgrading_status_push_event_handle @ edf4: edf4: 940012b3     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_status_push_event_handle @ ee24: ee24: 940012a7     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_status_push_event_handle @ ee34: ee34: 9400129f     	bl	0x138b0 <memset@plt>
+single_module_upgrading_status_push_event_handle @ ee60: get_upcenter_id
+single_module_upgrading_status_push_event_handle @ ee90: ee90: 9400128c     	bl	0x138c0 <up_logi@plt>
+single_module_upgrading_status_push_event_handle @ ee98: client_send
+single_module_upgrading_status_push_event_handle @ eec0: eec0: 940012e8     	bl	0x13a60 <up_logf@plt>
+single_module_upgrading_status_push_event_handle @ eef8: eef8: 9400126a     	bl	0x138a0 <__stack_chk_fail@plt>
+package_mngr_test @ ef00: package_mngr_test_entry
+package_mngr_test_entry @ ef90: ef90: 94001360     	bl	0x13d10 <usleep@plt>
+package_mngr_test_entry @ f018: f018: 94001266     	bl	0x139b0 <upgrade_strncpy@plt>
+package_mngr_test_entry @ f034: f034: 9400128b     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f054: f054: 94001287     	bl	0x13a70 <getopt_long@plt>
+package_mngr_test_entry @ f088: f088: 94001276     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f09c: f09c: 94001245     	bl	0x139b0 <upgrade_strncpy@plt>
+package_mngr_test_entry @ f0b8: f0b8: 9400126a     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f0d0: f0d0: 940011b4     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f0e4: f0e4: 940011af     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f0f8: f0f8: 940011aa     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f10c: f10c: 940011a5     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f120: f120: 940011a0     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f134: f134: 9400119b     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f148: f148: 94001196     	bl	0x137a0 <strcmp@plt>
+package_mngr_test_entry @ f1c0: f1c0: 94001228     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f1e4: f1e4: 9400121f     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f1f0: client_init_communication
+package_mngr_test_entry @ f214: f214: 94001213     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f22c: f22c: 940011e1     	bl	0x139b0 <upgrade_strncpy@plt>
+package_mngr_test_entry @ f248: f248: 9400119a     	bl	0x138b0 <memset@plt>
+package_mngr_test_entry @ f258: f258: 94001196     	bl	0x138b0 <memset@plt>
+package_mngr_test_entry @ f29c: get_upcenter_id
+package_mngr_test_entry @ f2b8: client_send_with_ack
+package_mngr_test_entry @ f2dc: f2dc: 940011e1     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f2e0: client_deinit_communication
+package_mngr_test_entry @ f2f4: test_result_print
+package_mngr_test_entry @ f358: f358: 940011c2     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f368: f368: 94001202     	bl	0x13b70 <up_hex_dump@plt>
+package_mngr_test_entry @ f38c: f38c: 9400114d     	bl	0x138c0 <up_logi@plt>
+package_mngr_test_entry @ f3c4: f3c4: 940011a7     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f3f0: f3f0: 9400119c     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f3fc: f3fc: 940011dd     	bl	0x13b70 <up_hex_dump@plt>
+package_mngr_test_entry @ f410: test_items_type_to_test_items_str
+package_mngr_test_entry @ f430: f430: 9400118c     	bl	0x13a60 <up_logf@plt>
+package_mngr_test_entry @ f440: f440: 94001118     	bl	0x138a0 <__stack_chk_fail@plt>
+package_mngr_test_continue @ f448: package_mngr_test_entry
+get_external_version @ f540: f540: 940010dc     	bl	0x138b0 <memset@plt>
+get_external_version @ f550: f550: 940010d8     	bl	0x138b0 <memset@plt>
+get_external_version @ f570: get_upcenter_id
+get_external_version @ f59c: f59c: 940010c9     	bl	0x138c0 <up_logi@plt>
+get_external_version @ f5a8: client_send_with_ack
+get_external_version @ f628: f628: 940010a6     	bl	0x138c0 <up_logi@plt>
+get_external_version @ f64c: f64c: 940010b9     	bl	0x13930 <up_loge@plt>
+get_external_version @ f678: f678: 9400108a     	bl	0x138a0 <__stack_chk_fail@plt>
+request_upgrade @ f6ac: f6ac: 94001081     	bl	0x138b0 <memset@plt>
+request_upgrade @ f6bc: f6bc: 9400107d     	bl	0x138b0 <memset@plt>
+request_upgrade @ f6d8: get_upcenter_id
+request_upgrade @ f6f8: client_send_with_ack
+request_upgrade @ f720: f720: 940010d0     	bl	0x13a60 <up_logf@plt>
+request_upgrade @ f774: f774: 940010bb     	bl	0x13a60 <up_logf@plt>
+request_upgrade @ f79c: f79c: 940010b1     	bl	0x13a60 <up_logf@plt>
+request_upgrade @ f7c0: f7c0: 94001040     	bl	0x138c0 <up_logi@plt>
+request_upgrade @ f800: f800: 9400104c     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f81c: f81c: 94001045     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f840: f840: 9400103c     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f864: f864: 94001033     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f888: f888: 9400102a     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f8ac: f8ac: 94001021     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f8d0: f8d0: 94001018     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f90c: f90c: 94001009     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f930: f930: 94001000     	bl	0x13930 <up_loge@plt>
+request_upgrade @ f948: f948: 94000fd6     	bl	0x138a0 <__stack_chk_fail@plt>
+negotiate @ f980: f980: 94000fcc     	bl	0x138b0 <memset@plt>
+negotiate @ f990: f990: 94000fc8     	bl	0x138b0 <memset@plt>
+negotiate @ f9bc: get_upcenter_id
+negotiate @ f9f4: f9f4: 94000fb3     	bl	0x138c0 <up_logi@plt>
+negotiate @ fa00: client_send_with_ack
+negotiate @ fa28: fa28: 9400100e     	bl	0x13a60 <up_logf@plt>
+negotiate @ fa58: fa58: 94001002     	bl	0x13a60 <up_logf@plt>
+negotiate @ fa80: fa80: 94000ff8     	bl	0x13a60 <up_logf@plt>
+negotiate @ faa4: faa4: 94000f87     	bl	0x138c0 <up_logi@plt>
+negotiate @ facc: facc: 94000fe5     	bl	0x13a60 <up_logf@plt>
+negotiate @ fb18: fb18: 94000fd2     	bl	0x13a60 <up_logf@plt>
+negotiate @ fb48: fb48: 94000f5e     	bl	0x138c0 <up_logi@plt>
+negotiate @ fb80: fb80: 94000f50     	bl	0x138c0 <up_logi@plt>
+negotiate @ fb9c: fb9c: 94000f49     	bl	0x138c0 <up_logi@plt>
+negotiate @ fbbc: fbbc: 94000f41     	bl	0x138c0 <up_logi@plt>
+negotiate @ fbc4: fbc4: 94000f37     	bl	0x138a0 <__stack_chk_fail@plt>
+report_status @ fc1c: test_result_print
+report_status @ fc3c: test_result_print
+report_status @ fc60: fc60: 14000f34     	b	0x13930 <up_loge@plt>
+report_status @ fc74: test_result_print
+stop_peer_pushing @ fca0: fca0: 94000f04     	bl	0x138b0 <memset@plt>
+stop_peer_pushing @ fcb0: fcb0: 94000f00     	bl	0x138b0 <memset@plt>
+stop_peer_pushing @ fcc8: get_upcenter_id
+stop_peer_pushing @ fce8: client_send_with_ack
+stop_peer_pushing @ fd0c: fd0c: 94000f55     	bl	0x13a60 <up_logf@plt>
+stop_peer_pushing @ fd18: client_send_with_ack
+stop_peer_pushing @ fd3c: fd3c: 94000f49     	bl	0x13a60 <up_logf@plt>
+stop_peer_pushing @ fd48: client_send_with_ack
+stop_peer_pushing @ fd6c: fd6c: 94000f3d     	bl	0x13a60 <up_logf@plt>
+stop_peer_pushing @ fd78: client_send_with_ack
+stop_peer_pushing @ fd9c: fd9c: 94000f31     	bl	0x13a60 <up_logf@plt>
+stop_peer_pushing @ fda8: client_send_with_ack
+stop_peer_pushing @ fdcc: fdcc: 94000f25     	bl	0x13a60 <up_logf@plt>
+stop_peer_pushing @ fdf0: fdf0: 94000eac     	bl	0x138a0 <__stack_chk_fail@plt>
+upgrade_wait_finish @ fe38: fe38: 94000e9e     	bl	0x138b0 <memset@plt>
+upgrade_wait_finish @ fe54: fe54: 94000fa3     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_wait_finish @ fe7c: fe7c: 94000f99     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_wait_finish @ fea4: fea4: 94000f8f     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_wait_finish @ fec8: fec8: 94000ee6     	bl	0x13a60 <up_logf@plt>
+upgrade_wait_finish @ ff34: ff34: 94000e63     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ ff3c: ff3c: 94000f6d     	bl	0x13cf0 <upgrade_sleep_sec@plt>
+upgrade_wait_finish @ ff44: ff44: 94000f67     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_wait_finish @ ff98: ff98: 94000f4a     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+upgrade_wait_finish @ ffa4: ffa4: 94000f4f     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_wait_finish @ fffc: fffc: 94000e31     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 10004: report_status
+upgrade_wait_finish @ 10068: 10068: 94000e16     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 100b0: 100b0: 94000f14     	bl	0x13d00 <up_logw@plt>
+upgrade_wait_finish @ 100e8: 100e8: 94000df6     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 10118: 10118: 94000dea     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 10134: 10134: 94000dff     	bl	0x13930 <up_loge@plt>
+upgrade_wait_finish @ 1019c: 1019c: 94000de5     	bl	0x13930 <up_loge@plt>
+upgrade_wait_finish @ 101dc: 101dc: 94000db9     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 101f4: 101f4: 94000db3     	bl	0x138c0 <up_logi@plt>
+upgrade_wait_finish @ 101fc: report_status
+upgrade_wait_finish @ 10200: stop_peer_pushing
+upgrade_wait_finish @ 10224: 10224: 94000e0f     	bl	0x13a60 <up_logf@plt>
+upgrade_wait_finish @ 10264: 10264: 94000d8f     	bl	0x138a0 <__stack_chk_fail@plt>
+upgrade @ 10298: 10298: 94000d86     	bl	0x138b0 <memset@plt>
+upgrade @ 102a8: 102a8: 94000d82     	bl	0x138b0 <memset@plt>
+upgrade @ 102bc: get_upcenter_id
+upgrade @ 102f8: 102f8: 94000d72     	bl	0x138c0 <up_logi@plt>
+upgrade @ 10304: client_send_with_ack
+upgrade @ 10328: 10328: 94000d82     	bl	0x13930 <up_loge@plt>
+upgrade @ 10370: 10370: 94000d54     	bl	0x138c0 <up_logi@plt>
+upgrade @ 103a4: 103a4: 94000daf     	bl	0x13a60 <up_logf@plt>
+upgrade @ 103dc: 103dc: 94000da1     	bl	0x13a60 <up_logf@plt>
+upgrade @ 103e8: save_cmd_for_reboot
+upgrade @ 103f0: upgrade_wait_finish
+upgrade @ 10414: 10414: 94000d93     	bl	0x13a60 <up_logf@plt>
+upgrade @ 10430: 10430: 94000d8c     	bl	0x13a60 <up_logf@plt>
+upgrade @ 1044c: 1044c: 94000d85     	bl	0x13a60 <up_logf@plt>
+upgrade @ 10458: 10458: 94000d12     	bl	0x138a0 <__stack_chk_fail@plt>
+upgrade_status_push_handle @ 10498: 10498: 94000d0a     	bl	0x138c0 <up_logi@plt>
+upgrade_status_push_handle @ 104ac: 104ac: 94000e09     	bl	0x13cd0 <duss_osal_msgq_send@plt>
+upgrade_status_push_handle @ 104d4: 104d4: 94000d63     	bl	0x13a60 <up_logf@plt>
+upgrade_status_push_handle @ 104fc: 104fc: 94000d59     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 105c0: 105c0: 94000dd8     	bl	0x13d20 <getopt@plt>
+external_upgrade_test_client @ 105e8: 105e8: 94000dd2     	bl	0x13d30 <upgrade_is_file_existed@plt>
+external_upgrade_test_client @ 10604: 10604: 94000d17     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10628: 10628: 94000dc2     	bl	0x13d30 <upgrade_is_file_existed@plt>
+external_upgrade_test_client @ 10644: 10644: 94000d07     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10658: set_log_chnl_to_android_log
+external_upgrade_test_client @ 10664: test_result_print
+external_upgrade_test_client @ 10688: 10688: 94000d82     	bl	0x13c90 <duss_osal_msgq_create@plt>
+external_upgrade_test_client @ 106d4: 106d4: 94000c57     	bl	0x13830 <fprintf@plt>
+external_upgrade_test_client @ 10708: 10708: 94000cd6     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10768: 10768: 94000cbe     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10770: client_init_communication
+external_upgrade_test_client @ 10794: 10794: 94000cb3     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 107a0: test_result_print
+external_upgrade_test_client @ 107d8: 107d8: 94000c16     	bl	0x13830 <fprintf@plt>
+external_upgrade_test_client @ 107e8: get_external_version
+external_upgrade_test_client @ 1080c: 1080c: 94000c95     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10828: test_result_print
+external_upgrade_test_client @ 10830: request_upgrade
+external_upgrade_test_client @ 10858: 10858: 94000c82     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10870: test_result_print
+external_upgrade_test_client @ 10878: negotiate
+external_upgrade_test_client @ 108a0: 108a0: 94000c70     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 108b0: test_result_print
+external_upgrade_test_client @ 108b8: client_deinit_communication
+external_upgrade_test_client @ 108c0: 108c0: 94000cf8     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+external_upgrade_test_client @ 108cc: test_result_print
+external_upgrade_test_client @ 108dc: test_result_print
+external_upgrade_test_client @ 108f8: 108f8: 94000bde     	bl	0x13870 <snprintf@plt>
+external_upgrade_test_client @ 10900: 10900: 94000d10     	bl	0x13d40 <upgrade_run_cmd@plt>
+external_upgrade_test_client @ 10924: 10924: 94000c4f     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10930: test_result_print
+external_upgrade_test_client @ 10940: test_result_print
+external_upgrade_test_client @ 10950: client_communication_event_cb_regist
+external_upgrade_test_client @ 10978: 10978: 94000c3a     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 10984: test_result_print
+external_upgrade_test_client @ 10990: upgrade
+external_upgrade_test_client @ 109b8: 109b8: 94000c2a     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 109c8: test_result_print
+external_upgrade_test_client @ 109e4: 109e4: 94000c1f     	bl	0x13a60 <up_logf@plt>
+external_upgrade_test_client @ 109e8: client_deinit_communication
+external_upgrade_test_client @ 109f0: 109f0: 94000cac     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+external_upgrade_test_client @ 109fc: test_result_print
+external_upgrade_test_client @ 10a08: 10a08: 94000ba6     	bl	0x138a0 <__stack_chk_fail@plt>
+continue_external_upgrade_process @ 10a34: set_log_chnl_to_android_log
+continue_external_upgrade_process @ 10a40: test_result_print
+continue_external_upgrade_process @ 10a64: 10a64: 94000c8b     	bl	0x13c90 <duss_osal_msgq_create@plt>
+continue_external_upgrade_process @ 10a88: 10a88: 94000bf6     	bl	0x13a60 <up_logf@plt>
+continue_external_upgrade_process @ 10aac: 10aac: 94000bed     	bl	0x13a60 <up_logf@plt>
+continue_external_upgrade_process @ 10ab4: client_init_communication
+continue_external_upgrade_process @ 10ae4: client_communication_event_cb_regist
+continue_external_upgrade_process @ 10b0c: 10b0c: 94000bd5     	bl	0x13a60 <up_logf@plt>
+continue_external_upgrade_process @ 10b18: test_result_print
+continue_external_upgrade_process @ 10b1c: client_deinit_communication
+continue_external_upgrade_process @ 10b24: 10b24: 94000c5f     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+continue_external_upgrade_process @ 10b50: upgrade_wait_finish
+continue_external_upgrade_process @ 10b78: 10b78: 94000bba     	bl	0x13a60 <up_logf@plt>
+continue_external_upgrade_process @ 10b88: test_result_print
+continue_external_upgrade_process @ 10b9c: 10b9c: 94000bb1     	bl	0x13a60 <up_logf@plt>
+continue_external_upgrade_process @ 10ba4: 10ba4: 94000b3f     	bl	0x138a0 <__stack_chk_fail@plt>
+continue_external_upgrade_test_client @ 10bb4: save_cmd_for_reboot
+continue_external_upgrade_test_client @ 10bb8: continue_external_upgrade_process
+continue_external_upgrade_test_client @ 10bd8: test_result_print
+upgrade_compatible_push_handle @ 10c38: 10c38: 94000b22     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_push_handle @ 10c50: 10c50: 94000c20     	bl	0x13cd0 <duss_osal_msgq_send@plt>
+upgrade_compatible_push_handle @ 10c78: 10c78: 94000b7a     	bl	0x13a60 <up_logf@plt>
+upgrade_compatible_push_handle @ 10cb8: 10cb8: 94000b6a     	bl	0x13a60 <up_logf@plt>
+upgrade_compatible_action_resp @ 10d94: 10d94: 94000ac7     	bl	0x138b0 <memset@plt>
+upgrade_compatible_action_resp @ 10da0: 10da0: 94000bd0     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_compatible_action_resp @ 10dcc: 10dcc: 94000bc5     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_compatible_action_resp @ 10df0: 10df0: 94000b1c     	bl	0x13a60 <up_logf@plt>
+upgrade_compatible_action_resp @ 10e9c: 10e9c: 94000b89     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+upgrade_compatible_action_resp @ 10eb8: 10eb8: 94000a82     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 10ec0: 10ec0: 94000b8c     	bl	0x13cf0 <upgrade_sleep_sec@plt>
+upgrade_compatible_action_resp @ 10ec8: 10ec8: 94000b86     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_compatible_action_resp @ 10ed8: 10ed8: 94000b82     	bl	0x13ce0 <duss_osal_get_boot_time@plt>
+upgrade_compatible_action_resp @ 10f1c: 10f1c: 94000a69     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 10f24: test_result_print
+upgrade_compatible_action_resp @ 10f40: 10f40: 94000a60     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 10f74: 10f74: 94000a53     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 10f84: test_result_print
+upgrade_compatible_action_resp @ 10fa4: 10fa4: 94000a63     	bl	0x13930 <up_loge@plt>
+upgrade_compatible_action_resp @ 10fb0: test_result_print
+upgrade_compatible_action_resp @ 10fd8: 10fd8: 94000a3a     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 11034: 11034: 94000b33     	bl	0x13d00 <up_logw@plt>
+upgrade_compatible_action_resp @ 110b4: 110b4: 94000a1f     	bl	0x13930 <up_loge@plt>
+upgrade_compatible_action_resp @ 110dc: test_result_print
+upgrade_compatible_action_resp @ 110fc: 110fc: 94000af1     	bl	0x13cc0 <duss_osal_msgq_receive@plt>
+upgrade_compatible_action_resp @ 1111c: 1111c: 940009e9     	bl	0x138c0 <up_logi@plt>
+upgrade_compatible_action_resp @ 11148: 11148: 940009d6     	bl	0x138a0 <__stack_chk_fail@plt>
+compatible_upgrade_test_client @ 11194: set_log_chnl_to_android_log
+compatible_upgrade_test_client @ 111e0: 111e0: 94000ad0     	bl	0x13d20 <getopt@plt>
+compatible_upgrade_test_client @ 11204: 11204: 94000967     	bl	0x137a0 <strcmp@plt>
+compatible_upgrade_test_client @ 11214: 11214: 94000963     	bl	0x137a0 <strcmp@plt>
+compatible_upgrade_test_client @ 11224: 11224: 9400095f     	bl	0x137a0 <strcmp@plt>
+compatible_upgrade_test_client @ 11238: 11238: 94000a0a     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11254: 11254: 94000a03     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11270: 11270: 940009fc     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 1128c: test_result_print
+compatible_upgrade_test_client @ 112a8: 112a8: 94000a7a     	bl	0x13c90 <duss_osal_msgq_create@plt>
+compatible_upgrade_test_client @ 112c8: 112c8: 940009e6     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 112ec: 112ec: 94000a69     	bl	0x13c90 <duss_osal_msgq_create@plt>
+compatible_upgrade_test_client @ 1130c: 1130c: 940009d5     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11314: 11314: 94000a63     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+compatible_upgrade_test_client @ 1134c: 1134c: 940009c5     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11354: client_init_communication
+compatible_upgrade_test_client @ 11378: 11378: 940009ba     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 1139c: 1139c: 94000925     	bl	0x13830 <fprintf@plt>
+compatible_upgrade_test_client @ 113c0: test_result_print
+compatible_upgrade_test_client @ 113c4: send_request_compatbile_up_status_reset
+compatible_upgrade_test_client @ 113d4: test_result_print
+compatible_upgrade_test_client @ 1142c: 1142c: 94000901     	bl	0x13830 <fprintf@plt>
+compatible_upgrade_test_client @ 1145c: 1145c: 94000919     	bl	0x138c0 <up_logi@plt>
+compatible_upgrade_test_client @ 1146c: client_communication_event_cb_regist
+compatible_upgrade_test_client @ 11490: 11490: 94000974     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 114a8: test_result_print
+compatible_upgrade_test_client @ 114ac: send_request_compatbile_up_check_start
+compatible_upgrade_test_client @ 114c8: test_result_print
+compatible_upgrade_test_client @ 114d8: upgrade_compatible_action_resp
+compatible_upgrade_test_client @ 114ec: upgrade_list_compatible_check_result
+compatible_upgrade_test_client @ 114fc: test_result_print
+compatible_upgrade_test_client @ 11504: client_deinit_communication
+compatible_upgrade_test_client @ 1150c: 1150c: 940009e5     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+compatible_upgrade_test_client @ 11518: test_result_print
+compatible_upgrade_test_client @ 1152c: test_result_print
+compatible_upgrade_test_client @ 11554: 11554: 940009ff     	bl	0x13d50 <sleep@plt>
+compatible_upgrade_test_client @ 1157c: 1157c: 94000939     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11590: test_result_print
+compatible_upgrade_test_client @ 115a0: client_communication_event_cb_regist
+compatible_upgrade_test_client @ 115cc: test_result_print
+compatible_upgrade_test_client @ 115d0: client_deinit_communication
+compatible_upgrade_test_client @ 115d8: 115d8: 940009b2     	bl	0x13ca0 <duss_osal_msgq_destroy@plt>
+compatible_upgrade_test_client @ 115e4: test_result_print
+compatible_upgrade_test_client @ 11604: save_cmd_for_reboot
+compatible_upgrade_test_client @ 1160c: upgrade_wait_finish
+compatible_upgrade_test_client @ 11634: 11634: 9400090b     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11644: test_result_print
+compatible_upgrade_test_client @ 11660: 11660: 94000900     	bl	0x13a60 <up_logf@plt>
+compatible_upgrade_test_client @ 11668: 11668: 9400088e     	bl	0x138a0 <__stack_chk_fail@plt>
+continue_compatible_upgrade_test_client @ 11678: save_cmd_for_reboot
+continue_compatible_upgrade_test_client @ 1167c: continue_external_upgrade_process
+continue_compatible_upgrade_test_client @ 1169c: test_result_print
+check_single_slot_sha1 @ 11798: 11798: 940008b2     	bl	0x13a60 <up_logf@plt>
+check_single_slot_sha1 @ 117d0: 117d0: 94000828     	bl	0x13870 <snprintf@plt>
+check_single_slot_sha1 @ 117e8: 117e8: 94000822     	bl	0x13870 <snprintf@plt>
+check_single_slot_sha1 @ 11800: 11800: 9400081c     	bl	0x13870 <snprintf@plt>
+check_single_slot_sha1 @ 11818: 11818: 94000816     	bl	0x13870 <snprintf@plt>
+check_single_slot_sha1 @ 1181c: 1181c: 94000951     	bl	0x13d60 <unrd_open@plt>
+check_single_slot_sha1 @ 11838: 11838: 9400094e     	bl	0x13d70 <unrd_alloc_handle@plt>
+check_single_slot_sha1 @ 11858: 11858: 94000836     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11884: 11884: 9400082b     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 118a0: 118a0: 94000938     	bl	0x13d80 <unrd_get_length@plt>
+check_single_slot_sha1 @ 118c4: 118c4: 9400081b     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 118dc: 118dc: 940008a1     	bl	0x13b60 <calloc@plt>
+check_single_slot_sha1 @ 118fc: 118fc: 94000925     	bl	0x13d90 <unrd_get_string@plt>
+check_single_slot_sha1 @ 1193c: 1193c: 940007fd     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11958: 11958: 9400090a     	bl	0x13d80 <unrd_get_length@plt>
+check_single_slot_sha1 @ 1197c: 1197c: 940007ed     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11988: 11988: 940007b6     	bl	0x13860 <free@plt>
+check_single_slot_sha1 @ 11994: 11994: 94000903     	bl	0x13da0 <unrd_release_handle@plt>
+check_single_slot_sha1 @ 1199c: 1199c: 94000905     	bl	0x13db0 <unrd_close@plt>
+check_single_slot_sha1 @ 119dc: 119dc: 94000861     	bl	0x13b60 <calloc@plt>
+check_single_slot_sha1 @ 119fc: 119fc: 940008e5     	bl	0x13d90 <unrd_get_string@plt>
+check_single_slot_sha1 @ 11a3c: 11a3c: 940007bd     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11a60: 11a60: 940008c8     	bl	0x13d80 <unrd_get_length@plt>
+check_single_slot_sha1 @ 11a98: 11a98: 940008be     	bl	0x13d90 <unrd_get_string@plt>
+check_single_slot_sha1 @ 11ad0: 11ad0: 940008ac     	bl	0x13d80 <unrd_get_length@plt>
+check_single_slot_sha1 @ 11b08: 11b08: 940008a2     	bl	0x13d90 <unrd_get_string@plt>
+check_single_slot_sha1 @ 11b2c: 11b2c: 94000781     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11b38: 11b38: 9400074a     	bl	0x13860 <free@plt>
+check_single_slot_sha1 @ 11b48: 11b48: 9400072e     	bl	0x13800 <strlen@plt>
+check_single_slot_sha1 @ 11b5c: alpha_array_to_uint8_array
+check_single_slot_sha1 @ 11b64: 11b64: 94000727     	bl	0x13800 <strlen@plt>
+check_single_slot_sha1 @ 11b78: alpha_array_to_uint8_array
+check_single_slot_sha1 @ 11b88: cacu_partition_sha1
+check_single_slot_sha1 @ 11bf0: 11bf0: 94000750     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11c08: cacu_partition_sha1
+check_single_slot_sha1 @ 11c30: 11c30: 94000740     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11cbc: 11cbc: 9400071d     	bl	0x13930 <up_loge@plt>
+check_single_slot_sha1 @ 11cd0: 11cd0: 940006f4     	bl	0x138a0 <__stack_chk_fail@plt>
+cacu_partition_sha1 @ 11de0: 11de0: 940007f8     	bl	0x13dc0 <open@plt>
+cacu_partition_sha1 @ 11e04: 11e04: 940007f3     	bl	0x13dd0 <strtok_r@plt>
+cacu_partition_sha1 @ 11e10: 11e10: 94000720     	bl	0x13a90 <strtol@plt>
+cacu_partition_sha1 @ 11e24: 11e24: 94000673     	bl	0x137f0 <malloc@plt>
+cacu_partition_sha1 @ 11e70: 11e70: 940007d8     	bl	0x13dd0 <strtok_r@plt>
+cacu_partition_sha1 @ 11e7c: 11e7c: 94000705     	bl	0x13a90 <strtol@plt>
+cacu_partition_sha1 @ 11ea4: 11ea4: 94000653     	bl	0x137f0 <malloc@plt>
+cacu_partition_sha1 @ 11eb8: 11eb8: 9400067e     	bl	0x138b0 <memset@plt>
+cacu_partition_sha1 @ 11ed0: 11ed0: 940007c4     	bl	0x13de0 <SHA1_Init@plt>
+cacu_partition_sha1 @ 11f0c: 11f0c: 940007b9     	bl	0x13df0 <lseek64@plt>
+cacu_partition_sha1 @ 11f18: 11f18: 940006f2     	bl	0x13ae0 <__errno@plt>
+cacu_partition_sha1 @ 11f70: 11f70: 940007a4     	bl	0x13e00 <read@plt>
+cacu_partition_sha1 @ 11f7c: 11f7c: 940006d9     	bl	0x13ae0 <__errno@plt>
+cacu_partition_sha1 @ 11fac: 11fac: 94000799     	bl	0x13e10 <SHA1_Update@plt>
+cacu_partition_sha1 @ 11fdc: 11fdc: 940006c1     	bl	0x13ae0 <__errno@plt>
+cacu_partition_sha1 @ 11fe4: 11fe4: 940006d3     	bl	0x13b30 <strerror@plt>
+cacu_partition_sha1 @ 12008: 12008: 9400064a     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 1202c: 1202c: 94000641     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 12048: 12048: 9400063a     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 12050: 12050: 94000774     	bl	0x13e20 <close@plt>
+cacu_partition_sha1 @ 12070: 12070: 94000630     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 12078: 12078: 940005fa     	bl	0x13860 <free@plt>
+cacu_partition_sha1 @ 12080: 12080: 940006ac     	bl	0x13b30 <strerror@plt>
+cacu_partition_sha1 @ 120a0: 120a0: 94000624     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 120a8: 120a8: 940006a2     	bl	0x13b30 <strerror@plt>
+cacu_partition_sha1 @ 120c8: 120c8: 9400069a     	bl	0x13b30 <strerror@plt>
+cacu_partition_sha1 @ 120e8: 120e8: 94000612     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 120f0: 120f0: 94000690     	bl	0x13b30 <strerror@plt>
+cacu_partition_sha1 @ 12114: 12114: 94000607     	bl	0x13930 <up_loge@plt>
+cacu_partition_sha1 @ 12124: 12124: 94000743     	bl	0x13e30 <SHA1_Final@plt>
+cacu_partition_sha1 @ 1212c: 1212c: 940005cd     	bl	0x13860 <free@plt>
+cacu_partition_sha1 @ 12134: 12134: 940005cb     	bl	0x13860 <free@plt>
+cacu_partition_sha1 @ 1213c: 1213c: 94000739     	bl	0x13e20 <close@plt>
+cacu_partition_sha1 @ 12188: 12188: 940005c6     	bl	0x138a0 <__stack_chk_fail@plt>
+ab_both_up_result_check @ 121cc: check_single_slot_sha1
+ab_both_up_result_check @ 121f4: check_single_slot_sha1
+ab_both_up_result_check @ 1221c: 1221c: 94000561     	bl	0x137a0 <strcmp@plt>
+ab_both_up_result_check @ 1223c: 1223c: 940005bd     	bl	0x13930 <up_loge@plt>
+ab_both_up_result_check @ 12264: 12264: 9400058f     	bl	0x138a0 <__stack_chk_fail@plt>
+ab_both_upgrade_test_client @ 122c4: 122c4: 94000697     	bl	0x13d20 <getopt@plt>
+ab_both_upgrade_test_client @ 122ec: 122ec: 94000691     	bl	0x13d30 <upgrade_is_file_existed@plt>
+ab_both_upgrade_test_client @ 12308: 12308: 940005d6     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 1232c: 1232c: 94000681     	bl	0x13d30 <upgrade_is_file_existed@plt>
+ab_both_upgrade_test_client @ 12348: 12348: 940005c6     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 12364: 12364: 9400050f     	bl	0x137a0 <strcmp@plt>
+ab_both_upgrade_test_client @ 12378: 12378: 9400050a     	bl	0x137a0 <strcmp@plt>
+ab_both_upgrade_test_client @ 12390: 12390: 940005b4     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 123ac: 123ac: 940005ad     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 123d4: set_log_chnl_to_android_log
+ab_both_upgrade_test_client @ 123f0: 123f0: 9400059c     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 123fc: 123fc: 940005d9     	bl	0x13b60 <calloc@plt>
+ab_both_upgrade_test_client @ 12440: set_up_flags_request
+ab_both_upgrade_test_client @ 1246c: set_up_flags_request
+ab_both_upgrade_test_client @ 12478: 12478: 940004fa     	bl	0x13860 <free@plt>
+ab_both_upgrade_test_client @ 12488: external_upgrade_test_client
+ab_both_upgrade_test_client @ 12498: test_result_print
+ab_both_upgrade_test_client @ 1249c: ab_both_up_result_check
+ab_both_upgrade_test_client @ 124b0: test_result_print
+ab_both_upgrade_test_client @ 124fc: 124fc: 940004cd     	bl	0x13830 <fprintf@plt>
+ab_both_upgrade_test_client @ 12544: test_result_print
+ab_both_upgrade_test_client @ 1255c: 1255c: 94000541     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 12580: 12580: 940004ac     	bl	0x13830 <fprintf@plt>
+ab_both_upgrade_test_client @ 1259c: 1259c: 94000531     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 125dc: 125dc: 9400049d     	bl	0x13850 <fwrite@plt>
+ab_both_upgrade_test_client @ 12618: 12618: 94000512     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 12620: test_result_print
+ab_both_upgrade_test_client @ 12628: 12628: 9400048e     	bl	0x13860 <free@plt>
+ab_both_upgrade_test_client @ 1264c: 1264c: 94000505     	bl	0x13a60 <up_logf@plt>
+ab_both_upgrade_test_client @ 12654: test_result_print
+continue_ab_both_upgrade_test_client @ 12680: test_result_print
+continue_ab_both_upgrade_test_client @ 12698: 12698: 940004f2     	bl	0x13a60 <up_logf@plt>
+continue_ab_both_upgrade_test_client @ 126a4: save_cmd_for_reboot
+continue_ab_both_upgrade_test_client @ 126a8: continue_external_upgrade_process
+continue_ab_both_upgrade_test_client @ 126bc: test_result_print
+continue_ab_both_upgrade_test_client @ 126d0: ab_both_up_result_check
+continue_ab_both_upgrade_test_client @ 126e4: test_result_print
+continue_ab_both_upgrade_test_client @ 126fc: 126fc: 940004d9     	bl	0x13a60 <up_logf@plt>
+continue_ab_both_upgrade_test_client @ 12720: test_result_print
+continue_ab_both_upgrade_test_client @ 12738: 12738: 940004ca     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 1279c: 1279c: 94000561     	bl	0x13d20 <getopt@plt>
+force_up_all_upgrade_test_client @ 127c4: 127c4: 9400055b     	bl	0x13d30 <upgrade_is_file_existed@plt>
+force_up_all_upgrade_test_client @ 127e0: 127e0: 940004a0     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 127f4: 127f4: 9400054f     	bl	0x13d30 <upgrade_is_file_existed@plt>
+force_up_all_upgrade_test_client @ 12810: 12810: 94000494     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 12830: set_log_chnl_to_android_log
+force_up_all_upgrade_test_client @ 1284c: 1284c: 94000485     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 12858: 12858: 940004c2     	bl	0x13b60 <calloc@plt>
+force_up_all_upgrade_test_client @ 1289c: set_up_flags_request
+force_up_all_upgrade_test_client @ 128a8: 128a8: 940003ee     	bl	0x13860 <free@plt>
+force_up_all_upgrade_test_client @ 128bc: external_upgrade_test_client
+force_up_all_upgrade_test_client @ 128d4: test_result_print
+force_up_all_upgrade_test_client @ 128ec: 128ec: 9400045d     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 1293c: 1293c: 940003bd     	bl	0x13830 <fprintf@plt>
+force_up_all_upgrade_test_client @ 12958: 12958: 94000442     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 12994: 12994: 940003a7     	bl	0x13830 <fprintf@plt>
+force_up_all_upgrade_test_client @ 129d0: 129d0: 94000424     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 129e0: test_result_print
+force_up_all_upgrade_test_client @ 12a04: 12a04: 94000417     	bl	0x13a60 <up_logf@plt>
+force_up_all_upgrade_test_client @ 12a0c: test_result_print
+continue_force_up_all_upgrade_test_client @ 12a38: test_result_print
+continue_force_up_all_upgrade_test_client @ 12a50: 12a50: 94000404     	bl	0x13a60 <up_logf@plt>
+continue_force_up_all_upgrade_test_client @ 12a5c: save_cmd_for_reboot
+continue_force_up_all_upgrade_test_client @ 12a60: continue_external_upgrade_process
+continue_force_up_all_upgrade_test_client @ 12a74: test_result_print
+continue_force_up_all_upgrade_test_client @ 12a8c: 12a8c: 940003f5     	bl	0x13a60 <up_logf@plt>
+continue_force_up_all_upgrade_test_client @ 12aa4: test_result_print
+continue_force_up_all_upgrade_test_client @ 12abc: 12abc: 940003e9     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12b14: 12b14: 94000367     	bl	0x138b0 <memset@plt>
+set_up_flags_request @ 12b24: 12b24: 94000363     	bl	0x138b0 <memset@plt>
+set_up_flags_request @ 12b64: 12b64: 9400046f     	bl	0x13d20 <getopt@plt>
+set_up_flags_request @ 12b9c: 12b9c: 9400041d     	bl	0x13c10 <strncmp@plt>
+set_up_flags_request @ 12bb8: 12bb8: 94000416     	bl	0x13c10 <strncmp@plt>
+set_up_flags_request @ 12bd4: 12bd4: 9400040f     	bl	0x13c10 <strncmp@plt>
+set_up_flags_request @ 12bf0: 12bf0: 94000494     	bl	0x13e40 <atoi@plt>
+set_up_flags_request @ 12c30: test_result_print
+set_up_flags_request @ 12c60: 12c60: 94000380     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12c70: test_result_print
+set_up_flags_request @ 12c9c: 12c9c: 94000371     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12ca8: test_result_print
+set_up_flags_request @ 12cb0: client_init_communication
+set_up_flags_request @ 12ce4: 12ce4: 9400035f     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12d00: 12d00: 94000358     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12d20: 12d20: 940002c4     	bl	0x13830 <fprintf@plt>
+set_up_flags_request @ 12d3c: 12d3c: 94000349     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12d54: get_upcenter_id
+set_up_flags_request @ 12d74: client_send_with_ack
+set_up_flags_request @ 12d98: 12d98: 94000332     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12db4: 12db4: 9400028b     	bl	0x137e0 <printf@plt>
+set_up_flags_request @ 12dbc: 12dbc: 940002b1     	bl	0x13880 <putchar@plt>
+set_up_flags_request @ 12dd8: 12dd8: 94000322     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12e00: 12e00: 94000318     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12e44: test_result_print
+set_up_flags_request @ 12e48: client_deinit_communication
+set_up_flags_request @ 12e60: 12e60: 94000260     	bl	0x137e0 <printf@plt>
+set_up_flags_request @ 12e68: 12e68: 94000286     	bl	0x13880 <putchar@plt>
+set_up_flags_request @ 12e80: 12e80: 940002f8     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12ec8: 12ec8: 94000246     	bl	0x137e0 <printf@plt>
+set_up_flags_request @ 12ed0: 12ed0: 9400026c     	bl	0x13880 <putchar@plt>
+set_up_flags_request @ 12eec: 12eec: 940002dd     	bl	0x13a60 <up_logf@plt>
+set_up_flags_request @ 12ef4: 12ef4: 9400026b     	bl	0x138a0 <__stack_chk_fail@plt>
+send_request_compatbile_up_status_reset @ 12f28: 12f28: 94000262     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_status_reset @ 12f38: 12f38: 9400025e     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_status_reset @ 12f5c: get_upcenter_id
+send_request_compatbile_up_status_reset @ 12f78: client_send_with_ack
+send_request_compatbile_up_status_reset @ 12f9c: 12f9c: 940002b1     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_status_reset @ 12fc4: 12fc4: 940002a7     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_status_reset @ 12fe8: 12fe8: 9400029e     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_status_reset @ 1301c: 1301c: 94000221     	bl	0x138a0 <__stack_chk_fail@plt>
+send_request_compatbile_up_check_start @ 13050: 13050: 94000218     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_start @ 13060: 13060: 94000214     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_start @ 1308c: get_upcenter_id
+send_request_compatbile_up_check_start @ 130a8: client_send_with_ack
+send_request_compatbile_up_check_start @ 130cc: 130cc: 94000265     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_start @ 130f4: 130f4: 9400025b     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_start @ 13118: 13118: 94000252     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_start @ 1314c: 1314c: 940001d5     	bl	0x138a0 <__stack_chk_fail@plt>
+send_request_compatbile_up_check_module_list @ 1318c: 1318c: 940001c9     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_module_list @ 1319c: 1319c: 940001c5     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_module_list @ 131c0: get_upcenter_id
+send_request_compatbile_up_check_module_list @ 131dc: client_send_with_ack
+send_request_compatbile_up_check_module_list @ 13200: 13200: 94000218     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_list @ 13228: 13228: 9400020e     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_list @ 1324c: 1324c: 94000205     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_list @ 1327c: 1327c: 940001cd     	bl	0x139b0 <upgrade_strncpy@plt>
+send_request_compatbile_up_check_module_list @ 132c4: 132c4: 94000177     	bl	0x138a0 <__stack_chk_fail@plt>
+send_request_compatbile_up_check_module_info @ 13304: 13304: 9400016b     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_module_info @ 13314: 13314: 94000167     	bl	0x138b0 <memset@plt>
+send_request_compatbile_up_check_module_info @ 13338: 13338: 9400019e     	bl	0x139b0 <upgrade_strncpy@plt>
+send_request_compatbile_up_check_module_info @ 13348: get_upcenter_id
+send_request_compatbile_up_check_module_info @ 13364: client_send_with_ack
+send_request_compatbile_up_check_module_info @ 13388: 13388: 940001b6     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_info @ 133b0: 133b0: 940001ac     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_info @ 133d4: 133d4: 940001a3     	bl	0x13a60 <up_logf@plt>
+send_request_compatbile_up_check_module_info @ 13428: 13428: 9400011e     	bl	0x138a0 <__stack_chk_fail@plt>
+upgrade_list_compatible_check_result @ 13468: 13468: 94000112     	bl	0x138b0 <memset@plt>
+upgrade_list_compatible_check_result @ 13498: send_request_compatbile_up_check_module_list
+upgrade_list_compatible_check_result @ 134bc: 134bc: 94000169     	bl	0x13a60 <up_logf@plt>
+upgrade_list_compatible_check_result @ 134cc: test_result_print
+upgrade_list_compatible_check_result @ 1352c: 1352c: 9400014d     	bl	0x13a60 <up_logf@plt>
+upgrade_list_compatible_check_result @ 13548: send_request_compatbile_up_check_module_info
+upgrade_list_compatible_check_result @ 135a0: 135a0: 940000b4     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 135c0: 135c0: 940000ac     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 135f8: 135f8: 9400009e     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 13610: 13610: 94000098     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 13668: 13668: 94000082     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 13684: 13684: 9400007b     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 136a4: 136a4: 94000073     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 136c4: 136c4: 9400006b     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 136e0: 136e0: 94000064     	bl	0x13870 <snprintf@plt>
+upgrade_list_compatible_check_result @ 1370c: test_result_print
+upgrade_list_compatible_check_result @ 13754: 13754: 94000053     	bl	0x138a0 <__stack_chk_fail@plt>

@@ -1,0 +1,20 @@
+{
+  "physical_operation_confirmed": true,
+  "mapping_verified": false,
+  "counts": {
+    "/dev/input/event1 EV_ABS ABS_X": 356,
+    "/dev/input/event1 EV_SYN SYN_REPORT": 694,
+    "/dev/input/event0 EV_ABS ABS_MT_TRACKING_ID": 4,
+    "/dev/input/event0 EV_ABS ABS_MT_POSITION_X": 2,
+    "/dev/input/event0 EV_ABS ABS_MT_POSITION_Y": 65,
+    "/dev/input/event0 EV_ABS ABS_MT_PRESSURE": 16,
+    "/dev/input/event0 EV_ABS ABS_MT_TOUCH_MAJOR": 44,
+    "/dev/input/event0 EV_ABS ABS_MT_TOUCH_MINOR": 28,
+    "/dev/input/event0 EV_ABS ABS_MT_ORIENTATION": 40,
+    "/dev/input/event0 EV_SYN SYN_REPORT": 109,
+    "/dev/input/event1 EV_ABS ABS_Y": 481,
+    "/dev/input/event2 EV_KEY KEY_POWER": 2,
+    "/dev/input/event2 EV_SYN SYN_REPORT": 2
+  },
+  "conclusion": "No target EV_KEY or HAT changes observed across all four input nodes. Stick axes provide positive capture control. This does not rule out separate MCU protocol or USB report data not exposed by xpad."
+}

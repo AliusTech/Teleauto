@@ -1,0 +1,17 @@
+[
+  {
+    "name": "dji_amt",
+    "sha256": "d4d718dedecbe1161d41924c8a0c1087f2efec14407df4d1d0bd5f33f5a57079",
+    "size": 52520
+  },
+  {
+    "name": "dji_config_store",
+    "sha256": "deb2b4cbc184aaf999fe4de63669a3d6bf304445612572c91429666baec611ab",
+    "size": 250064
+  },
+  {
+    "name": "upgrade_test",
+    "sha256": "7c34c6a89e021b742e1fc89f3fd1f7918e163e642997f05b50e5a9fd40f7f6f7",
+    "size": 93096
+  }
+]

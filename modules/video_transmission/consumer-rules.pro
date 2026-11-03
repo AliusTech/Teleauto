@@ -1,0 +1,1 @@
+-keep class com.openipc.wfbngrtl8812.** { *; }

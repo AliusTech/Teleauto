@@ -1,0 +1,19 @@
+{
+  "id": "req_12702",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-09-24T07:48:59.909026Z",
+  "ok": true,
+  "result": {
+    "saved": true
+  },
+  "context": {
+    "projectUuid": "c15f2ba144e644eca844ab18ebaf753e",
+    "projectName": "遥控器射频板",
+    "documentUuid": "6da79bf818384203",
+    "documentType": "schematic",
+    "tabId": "6da79bf818384203@c15f2ba144e644eca844ab18ebaf753e"
+  },
+  "seq": 5857,
+  "seqAbandoned": 0
+}

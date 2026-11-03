@@ -1,0 +1,47 @@
+--------- beginning of main
+--------- beginning of system
+--------- beginning of crash
+09-14 17:19:32.039 17472 17490 I TeleautoKeyProbe: software AES-GCM roundtrip=true
+09-14 17:19:32.041 17472 17490 I TeleautoKeyProbe: keystore load OK; mode=rsa
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: FAILED stage=RSA key generation
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: java.security.ProviderException: Failed to load generated key pair from keystore
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreKeyPairGeneratorSpi.loadKeystoreKeyPair(AndroidKeyStoreKeyPairGeneratorSpi.java:518)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreKeyPairGeneratorSpi.generateKeyPair(AndroidKeyStoreKeyPairGeneratorSpi.java:470)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at java.security.KeyPairGenerator$Delegate.generateKeyPair(KeyPairGenerator.java:699)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.runTest(MainActivity.java:33)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.lambda$onCreate$0(MainActivity.java:17)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.$r8$lambda$lv2BOnTRiu-msh4HuDa0iPVdB6A(MainActivity.java)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at java.lang.Thread.run(Thread.java:761)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: Caused by: java.security.UnrecoverableKeyException: Failed to obtain information about private key
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreProvider.loadAndroidKeyStorePublicKeyFromKeystore(AndroidKeyStoreProvider.java:223)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreProvider.loadAndroidKeyStoreKeyPairFromKeystore(AndroidKeyStoreProvider.java:259)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreKeyPairGeneratorSpi.loadKeystoreKeyPair(AndroidKeyStoreKeyPairGeneratorSpi.java:509)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	... 7 more
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: Caused by: android.security.KeyStoreException: Invalid key blob
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.KeyStore.getKeyStoreException(KeyStore.java:676)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreProvider.loadAndroidKeyStorePublicKeyFromKeystore(AndroidKeyStoreProvider.java:224)
+09-14 17:19:32.059 17472 17490 E TeleautoKeyProbe: 	... 9 more
+09-14 17:19:32.059 17472 17490 I TeleautoKeyProbe: FAILED RSA key generation: ProviderException
+09-14 17:19:32.060 17472 17490 I TeleautoKeyProbe: temporary alias deleted
+09-14 17:19:32.060 17472 17490 I TeleautoKeyProbe: DONE
+09-14 17:19:58.002 18042 18073 I TeleautoKeyProbe: software AES-GCM roundtrip=true
+09-14 17:19:58.004 18042 18073 I TeleautoKeyProbe: keystore load OK; mode=aes128
+09-14 17:19:58.012 18042 18073 I TeleautoKeyProbe: AES-128 generation OK
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: FAILED stage=AES-128 key reload
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: java.security.UnrecoverableKeyException: Failed to obtain information about key
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreProvider.loadAndroidKeyStoreSecretKeyFromKeystore(AndroidKeyStoreProvider.java:282)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreSpi.engineGetKey(AndroidKeyStoreSpi.java:98)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at java.security.KeyStore.getKey(KeyStore.java:825)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.runTest(MainActivity.java:40)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.lambda$onCreate$0(MainActivity.java:17)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity.$r8$lambda$lv2BOnTRiu-msh4HuDa0iPVdB6A(MainActivity.java)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at tech.alius.rc.keystoreprobe.MainActivity$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at java.lang.Thread.run(Thread.java:761)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: Caused by: android.security.KeyStoreException: Invalid key blob
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at android.security.KeyStore.getKeyStoreException(KeyStore.java:676)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	at android.security.keystore.AndroidKeyStoreProvider.loadAndroidKeyStoreSecretKeyFromKeystore(AndroidKeyStoreProvider.java:283)
+09-14 17:19:58.014 18042 18073 E TeleautoKeyProbe: 	... 7 more
+09-14 17:19:58.014 18042 18073 I TeleautoKeyProbe: FAILED AES-128 key reload: UnrecoverableKeyException
+09-14 17:19:58.016 18042 18073 I TeleautoKeyProbe: temporary alias deleted
+09-14 17:19:58.016 18042 18073 I TeleautoKeyProbe: DONE

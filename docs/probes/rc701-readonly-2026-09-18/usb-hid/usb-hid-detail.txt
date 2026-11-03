@@ -1,0 +1,240 @@
+/config/usb_gadget:
+total 0
+drwxrwx--- 6 root root 0 2026-09-18 16:18 g1
+drwxrwx--- 6 root root 0 2026-09-18 16:18 g2
+-r--r--r-- 1 root root 41509 2026-09-18 16:18 /proc/config.gz
+configured
+0000000000000000 t hidg_alloc_inst$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_alloc$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_free_inst$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_subclass_show$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_subclass_store$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_protocol_show$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_protocol_store$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_report_length_show$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_report_length_store$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_report_desc_show$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_report_desc_store$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hid_opts_dev_show$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_bind$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_unbind$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_set_alt$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_disable$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_setup$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_free$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_read$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_write$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_poll$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_open$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_release$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t f_hidg_req_complete$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_set_report_complete$d066d404902689378f29dbfe8826a7f9
+0000000000000000 t hidg_alloc_inst$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_alloc$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_set_alt$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_subclass_store$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_report_length_store$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_report_desc_store$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_protocol_store$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_unbind$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_dev_show$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_protocol_show$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_subclass_show$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_report_desc_show$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hid_opts_report_length_show$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_req_complete$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_set_report_complete$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_bind$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_free_inst$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_setup$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_disable$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t hidg_free$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_poll$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_read$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_write$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_release$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 t f_hidg_open$d066d404902689378f29dbfe8826a7f9.cfi_jt
+0000000000000000 d hid_func_type
+0000000000000000 d f_hidg_fops
+0000000000000000 d hidg_ida_lock
+0000000000000000 d hidg_ida
+0000000000000000 d hidg_item_ops
+0000000000000000 d f_hid_opts_attr_subclass
+0000000000000000 d f_hid_opts_attr_protocol
+0000000000000000 d f_hid_opts_attr_report_length
+0000000000000000 d f_hid_opts_attr_report_desc
+0000000000000000 d f_hid_opts_attr_dev
+0000000000000000 d hidg_interface_desc
+0000000000000000 d hidg_fs_in_ep_desc
+0000000000000000 d hidg_fs_out_ep_desc
+0000000000000000 d hidg_ss_in_ep_desc
+0000000000000000 d hidg_ss_in_comp_desc
+0000000000000000 d hidg_hs_in_ep_desc
+0000000000000000 d hidg_ss_out_ep_desc
+0000000000000000 d hidg_ss_out_comp_desc
+0000000000000000 d hidg_hs_out_ep_desc
+0000000000000000 d hidg_desc
+0000000000000000 d hidg_fs_descriptors
+0000000000000000 d hidg_hs_descriptors
+0000000000000000 d hidg_ss_descriptors
+0000000000000000 b hidg_class
+0000000000000000 b hidg_alloc_inst.__key
+0000000000000000 b hidg_bind.__key
+0000000000000000 b hidg_bind.__key.12
+/vendor/etc/init/hw/init.qcom.usb.rc:145:on property:persist.vendor.usb.config=*
+/vendor/etc/init/hw/init.qcom.usb.rc:158:on property:sys.usb.config=none && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:170:on property:sys.usb.config=mass_storage && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:187:on property:sys.usb.config=mass_storage,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:190:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mass_storage,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:208:on property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:211:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:230:on property:sys.usb.config=diag && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:248:on property:sys.usb.config=diag,serial_cdev,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:251:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,serial_cdev,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:272:on property:sys.usb.config=diag,serial_cdev,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:292:on property:sys.usb.config=diag,serial_cdev,serial_cdev_nmea,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:295:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,serial_cdev,serial_cdev_nmea,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:319:on property:sys.usb.config=rndis
+/vendor/etc/init/hw/init.qcom.usb.rc:322:on property:sys.usb.config=rndis,none && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:339:on property:sys.usb.config=rndis,sec && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:348:on property:sys.usb.config=rndis,adb
+/vendor/etc/init/hw/init.qcom.usb.rc:351:on property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:354:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:372:on property:sys.usb.config=rndis,diag && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:390:on property:sys.usb.config=rndis,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:393:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:412:on property:sys.usb.config=rndis,serial_cdev && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:430:on property:sys.usb.config=rndis,serial_cdev,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:433:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,serial_cdev,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:452:on property:sys.usb.config=rndis,serial_cdev,diag && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:471:on property:sys.usb.config=rndis,serial_cdev,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:474:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,serial_cdev,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:494:on property:sys.usb.config=mtp,diag && property:vendor.usb.use_ffs_mtp=0 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:512:on property:sys.usb.config=mtp,diag && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:530:on property:sys.usb.config=mtp,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:533:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,diag,adb && property:vendor.usb.use_ffs_mtp=0 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:552:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,diag,adb && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:571:on property:sys.usb.config=mtp,bulk,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:574:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,bulk,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:594:on property:sys.usb.config=mtp,bulk && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:613:on property:sys.usb.config=diag,qdss && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:633:on property:sys.usb.config=diag,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:636:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:657:on property:sys.usb.config=diag,qdss,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:678:on property:sys.usb.config=diag,qdss,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:681:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,qdss,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:703:on property:sys.usb.config=rndis,diag,qdss && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:723:on property:sys.usb.config=rndis,diag,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:726:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:747:on property:sys.usb.config=ncm && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:764:on property:sys.usb.config=ncm,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:767:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=ncm,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:785:on property:sys.usb.config=diag,serial_cdev && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:804:on property:sys.usb.config=diag,adb,serial_cdev && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:807:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,adb,serial_cdev && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:827:on property:sys.usb.config=diag,serial_cdev,rmnet,dpl && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:848:on property:sys.usb.config=diag,serial_cdev,rmnet,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:851:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,serial_cdev,rmnet,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:873:on property:sys.usb.config=rndis,diag,dpl && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:892:on property:sys.usb.config=rndis,diag,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:895:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:915:on property:sys.usb.config=ccid && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:932:on property:sys.usb.config=ccid,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:935:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=ccid,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:953:on property:sys.usb.config=ccid,diag && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:971:on property:sys.usb.config=ccid,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:974:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=ccid,diag,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:993:on property:sys.usb.config=diag,serial_cdev,rmnet,ccid && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1014:on property:sys.usb.config=diag,serial_cdev,rmnet,ccid,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1017:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,serial_cdev,rmnet,ccid,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1039:on property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1063:on property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1066:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1091:on property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,dpl,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1116:on property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1119:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,serial_cdev_mdm,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1145:on property:sys.usb.config=diag,serial_cdev,rmnet,dpl,qdss && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1167:on property:sys.usb.config=diag,serial_cdev,rmnet,dpl,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1170:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,serial_cdev,rmnet,dpl,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1193:on property:sys.usb.config=diag,uac2,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1196:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,uac2,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1216:on property:sys.usb.config=diag,uac2 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1235:on property:sys.usb.config=diag,uvc,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1238:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,uvc,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1258:on property:sys.usb.config=diag,uvc && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1277:on property:sys.usb.config=diag,uac2,uvc,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1280:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,uac2,uvc,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1301:on property:sys.usb.config=diag,uac2,uvc && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1321:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1345:on property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1348:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1373:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1396:on property:sys.usb.config=rndis,diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1399:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,diag_mdm,qdss,qdss_mdm,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1423:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,qdss,serial_cdev,dpl && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1444:on property:sys.usb.config=rndis,diag,qdss,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1447:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,qdss,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1469:on property:sys.usb.config=diag,diag_mdm,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1472:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1492:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl,rmnet && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1517:on property:sys.usb.config=diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1520:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl,rmnet,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1546:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1570:on property:sys.usb.config=rndis,diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1573:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,diag_mdm,diag_mdm2,qdss,qdss_mdm,serial_cdev,dpl,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1598:on property:sys.usb.config=diag,diag_mdm,ccid && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1618:on property:sys.usb.config=diag,diag_mdm,adb,ccid && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1621:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,adb,ccid && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1642:on property:sys.usb.config=diag,diag_cnss,serial_cdev,rmnet,dpl,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1645:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_cnss,serial_cdev,rmnet,dpl,qdss,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1669:on property:sys.usb.config=diag,diag_cnss,serial_cdev,rmnet,dpl,qdss && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1692:on property:sys.usb.config=adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1696:on property:sys.usb.config=mtp && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1700:on property:sys.usb.config=mtp && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1703:on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1707:on property:sys.usb.config=mtp,adb && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1711:on property:sys.usb.config=ptp && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1715:on property:sys.usb.config=ptp && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1718:on property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1722:on property:sys.usb.config=ptp,adb && property:vendor.usb.use_ffs_mtp=1 && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1726:on property:sys.usb.config=accessory && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1730:on property:sys.usb.config=accessory,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1734:on property:sys.usb.config=audio_source && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1738:on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1742:on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1746:on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1750:on property:sys.usb.config=midi && property:sys.usb.configfs=1
+/vendor/etc/init/hw/init.qcom.usb.rc:1754:on property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:1:on property:sys.usb.config=none && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:17:on property:sys.usb.config=adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:20:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:26:on property:sys.usb.config=mtp && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:32:on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:35:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:42:on property:sys.usb.config=ptp && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:48:on property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:51:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:58:on property:sys.usb.config=accessory && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:64:on property:sys.usb.config=accessory,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:67:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=accessory,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:74:on property:sys.usb.config=audio_source && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:80:on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:83:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:90:on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:97:on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:100:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:108:on property:sys.usb.config=midi && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:114:on property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:117:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=midi,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:124:on property:sys.usb.config=rndis && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:131:on property:sys.usb.config=rndis,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.configfs.rc:134:on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,adb && property:sys.usb.configfs=1
+/system/etc/init/hw/init.usb.rc:28:on property:sys.usb.config=none && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:37:on property:sys.usb.config=adb && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:47:on property:sys.usb.config=accessory && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:56:on property:sys.usb.config=accessory,adb && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:66:on property:sys.usb.config=audio_source && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:75:on property:sys.usb.config=audio_source,adb && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:85:on property:sys.usb.config=accessory,audio_source && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:94:on property:sys.usb.config=accessory,audio_source,adb && property:sys.usb.configfs=0
+/system/etc/init/hw/init.usb.rc:105:on boot && property:persist.sys.usb.config=*

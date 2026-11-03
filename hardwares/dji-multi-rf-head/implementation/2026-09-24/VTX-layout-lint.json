@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "minGap": 2.54,
+  "componentCount": 30,
+  "withBBox": 30,
+  "skippedNonParts": 1,
+  "overlaps": null,
+  "tightSpacing": null,
+  "pinCoincidences": null,
+  "measurementUnit": "mm",
+  "coordinateUnit": "0.01inch",
+  "anchorGridRaw": 5,
+  "anchorGridUnit": "0.01inch",
+  "zoneCheckStatus": "not-configured",
+  "outOfSheet": [
+    {
+      "a": "C45",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 85,
+      "y": 15
+    },
+    {
+      "a": "C46",
+      "overlapX": 0,
+      "overlapY": 1.905,
+      "type": "out-of-sheet",
+      "x": 175,
+      "y": 15
+    },
+    {
+      "a": "C48",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 265,
+      "y": 15
+    },
+    {
+      "a": "C50",
+      "overlapX": 0,
+      "overlapY": 1.397,
+      "type": "out-of-sheet",
+      "x": 355,
+      "y": 15
+    },
+    {
+      "a": "C53",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 85,
+      "y": -65
+    },
+    {
+      "a": "C54",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 175,
+      "y": -65
+    },
+    {
+      "a": "C66",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 265,
+      "y": -65
+    },
+    {
+      "a": "C69",
+      "overlapX": 0,
+      "overlapY": 21.717,
+      "type": "out-of-sheet",
+      "x": 355,
+      "y": -65
+    },
+    {
+      "a": "R18",
+      "overlapX": 0,
+      "overlapY": 20.955000000000002,
+      "type": "out-of-sheet",
+      "x": 445,
+      "y": -65
+    },
+    {
+      "a": "R34",
+      "overlapX": 0,
+      "overlapY": 20.955000000000002,
+      "type": "out-of-sheet",
+      "x": 625,
+      "y": -65
+    },
+    {
+      "a": "TP2",
+      "overlapX": 0,
+      "overlapY": 19.685,
+      "type": "out-of-sheet",
+      "x": 715,
+      "y": -65
+    }
+  ],
+  "sheetCheckStatus": "checked",
+  "pinEps": 0,
+  "summary": "strict=false: 30 components (30 with bbox): 0 overlap, 0 tight (\u003c2.54mm), 0 pin-coincidence, 0 off-grid, 11 out-of-sheet, 0 unchecked-bbox, 0 unchecked-pins, 0 unproven-pins, 0 invalid-geometry; zoneCheck=not-configured sheetCheck=checked"
+}

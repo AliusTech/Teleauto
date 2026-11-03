@@ -1,0 +1,103 @@
+{
+  "pinStateCases": "passed: unknown/unconnected/NC/connected/conflict/missing evidence",
+  "savedReloadDiff": "passed: exactly U3 19–24 NC; other pin nets/NC/coordinates unchanged",
+  "changes": [
+    {
+      "ref": "U3",
+      "pin": "19",
+      "before": [
+        "",
+        false,
+        180,
+        620
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        620
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "20",
+      "before": [
+        "",
+        false,
+        180,
+        630
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        630
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "21",
+      "before": [
+        "",
+        false,
+        180,
+        640
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        640
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "22",
+      "before": [
+        "",
+        false,
+        180,
+        650
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        650
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "23",
+      "before": [
+        "",
+        false,
+        180,
+        660
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        660
+      ]
+    },
+    {
+      "ref": "U3",
+      "pin": "24",
+      "before": [
+        "",
+        false,
+        180,
+        670
+      ],
+      "after": [
+        "",
+        true,
+        180,
+        670
+      ]
+    }
+  ],
+  "incompleteGateExitCode": 1
+}

@@ -1,0 +1,34 @@
+{
+  "id": "req_12687",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-09-24T07:47:15.868887Z",
+  "ok": true,
+  "result": {
+    "items": [],
+    "resolvedCount": 0,
+    "scope": "activePage",
+    "total": 1,
+    "unresolved": [
+      {
+        "designator": "U3",
+        "footprint": "QFN-32_L5.0-W5.0-P0.50-TL-EP3.7",
+        "mpn": "ESP32-C3FH4",
+        "reason": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"59b531d9f48822fd\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence"
+      }
+    ],
+    "unresolvedCount": 1
+  },
+  "context": {
+    "projectUuid": "c15f2ba144e644eca844ab18ebaf753e",
+    "projectName": "遥控器射频板",
+    "documentUuid": "6da79bf818384203",
+    "documentType": "schematic",
+    "tabId": "6da79bf818384203@c15f2ba144e644eca844ab18ebaf753e"
+  },
+  "warnings": [
+    "1 part(s) could not be resolved deterministically — review result.unresolved (candidates included); nothing was guessed."
+  ],
+  "seq": 5848,
+  "seqAbandoned": 0
+}

@@ -1,0 +1,16 @@
+{
+  "serial": "455LJ1710100UJ",
+  "model": "ag501",
+  "label": "baseline",
+  "repeat": 1,
+  "source": "kernel",
+  "started_utc": "2026-09-14T18:48:05.206898+00:00",
+  "duration_requested_seconds": 180,
+  "firmware": "DJI/ag501/ag501:7.1.2/V01.00.00.38/38:user/release-keys",
+  "device_uptime_start": "1454.06 8516.70",
+  "status": "captured",
+  "physical_operation_confirmed": false,
+  "note": "Label identifies requested operation; confirm execution separately. No mapping is inferred automatically.",
+  "duration_actual_seconds": 180.04680395800096,
+  "ended_utc": "2026-09-14T18:51:05.312391+00:00"
+}

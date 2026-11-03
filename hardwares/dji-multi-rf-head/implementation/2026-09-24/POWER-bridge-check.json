@@ -1,0 +1,54 @@
+{
+  "id": "req_12730",
+  "ok": true,
+  "result": {
+    "passed": false,
+    "summary": {
+      "trees": 2,
+      "bridges": 1,
+      "orphans": 0,
+      "orphanFlags": 0,
+      "orphanTrees": 1,
+      "wireTreesTotal": 63
+    },
+    "trees": [
+      {
+        "kind": "ORPHAN_TREE",
+        "type": "orphan-tree",
+        "level": "warn",
+        "wireIds": [
+          "dd6000ed32db7b87"
+        ],
+        "flagIds": [
+          "d79a29e0c2bb1fcc"
+        ],
+        "pins": [],
+        "nets": [
+          "GND"
+        ]
+      },
+      {
+        "kind": "BRIDGE",
+        "type": "wire-bridge",
+        "level": "error",
+        "wireIds": [
+          "24f94b9ba10be0de"
+        ],
+        "flagIds": [
+          "c671416d2f46a03d",
+          "12ac4b3a52d25d2d"
+        ],
+        "pins": [
+          "C18:2",
+          "C19:1"
+        ],
+        "nets": [
+          "BATTERY",
+          "BATTERY_5V"
+        ]
+      }
+    ]
+  },
+  "type": "response",
+  "version": "v1"
+}

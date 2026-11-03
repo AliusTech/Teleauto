@@ -1,0 +1,4 @@
+SDL 3.4.12
+Source: https://github.com/libsdl-org/SDL/releases/tag/release-3.4.12
+Archive SHA-256: f07b958a9ac5020fb7a44cadb957f658b2149c3c8abb4f63145fac9303249db7
+License: zlib (see LICENSE.txt)

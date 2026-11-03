@@ -1,0 +1,162 @@
+GPIOs 1000-1031, platform/pinctrl, gpio0:
+ gpio-1001 (                    |vcc3v0_sd           ) out hi    
+ gpio-1003 (                    |wlan_default_wlan_po) out hi    
+ gpio-1004 (                    |bt_default_wake_host) in  lo    
+ gpio-1005 (                    |power               ) in  hi    
+ gpio-1008 (                    |TAS2555_PWREN       ) out lo    
+ gpio-1009 (                    |bt_default_reset    ) out lo    
+ gpio-1012 (                    |TAS2555_RST         ) out hi    
+
+GPIOs 1032-1063, platform/pinctrl, gpio1:
+ gpio-1034 (                    |int-n               ) in  hi    
+ gpio-1035 (                    |camsys_gpio         ) out hi    
+ gpio-1045 (                    |rf-pin1-state       ) in  lo    
+ gpio-1046 (                    |vsel                ) out lo    
+ gpio-1049 (                    |vsel                ) out lo    
+ gpio-1054 (                    |rf-pin2-state       ) in  lo    
+ gpio-1055 (                    |rf-pin3-state       ) in  lo    
+
+GPIOs 1064-1095, platform/pinctrl, gpio2:
+ gpio-1066 (                    |?                   ) out hi    
+ gpio-1067 (                    |?                   ) in  hi    
+ gpio-1068 (                    |battery-ok          ) in  hi    
+ gpio-1069 (                    |poweroff-notify-1549) out hi    
+ gpio-1070 (                    |vbus-5v             ) out lo    
+ gpio-1090 (                    |bt_default_wake     ) in  hi    
+ gpio-1092 (                    |reset               ) out lo    
+
+GPIOs 1096-1127, platform/pinctrl, gpio3:
+ gpio-1104 (                    |mpu6500             ) in  lo    
+ gpio-1105 (                    |enable              ) out lo    
+ gpio-1112 (                    |charge-state        ) in  hi    
+ gpio-1113 (                    |back                ) in  hi    
+
+GPIOs 1128-1159, platform/pinctrl, gpio4:
+ gpio-1149 (                    |enable              ) out lo    
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+    lo:  605383    6539    0    0    0     0          0         0   605383    6539    0    0    0     0       0          0
+ wlan0:  102224     395    0    0    0     0          0         0    54699     320    0    0    0     0       0          0
+  p2p0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+0
+0
+DEVICE:/sys/bus/usb/devices/1-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/2/404
+TYPE=9/0/0
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0002d0404dc09dsc00dp00ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/2-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/1/404
+TYPE=9/0/0
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0001d0404dc09dsc00dp00ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/2-1
+MAJOR=189
+MINOR=129
+DEVNAME=bus/usb/002/002
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=2ca3/1501/101
+TYPE=255/71/208
+BUSNUM=002
+DEVNUM=002
+DEVICE:/sys/bus/usb/devices/2-1:1.0
+DEVTYPE=usb_interface
+DRIVER=xpad
+PRODUCT=2ca3/1501/101
+TYPE=255/71/208
+INTERFACE=255/71/208
+MODALIAS=usb:v2CA3p1501d0101dcFFdsc47dpD0icFFisc47ipD0in00
+DEVICE:/sys/bus/usb/devices/3-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/2/404
+TYPE=9/0/0
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0002d0404dc09dsc00dp00ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/4-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/1/404
+TYPE=9/0/0
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0001d0404dc09dsc00dp00ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/5-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/2/404
+TYPE=9/0/1
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0002d0404dc09dsc00dp01ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/6-0:1.0
+DEVTYPE=usb_interface
+DRIVER=hub
+PRODUCT=1d6b/3/404
+TYPE=9/0/3
+INTERFACE=9/0/0
+MODALIAS=usb:v1D6Bp0003d0404dc09dsc00dp03ic09isc00ip00in00
+DEVICE:/sys/bus/usb/devices/usb1
+MAJOR=189
+MINOR=0
+DEVNAME=bus/usb/001/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/2/404
+TYPE=9/0/0
+BUSNUM=001
+DEVNUM=001
+DEVICE:/sys/bus/usb/devices/usb2
+MAJOR=189
+MINOR=128
+DEVNAME=bus/usb/002/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/1/404
+TYPE=9/0/0
+BUSNUM=002
+DEVNUM=001
+DEVICE:/sys/bus/usb/devices/usb3
+MAJOR=189
+MINOR=256
+DEVNAME=bus/usb/003/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/2/404
+TYPE=9/0/0
+BUSNUM=003
+DEVNUM=001
+DEVICE:/sys/bus/usb/devices/usb4
+MAJOR=189
+MINOR=384
+DEVNAME=bus/usb/004/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/1/404
+TYPE=9/0/0
+BUSNUM=004
+DEVNUM=001
+DEVICE:/sys/bus/usb/devices/usb5
+MAJOR=189
+MINOR=512
+DEVNAME=bus/usb/005/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/2/404
+TYPE=9/0/1
+BUSNUM=005
+DEVNUM=001
+DEVICE:/sys/bus/usb/devices/usb6
+MAJOR=189
+MINOR=640
+DEVNAME=bus/usb/006/001
+DEVTYPE=usb_device
+DRIVER=usb
+PRODUCT=1d6b/3/404
+TYPE=9/0/3
+BUSNUM=006
+DEVNUM=001

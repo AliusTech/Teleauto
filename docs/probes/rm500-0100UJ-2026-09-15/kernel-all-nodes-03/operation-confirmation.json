@@ -1,0 +1,13 @@
+{
+  "user_confirmed": true,
+  "requested_sequence": [
+    "c1",
+    "c2",
+    "pause",
+    "rth",
+    "switch",
+    "sticks"
+  ],
+  "mapping_verified": false,
+  "limitation": "Non-PTY getevent output ended in a partial line. Final stdio buffer may be missing; absence of key events is not conclusive."
+}

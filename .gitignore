@@ -1,0 +1,21 @@
+# 隐藏文件与目录；保留版本规则和 CI 配置
+.*
+!.gitignore
+!.github/
+
+# 构建输出
+build/
+
+# 本机环境
+local.properties
+*.iml
+captures/
+
+# 工具与日志产物
+build.log
+release_dex.txt
+analysis/
+
+# Rust License Generator build products
+license-generator/target/
+__pycache__/

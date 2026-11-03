@@ -1,0 +1,868 @@
+    group root
+
+on property:dji.service.reset_abc=1
+    stop abc
+    start abc
+
+on property:sys.dji.switch_abc=1
+    start abc
+    start dji_start_system
+
+on property:sys.dji.switch_abc=0
+    stop abc
+    stop dji_start_system
+
+service dji_amt /system/bin/dji_amt
+    class main
+    user root
+    group root
+
+on property:dji.amt_service=1
+    start dji_amt
+
+on property:dji.amt_service=0
+    stop dji_amt
+running
+
+
+
+drwxrwx--x 51 system system u:object_r:system_data_root_file:s0  4096 2026-09-18 16:18 /data
+-rw-r--r-- 1 root root u:object_r:vendor_configs_file:s0  200366 2009-01-01 08:00 /vendor/etc/dji_0.json
+295:        "dji_amt": {
+306:                "base_dir"          : "/sdcard/dji_amt",
+338:    "router_control": {
+339:        "wl_route_switch": {
+346:        "mb_route_table": {
+352:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+355:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+357:                "10": {"status": 0,"target_machine": 0,"target": "camera", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+359:                "10": {"status": 0,"target_machine": 0,"target": "camera", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+362:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+364:                "11": {"status": 0,"target_machine": 0,"target": "camera", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+366:                "11": {"status": 0,"target_machine": 0,"target": "camera", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+369:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+371:                "12": {"status": 0,"target_machine": 0,"target": "camera", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+373:                "12": {"status": 0,"target_machine": 0,"target": "camera", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+376:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+378:                "13": {"status": 0,"target_machine": 0,"target": "camera", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+380:                "13": {"status": 0,"target_machine": 0,"target": "camera", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+383:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+385:                "14": {"status": 0,"target_machine": 0,"target": "camera", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+387:                "14": {"status": 0,"target_machine": 0,"target": "camera", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+390:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+392:                "15": {"status": 0,"target_machine": 0,"target": "camera", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+394:                "15": {"status": 0,"target_machine": 0,"target": "camera", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+397:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+399:                "17": {"status": 0,"target_machine": 0,"target": "camera", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+401:                "17": {"status": 0,"target_machine": 0,"target": "camera", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+404:                    "sync_route_msg_table": {
+460:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+462:                "30": {"status": 0,"target_machine": 0,"target": "flight", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+464:                "30": {"status": 0,"target_machine": 0,"target": "flight", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+467:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+469:                "31": {"status": 0,"target_machine": 0,"target": "flight", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+471:                "31": {"status": 0,"target_machine": 0,"target": "flight", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+474:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+476:                "35": {"status": 0,"target_machine": 0,"target": "flight", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+478:                "35": {"status": 0,"target_machine": 0,"target": "flight", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+481:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+483:                "36": {"status": 0,"target_machine": 0,"target": "flight", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+485:                "36": {"status": 0,"target_machine": 0,"target": "flight", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+488:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+490:                "37": {"status": 0,"target_machine": 0,"target": "flight", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+492:                "37": {"status": 0,"target_machine": 0,"target": "flight", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+495:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+497:                "40": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+499:                "40": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+502:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+504:                "41": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+506:                "41": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+509:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+511:                "42": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+513:                "42": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+516:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+518:                "44": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+520:                "44": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+523:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+525:                "50": {"status": 0,"target_machine": 0,"target": "cboard", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+527:                "50": {"status": 0,"target_machine": 0,"target": "cboard", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+530:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+532:                "51": {"status": 0,"target_machine": 0,"target": "cboard", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+534:                "51": {"status": 0,"target_machine": 0,"target": "cboard", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+537:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+539:                "53": {"status": 0,"target_machine": 0,"target": "cboard", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+541:                "53": {"status": 0,"target_machine": 0,"target": "cboard", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+544:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+546:                "54": {"status": 0,"target_machine": 0,"target": "cboard", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+548:                "54": {"status": 0,"target_machine": 0,"target": "cboard", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+551:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+553:                "55": {"status": 0,"target_machine": 0,"target": "cboard", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+555:                "55": {"status": 0,"target_machine": 0,"target": "cboard", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+570:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+572:                "70": {"status": 0,"target_machine": 0,"target": "network", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+574:                "70": {"status": 0,"target_machine": 0,"target": "network", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+577:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+579:                "71": {"status": 0,"target_machine": 0,"target": "network", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+581:                "71": {"status": 0,"target_machine": 0,"target": "network", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+584:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+586:                "73": {"status": 0,"target_machine": 0,"target": "network", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+588:                "73": {"status": 0,"target_machine": 0,"target": "network", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+591:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+593:                "75": {"status": 0,"target_machine": 0,"target": "network", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+595:                "75": {"status": 0,"target_machine": 0,"target": "network", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+598:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+600:                "80": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+602:                "80": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+605:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+607:                "81": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+609:                "81": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+612:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+615:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+617:                "82": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+619:                "82": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+622:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+625:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+627:                "83": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+629:                "83": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+632:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+634:                "84": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+636:                "84": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+639:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+641:                "86": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+643:                "86": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+646:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+648:                "87": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+650:                "87": {"status": 0,"target_machine": 0,"target": "ve_air", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+653:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+655:                "90": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+657:                "90": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+660:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+662:                "91": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+664:                "91": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+667:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+669:                "93": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+671:                "93": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+674:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+676:                "94": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+678:                "94": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+681:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+683:                "95": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+685:                "95": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+688:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+691:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+693:                "96": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+695:                "96": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+698:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+700:                "97": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+702:                "97": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+713:                    "sync_route_msg_table": {
+731:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+734:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+736:                "b0": {"status": 0,"target_machine": 0,"target": "battery", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+738:                "b0": {"status": 0,"target_machine": 0,"target": "battery", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+741:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+743:                "b1": {"status": 0,"target_machine": 0,"target": "battery", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+745:                "b1": {"status": 0,"target_machine": 0,"target": "battery", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+748:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+750:                "c0": {"status": 0,"target_machine": 0,"target": "esc", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+752:                "c0": {"status": 0,"target_machine": 0,"target": "esc", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+755:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+757:                "c1": {"status": 0,"target_machine": 0,"target": "esc", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+759:                "c1": {"status": 0,"target_machine": 0,"target": "esc", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+762:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+764:                "c2": {"status": 0,"target_machine": 0,"target": "esc", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+766:                "c2": {"status": 0,"target_machine": 0,"target": "esc", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+769:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+771:                "c3": {"status": 0,"target_machine": 0,"target": "esc", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+773:                "c3": {"status": 0,"target_machine": 0,"target": "esc", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+778:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+781:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+784:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+787:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+790:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+795:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+804:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+806:                "f0": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+808:                "f0": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+811:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+813:                "f1": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+815:                "f1": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+818:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+820:                "f2": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+822:                "f2": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+825:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+828:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+830:                "f3": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+832:                "f3": {"status": 0,"target_machine": 0,"target": "s_to_p_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+835:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+837:                "110": {"status": 0,"target_machine": 0,"target": "mvision", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+839:                "110": {"status": 0,"target_machine": 0,"target": "mvision", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+842:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+844:                "112": {"status": 0,"target_machine": 0,"target": "mvision", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+846:                "112": {"status": 0,"target_machine": 0,"target": "mvision", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+849:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+851:                "113": {"status": 0,"target_machine": 0,"target": "mvision", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+853:                "113": {"status": 0,"target_machine": 0,"target": "mvision", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+856:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+858:                "114": {"status": 0,"target_machine": 0,"target": "mvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+860:                "114": {"status": 0,"target_machine": 0,"target": "mvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+863:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+865:                "115": {"status": 0,"target_machine": 0,"target": "mvision", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+867:                "115": {"status": 0,"target_machine": 0,"target": "mvision", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+870:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+872:                "116": {"status": 0,"target_machine": 0,"target": "mvision", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+874:                "116": {"status": 0,"target_machine": 0,"target": "mvision", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+877:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+879:                "117": {"status": 0,"target_machine": 0,"target": "mvision", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+881:                "117": {"status": 0,"target_machine": 0,"target": "mvision", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+884:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+886:                "120": {"status": 0,"target_machine": 0,"target": "bvision", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+888:                "120": {"status": 0,"target_machine": 0,"target": "bvision", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+891:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+893:                "121": {"status": 0,"target_machine": 0,"target": "bvision", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+895:                "121": {"status": 0,"target_machine": 0,"target": "bvision", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+898:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+901:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+903:                "123": {"status": 0,"target_machine": 0,"target": "bvision", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+905:                "123": {"status": 0,"target_machine": 0,"target": "bvision", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+908:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+910:                "124": {"status": 0,"target_machine": 0,"target": "bvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+912:                "124": {"status": 0,"target_machine": 0,"target": "bvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+915:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+918:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+920:                "125": {"status": 0,"target_machine": 0,"target": "bvision", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+922:                "125": {"status": 0,"target_machine": 0,"target": "bvision", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+925:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+927:                "131": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+929:                "131": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+932:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+934:                "132": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+936:                "132": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+939:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+941:                "133": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+943:                "133": {"status": 0,"target_machine": 0,"target": "fpga_air", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+962:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+964:                "180": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+966:                "180": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+969:                      "route_control": {"hs_control": 1, "master_rt" : 0, "auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1"},
+972:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+974:                "183": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+976:                "183": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+979:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+981:                "184": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+983:                "184": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+986:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+988:                "185": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+990:                "185": {"status": 0,"target_machine": 0,"target": "rcpmu", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+993:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+995:                "1a0": {"status": 0,"target_machine": 0,"target": "gps", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+997:                "1a0": {"status": 0,"target_machine": 0,"target": "gps", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1000:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1002:                "1a1": {"status": 0,"target_machine": 0,"target": "gps", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1004:                "1a1": {"status": 0,"target_machine": 0,"target": "gps", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1007:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1009:                "1a2": {"status": 0,"target_machine": 0,"target": "gps", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1011:                "1a2": {"status": 0,"target_machine": 0,"target": "gps", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1014:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1016:                "1a3": {"status": 0,"target_machine": 0,"target": "gps", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1018:                "1a3": {"status": 0,"target_machine": 0,"target": "gps", "index": 3, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1021:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1023:                "1a4": {"status": 0,"target_machine": 0,"target": "gps", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1025:                "1a4": {"status": 0,"target_machine": 0,"target": "gps", "index": 4, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1028:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1030:                "1a5": {"status": 0,"target_machine": 0,"target": "gps", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1032:                "1a5": {"status": 0,"target_machine": 0,"target": "gps", "index": 5, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1037:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1039:                "1a7": {"status": 0,"target_machine": 0,"target": "gps", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1041:                "1a7": {"status": 0,"target_machine": 0,"target": "gps", "index": 7, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1050:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1052:                "1d0": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1054:                "1d0": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 0, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1057:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1059:                "1d1": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1061:                "1d1": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 1, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1064:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1066:                "1d2": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1068:                "1d2": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 2, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1074:                        "route_control": {"auto_switch": 1, "uevent_path": "/devices/platform/soc/1c08000.qcom,pcie/pci0001:00/0001:00:00.0/0001:01:00.0/usb2/2-1", "wl_mode": 0},
+1076:                "1d6": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 1},
+1078:                "1d6": {"status": 0,"target_machine": 0,"target": "blackbox", "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "route_control": {"wl_mode": 3},
+1097:        "mb_route_table": {
+1124:        "mb_route_table": {
+1127:                "10": {"status": 0,"target_machine": 0,"target": "camera", "index": 0,  "channel": "local", "distance": 0, "protocol": "logic",         "route_control": {"wl_mode": 0},
+1129:                "10": {"status": 0,"target_machine": 0,"target": "camera", "index": 0,"channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1131:                "10": {"status": 0,"target_machine": 0,"target": "camera", "index": 0, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 3},
+1134:                "11": {"status": 0,"target_machine": 0,"target": "camera", "index": 1,  "channel": "local", "distance": 0, "protocol": "logic",         "route_control": {"wl_mode": 0},
+1136:                "11": {"status": 0,"target_machine": 0,"target": "camera", "index": 1,  "channel": "wl", "distance": 0, "protocol": "v1",               "route_control": {"wl_mode": 1},
+1138:                "11": {"status": 0,"target_machine": 0,"target": "camera", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 3},
+1141:                "12": {"status": 0,"target_machine": 0,"target": "camera", "index": 2, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 0},
+1143:                "12": {"status": 0,"target_machine": 0,"target": "camera", "index": 2,  "channel": "wl", "distance": 0, "protocol": "v1",               "route_control": {"wl_mode": 1},
+1145:                "12": {"status": 0,"target_machine": 0,"target": "camera", "index": 2, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 3},
+1148:                "13": {"status": 0,"target_machine": 0,"target": "camera", "index": 3, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 0},
+1150:                "13": {"status": 0,"target_machine": 0,"target": "camera", "index": 3, "channel": "wl", "distance": 0, "protocol": "v1",                "route_control": {"wl_mode": 1},
+1152:                "13": {"status": 0,"target_machine": 0,"target": "camera", "index": 3,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1155:                "14": {"status": 0,"target_machine": 0,"target": "camera", "index": 4,"channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 0},
+1157:                "14": {"status": 0,"target_machine": 0,"target": "camera", "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",                "route_control": {"wl_mode": 1},
+1159:                "14": {"status": 0,"target_machine": 0,"target": "camera", "index": 4, "channel": "local", "distance": 0, "protocol": "logic",          "route_control": {"wl_mode": 3},
+1161:                "15": {"status": 0,"target_machine": 0,"target": "camera", "index": 5,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1163:                "15": {"status": 0,"target_machine": 0,"target": "camera", "index": 5,"channel": "wl", "distance": 0, "protocol": "v1",                "route_control": {"wl_mode": 1},
+1165:                "15": {"status": 0,"target_machine": 0,"target": "camera", "index": 5,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1179:                "30": {"status": 0,"target_machine": 0,"target": "flight", "index": 0, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1181:                "30": {"status": 0,"target_machine": 0,"target": "flight", "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1183:                "30": {"status": 0,"target_machine": 0,"target": "flight", "index": 0, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1185:                "31": {"status": 0,"target_machine": 0,"target": "flight", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1187:                "31": {"status": 0,"target_machine": 0,"target": "flight", "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1189:                "31": {"status": 0,"target_machine": 0,"target": "flight", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1191:                "35": {"status": 0,"target_machine": 0,"target": "flight", "index": 5, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1193:                "35": {"status": 0,"target_machine": 0,"target": "flight", "index": 5, "channel": "wl", "distance": 0, "protocol": "v1",                "route_control": {"wl_mode": 1},
+1195:                "35": {"status": 0,"target_machine": 0,"target": "flight", "index": 5,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1197:                "36": {"status": 0,"target_machine": 0,"target": "flight", "index": 6, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1199:                "36": {"status": 0,"target_machine": 0,"target": "flight", "index": 6, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1201:                "36": {"status": 0,"target_machine": 0,"target": "flight", "index": 6,"channel": "local", "distance": 0, "protocol": "logic",            "route_control": {"wl_mode": 3},
+1203:                "40": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 0, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1205:                "40": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1207:                "40": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 0,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1209:                "41": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 1,"channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1211:                "41": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1213:                "41": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1215:                "42": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 2, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1217:                "42": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 2, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1219:                "42": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 2, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1221:                "44": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 4, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1223:                "44": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",                  "route_control": {"wl_mode": 1},
+1225:                "44": {"status": 0,"target_machine": 0,"target": "gimbal", "index": 4, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1228:                "50": {"status": 0,"target_machine": 0,"target": "cboard", "index": 0,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1230:                "50": {"status": 0,"target_machine": 0,"target": "cboard", "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1232:                "50": {"status": 0,"target_machine": 0,"target": "cboard", "index": 0,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1234:                "51": {"status": 0,"target_machine": 0,"target": "cboard", "index": 1,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1236:                "51": {"status": 0,"target_machine": 0,"target": "cboard", "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1238:                "51": {"status": 0,"target_machine": 0,"target": "cboard", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1240:                "53": {"status": 0,"target_machine": 0,"target": "cboard", "index": 3, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1242:                "53": {"status": 0,"target_machine": 0,"target": "cboard", "index": 3, "channel": "wl", "distance": 0, "protocol": "v1",                  "route_control": {"wl_mode": 1},
+1244:                "53": {"status": 0,"target_machine": 0,"target": "cboard", "index": 3,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1246:                "54": {"status": 0,"target_machine": 0,"target": "cboard", "index": 4,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1248:                "54": {"status": 0,"target_machine": 0,"target": "cboard", "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",                  "route_control": {"wl_mode": 1},
+1250:                "54": {"status": 0,"target_machine": 0,"target": "cboard", "index": 4,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1252:                "55": {"status": 0,"target_machine": 0,"target": "cboard", "index": 5, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1254:                "55": {"status": 0,"target_machine": 0,"target": "cboard", "index": 5, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1256:                "55": {"status": 0,"target_machine": 0,"target": "cboard", "index": 5,  "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1259:                "80": {"status": 0, "target": "ve_air",  "index": 0,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1261:                "80": {"status": 0, "target": "ve_air",  "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1263:                "80": {"status": 0, "target": "ve_air",  "index": 0,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1265:                "81": {"status": 0, "target": "ve_air",  "index": 1,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1267:                "81": {"status": 0, "target": "ve_air",  "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",                    "route_control": {"wl_mode": 1},
+1269:                "81": {"status": 0, "target": "ve_air",  "index": 1,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1271:                "82": {"status": 0, "target": "ve_air",  "index": 2,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1273:                "82": {"status": 0, "target": "ve_air",  "index": 2, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1275:                "82": {"status": 0, "target": "ve_air",  "index": 2,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1279:                "84": {"status": 0, "target": "ve_air",  "index": 4, "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1281:                "84": {"status": 0, "target": "ve_air",  "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",                   "route_control": {"wl_mode": 1},
+1283:                "84": {"status": 0, "target": "ve_air",  "index": 4,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1286:                "86": {"status": 0, "target": "ve_air",  "index": 6, "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1288:                "86": {"status": 0, "target": "ve_air",  "index": 6,"channel": "wl", "distance": 0, "protocol": "v1",                    "route_control": {"wl_mode": 1},
+1290:                "86": {"status": 0, "target": "ve_air",  "index": 6, "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1292:                "87": {"status": 0, "target": "ve_air",  "index": 7,  "channel": "local", "distance": 0,  "protocol": "logic",             "route_control": {"wl_mode": 0},
+1294:                "87": {"status": 0, "target": "ve_air",  "index": 7, "channel": "wl", "distance": 0, "protocol": "v1",                     "route_control": {"wl_mode": 1},
+1296:                "87": {"status": 0, "target": "ve_air",  "index": 7,  "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1299:                "90": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 0,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1301:                "90": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1303:                "90": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 0,   "channel": "local", "distance": 0,  "protocol": "logic",  "route_control": {"wl_mode": 3},
+1305:                "91": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 1,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1307:                "91": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1309:                "91": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 1,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1311:                "93": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 3,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1313:                "93": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 3, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1315:                "93": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 3,   "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1317:                "94": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 4,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1319:                "94": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1321:                "94": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 4,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1323:                "95": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 5,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1325:                "95": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 5,"channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1327:                "95": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 5,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1329:                "96": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 6,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1331:                "96": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 6,"channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1333:                "96": {"status": 0,"target_machine": 0,"target": "vt_air", "index": 6,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1342:                "b0": {"status": 0,"target_machine": 0,"target": "battery", "index": 0,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1344:                "b0": {"status": 0,"target_machine": 0,"target": "battery", "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1346:                "b0": {"status": 0,"target_machine": 0,"target": "battery", "index": 0,   "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1348:                "b1": {"status": 0,"target_machine": 0,"target": "battery", "index": 1,  "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1350:                "b1": {"status": 0,"target_machine": 0,"target": "battery", "index": 1, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1352:                "b1": {"status": 0,"target_machine": 0,"target": "battery", "index": 1,   "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1355:                "c0": {"status": 0,"target_machine": 0,"target": "esc", "index": 0, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1357:                "c0": {"status": 0,"target_machine": 0,"target": "esc", "index": 0,  "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1359:                "c0": {"status": 0,"target_machine": 0,"target": "esc", "index": 0, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1361:                "c1": {"status": 0,"target_machine": 0,"target": "esc", "index": 1, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1363:                "c1": {"status": 0,"target_machine": 0,"target": "esc", "index": 1,  "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1365:                "c1": {"status": 0,"target_machine": 0,"target": "esc", "index": 1, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1367:                "c2": {"status": 0,"target_machine": 0,"target": "esc", "index": 2, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1369:                "c2": {"status": 0,"target_machine": 0,"target": "esc", "index": 2, "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1371:                "c2": {"status": 0,"target_machine": 0,"target": "esc", "index": 2, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1373:                "c3": {"status": 0,"target_machine": 0,"target": "esc", "index": 3, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 0},
+1375:                "c3": {"status": 0,"target_machine": 0,"target": "esc", "index": 3,  "channel": "wl", "distance": 0, "protocol": "v1",           "route_control": {"wl_mode": 1},
+1377:                "c3": {"status": 0,"target_machine": 0,"target": "esc", "index": 3, "channel": "local", "distance": 0,  "protocol": "logic",   "route_control": {"wl_mode": 3},
+1385:                "f3": {"status": 0, "target": "s_to_p_air", "index": 3, "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 0},
+1387:                "f3": {"status": 0, "target": "s_to_p_air", "index": 3,"channel": "wl", "distance": 0, "protocol": "v1",                    "route_control": {"wl_mode": 1},
+1389:                "f3": {"status": 0, "target": "s_to_p_air", "index": 3, "channel": "local", "distance": 0,  "protocol": "logic",            "route_control": {"wl_mode": 3},
+1391:                "124": {"status": 0,"target_machine": 0,"target": "bvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 0},
+1393:                "124": {"status": 0,"target_machine": 0,"target": "bvision", "index": 4, "channel": "wl", "distance": 0, "protocol": "v1",                 "route_control": {"wl_mode": 1},
+1395:                "124": {"status": 0,"target_machine": 0,"target": "bvision", "index": 4, "channel": "local", "distance": 0, "protocol": "logic",           "route_control": {"wl_mode": 3},
+1407:            "local_router_host_id": "0x0205",
+1438:        "mb_route_table": {
+1504:        "mb_route_table": {
+1520:        "mb_route_table": {
+1551:        "mb_route_table": {
+1574:        "mb_route_table": {
+1682:                        {"gpt": "modem-sparrow-amt",     "image": "/mnt/dji_persist/sparrow2/cali/amt.bin",          "timeout_ms": 2000},
+1699:                "amt":        {"vendor": "/mnt/dji_persist/sparrow2/firmware/amt.bin", "original": "/mnt/dji_persist/sparrow2/cali/amt.bin",
+1700:                               "backup": "/mnt/dji_persist/sparrow2/cali/amt_bak.bin"},
+1744:                "enable_static_route": 0,
+1797:                    "da_log_out": {"status": 1, "channel": "socket", "buf_size": 2097152, "output": ["modem_da_log"],
+1798:                        "socket": {"port":8902}
+1837:        "mb_route_table": {
+1898:    "amt_service": {
+1899:        "mb_route_table": {
+1913:        "mb_route_table": {
+1928:        "mb_route_table": {
+Num       RefCount Protocol Flags    Type St Inode Path
+0000000000000000: 00000002 00000000 00010000 0001 01 33792 /dev/socket/mdnsd
+0000000000000000: 00000002 00000000 00010000 0005 01 33701 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00010000 0001 01 39941 /dev/socket/dpmd
+0000000000000000: 00000002 00000000 00010000 0005 01 33030 /dev/socket/qesd
+0000000000000000: 00000002 00000000 00010000 0001 01 39943 /dev/socket/tcm
+0000000000000000: 00000002 00000000 00000000 0001 01 39945 /dev/socket/dpmwrapper
+0000000000000000: 00000002 00000000 00010000 0001 01  4877 /dev/socket/logd
+0000000000000000: 00000002 00000000 00010000 0001 01 30222 /dev/socket/zygote_secondary
+0000000000000000: 00000002 00000000 00010000 0005 01  4879 /dev/socket/logdr
+0000000000000000: 00000002 00000000 00010000 0001 01 30224 /dev/socket/usap_pool_secondary
+0000000000000000: 000000A5 00000000 00000000 0002 01  4881 /dev/socket/logdw
+0000000000000000: 00000002 00000000 00000000 0002 01 47123 /dev/wl_lte_v1
+0000000000000000: 00000002 00000000 00010000 0001 01 33050 /dev/socket/pps
+0000000000000000: 00000002 00000000 00010000 0001 01 49711 /dev/socket/thermal-send-client
+0000000000000000: 00000002 00000000 00000000 0002 01 46896 /dev/socket/wifihal/wifihal_ctrlsock
+0000000000000000: 00000002 00000000 00010000 0001 01 49713 /dev/socket/thermal-recv-client
+0000000000000000: 00000002 00000000 00010000 0001 01 49715 /dev/socket/thermal-recv-passive-client
+0000000000000000: 00000002 00000000 00010000 0001 01 49717 /dev/socket/thermal-send-rule
+0000000000000000: 00000002 00000000 00000000 0002 01 36799 @/duss/mb/0x1d03
+0000000000000000: 00000002 00000000 00000000 0002 01 41263 @/duss/mb/0x1a06
+0000000000000000: 00000002 00000000 00000000 0002 01 37253 /data/vendor/wifi/sockets/cnss_user_server
+0000000000000000: 00000002 00000000 00000000 0002 01 41059 @/duss/mb/0x607
+0000000000000000: 00000002 00000000 00000000 0002 01 40937 /data/system/unsolzygotesocket
+0000000000000000: 00000002 00000000 00000000 0002 01 44164 @/duss/mb/0x205
+0000000000000000: 00000002 00000000 00000000 0002 01 42098 @/duss/mb/0x601
+0000000000000000: 00000002 00000000 00010000 0001 01 40284 /dev/socket/ims_datad
+0000000000000000: 00000002 00000000 00000000 0002 01 36839 @/duss/mb/0xe07
+0000000000000000: 00000002 00000000 00000000 0002 01 47121 @/duss/mb/0xe06
+0000000000000000: 00000002 00000000 00000000 0002 01 32718 @/duss/mb/0xe04
+0000000000000000: 00000002 00000000 00000000 0002 01 45172 @/duss/mb/0xd04
+0000000000000000: 00000002 00000000 00010000 0001 01 27496 /dev/socket/property_service
+0000000000000000: 00000002 00000000 00000000 0002 01 51050 @/duss/mb/0xd00
+0000000000000000: 00000002 00000000 00010000 0001 01 32368 /dev/socket/traced_consumer
+0000000000000000: 00000002 00000000 00010000 0001 01  1771 @time_genoff
+0000000000000000: 00000002 00000000 00000000 0002 01 40306 /dev/socket/ipacm_log_file
+0000000000000000: 00000002 00000000 00010000 0001 01 32370 /dev/socket/traced_producer
+0000000000000000: 0000000C 00000000 00000000 0002 01 25228 /dev/socket/statsdw
+0000000000000000: 00000002 00000000 00010000 0001 01 39573 /dev/socket/qdma_app/qdma_file_s
+0000000000000000: 00000002 00000000 00010000 0005 01 29334 /dev/socket/lmkd
+0000000000000000: 00000002 00000000 00010000 0001 01 43701 /data/system/ndebugsocket
+0000000000000000: 00000002 00000000 00010000 0005 01 30112 /dev/socket/tombstoned_crash
+0000000000000000: 00000002 00000000 00010000 0001 01 44193 /dev/socket/dji_fpv
+0000000000000000: 00000002 00000000 00010000 0005 01 30114 /dev/socket/tombstoned_intercept
+0000000000000000: 00000002 00000000 00010000 0005 01 30116 /dev/socket/tombstoned_java_trace
+0000000000000000: 00000002 00000000 00010000 0001 01 49169 @com.android.internal.os.WebViewZygoteInit/a2009ea1-f4e2-4ab0-a318-f0eaee2fda54
+0000000000000000: 00000002 00000000 00010000 0001 01 49089 @THERMALE_UI
+0000000000000000: 00000002 00000000 00000000 0002 01 47040 /dev/socket/vendor_wpa_wlan0
+0000000000000000: 00000002 00000000 00010000 0005 01 40387 /dev/socket/ssgqmig
+0000000000000000: 00000002 00000000 00000000 0002 01 36836 @/duss/wlm_fmsg_forward
+0000000000000000: 00000002 00000000 00010000 0001 01 40395 /dev/socket/mlid
+0000000000000000: 00000002 00000000 00010000 0005 01 52953 /dev/socket/adbd
+0000000000000000: 00000002 00000000 00010000 0001 01 32986 /dev/socket/ssgtzd
+0000000000000000: 00000002 00000000 00000000 0001 01 35803 /dev/socket/fpv_sock
+0000000000000000: 00000002 00000000 00010000 0001 01 32988 /dev/socket/qwes_ipc
+0000000000000000: 00000002 00000000 00000000 0001 01 35805 /dev/socket/fpv_sock1
+0000000000000000: 00000002 00000000 00000000 0001 01 35807 /dev/socket/fpv_sock2
+0000000000000000: 00000002 00000000 00010000 0005 01 61603 @jdwp-control
+0000000000000000: 00000002 00000000 00000000 0001 01 35809 /dev/socket/dji_fpv
+0000000000000000: 00000002 00000000 00000000 0002 01 39138 /dev/uds_liveview
+0000000000000000: 00000002 00000000 00000000 0002 01 44189 @/duss/mb/0x0
+0000000000000000: 00000002 00000000 00000000 0002 01  5006 @gplisnr@
+0000000000000000: 00000002 00000000 00000000 0002 01 44018 /dev/dji_lte_v1
+0000000000000000: 00000002 00000000 00000000 0002 01 61354 /data/vendor/wifi/wpa/sockets/wlan0
+0000000000000000: 00000002 00000000 00000000 0002 01 44021 /dev/uds_liveview-1741
+0000000000000000: 00000002 00000000 00010000 0001 01 26361 /dev/socket/zygote
+0000000000000000: 00000002 00000000 00010000 0001 01 30201 /dev/socket/dnsproxyd
+0000000000000000: 00000002 00000000 00010000 0001 01 26363 /dev/socket/usap_pool_primary
+0000000000000000: 00000002 00000000 00010000 0001 01 30203 /dev/socket/mdns
+0000000000000000: 00000002 00000000 00010000 0001 01 30205 /dev/socket/fwmarkd
+0000000000000000: 00000002 00000000 00000000 0002 01 47173
+0000000000000000: 00000002 00000000 00000000 0002 01 29393
+0000000000000000: 00000003 00000000 00000000 0005 03 61066
+0000000000000000: 00000003 00000000 00000000 0005 03 41770
+0000000000000000: 00000002 00000000 00000000 0002 01 38192
+0000000000000000: 00000002 00000000 00000000 0002 01 65889
+0000000000000000: 00000002 00000000 00000000 0002 01 46917
+0000000000000000: 00000003 00000000 00000000 0005 03 64288
+0000000000000000: 00000003 00000000 00000000 0001 03 51058
+0000000000000000: 00000003 00000000 00000000 0001 03 34471
+0000000000000000: 00000002 00000000 00000000 0002 01 61857
+0000000000000000: 00000003 00000000 00000000 0001 03 31878
+0000000000000000: 00000003 00000000 00000000 0005 03 43573
+0000000000000000: 00000002 00000000 00000000 0002 01 40571
+0000000000000000: 00000003 00000000 00000000 0005 03 41779
+0000000000000000: 00000002 00000000 00000000 0002 01 44230
+0000000000000000: 00000002 00000000 00000000 0002 01  1548
+0000000000000000: 00000002 00000000 00000000 0002 01 34123
+0000000000000000: 00000002 00000000 00000000 0002 01 42171
+0000000000000000: 00000002 00000000 00000000 0002 01 61834
+0000000000000000: 00000003 00000000 00000000 0005 03 67803
+0000000000000000: 00000003 00000000 00000000 0005 03 66568
+0000000000000000: 00000003 00000000 00000000 0005 03 41438
+0000000000000000: 00000003 00000000 00000000 0005 03 36898
+0000000000000000: 00000002 00000000 00000000 0002 01 47776
+0000000000000000: 00000003 00000000 00000000 0005 03 34328
+0000000000000000: 00000002 00000000 00000000 0002 01 39702
+0000000000000000: 00000002 00000000 00000000 0002 01 50743
+0000000000000000: 00000003 00000000 00000000 0005 03 70715
+0000000000000000: 00000002 00000000 00000000 0002 01 42370
+0000000000000000: 00000002 00000000 00000000 0002 01 60141
+0000000000000000: 00000002 00000000 00000000 0002 01 34122
+0000000000000000: 00000003 00000000 00000000 0001 03 47634 /dev/socket/zygote
+0000000000000000: 00000002 00000000 00000000 0002 01 41041
+0000000000000000: 00000002 00000000 00000000 0002 01 35188
+0000000000000000: 00000002 00000000 00000000 0002 01 29562
+0000000000000000: 00000002 00000000 00000000 0002 01 50315
+0000000000000000: 00000003 00000000 00000000 0005 03 49291
+0000000000000000: 00000003 00000000 00000000 0001 03 872281
+0000000000000000: 00000003 00000000 00000000 0005 03 37317 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 34475
+0000000000000000: 00000002 00000000 00000000 0002 01 64152
+0000000000000000: 00000002 00000000 00000000 0002 01 61540
+0000000000000000: 00000003 00000000 00000000 0005 03 67944
+0000000000000000: 00000002 00000000 00000000 0002 01 39716
+0000000000000000: 00000003 00000000 00000000 0005 03 42170 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 33986
+0000000000000000: 00000003 00000000 00000000 0001 03 872283
+0000000000000000: 00000002 00000000 00000000 0002 01 40194
+0000000000000000: 00000003 00000000 00000000 0005 03 52923 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 35139
+0000000000000000: 00000002 00000000 00000000 0002 01 48359
+0000000000000000: 00000003 00000000 00000000 0005 03 68997
+0000000000000000: 00000003 00000000 00000000 0005 03 43852 /dev/socket/logdr
+0000000000000000: 00000003 00000000 00000000 0002 01 37408
+0000000000000000: 00000003 00000000 00000000 0005 03 27534
+0000000000000000: 00000002 00000000 00000000 0002 01 40261
+0000000000000000: 00000002 00000000 00000000 0002 01 50774
+0000000000000000: 00000003 00000000 00000000 0005 03 68387
+0000000000000000: 00000003 00000000 00000000 0001 03 46564 /dev/socket/traced_producer
+0000000000000000: 00000003 00000000 00000000 0005 03 45460
+0000000000000000: 00000003 00000000 00000000 0001 03 61601
+0000000000000000: 00000003 00000000 00000000 0005 03 61251
+0000000000000000: 00000002 00000000 00000000 0002 01 44257
+0000000000000000: 00000002 00000000 00000000 0002 01 36838
+0000000000000000: 00000002 00000000 00000000 0002 01 65850
+0000000000000000: 00000002 00000000 00000000 0002 01 34330
+0000000000000000: 00000002 00000000 00000000 0002 01 49261
+0000000000000000: 00000002 00000000 00000000 0002 01 31826
+0000000000000000: 00000003 00000000 00000000 0005 03 35548
+0000000000000000: 00000002 00000000 00000000 0002 01 30971
+0000000000000000: 00000003 00000000 00000000 0002 01 42427
+0000000000000000: 00000002 00000000 00000000 0002 01 40573
+0000000000000000: 00000002 00000000 00000000 0002 01 30172
+0000000000000000: 00000002 00000000 00000000 0002 01 66305
+0000000000000000: 00000002 00000000 00000000 0002 01 34110
+0000000000000000: 00000002 00000000 00000000 0002 01 51120
+0000000000000000: 00000003 00000000 00000000 0005 03 70716
+0000000000000000: 00000002 00000000 00000000 0002 01 35905
+0000000000000000: 00000003 00000000 00000000 0005 03 49232
+0000000000000000: 00000003 00000000 00000000 0001 03 40066
+0000000000000000: 00000003 00000000 00000000 0005 03 60385
+0000000000000000: 00000002 00000000 00000000 0002 01 46501
+0000000000000000: 00000002 00000000 00000000 0002 01 35123
+0000000000000000: 00000003 00000000 00000000 0005 03 45560
+0000000000000000: 00000002 00000000 00000000 0002 01 30834
+0000000000000000: 00000002 00000000 00000000 0002 01 41427
+0000000000000000: 00000002 00000000 00000000 0002 01 48741
+0000000000000000: 00000003 00000000 00000000 0005 03 34325 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000003 00000000 00000000 0002 01 42474
+0000000000000000: 00000002 00000000 00000000 0005 03 50459
+0000000000000000: 00000003 00000000 00000000 0005 03 68388
+0000000000000000: 00000003 00000000 00000000 0005 03 68992
+0000000000000000: 00000003 00000000 00000000 0005 03 40379
+0000000000000000: 00000003 00000000 00000000 0005 03 35407
+0000000000000000: 00000003 00000000 00000000 0005 03 47641
+0000000000000000: 00000002 00000000 00000000 0002 01 33455
+0000000000000000: 00000002 00000000 00000000 0002 01 41042
+0000000000000000: 00000002 00000000 00000000 0002 01 35927
+0000000000000000: 00000002 00000000 00000000 0002 01 48281
+0000000000000000: 00000002 00000000 00000000 0002 01 61329
+0000000000000000: 00000002 00000000 00000000 0002 01 25470
+0000000000000000: 00000003 00000000 00000000 0005 03 46523
+0000000000000000: 00000002 00000000 00000000 0002 01 44231
+0000000000000000: 00000003 00000000 00000000 0005 03 43574
+0000000000000000: 00000003 00000000 00000000 0005 03 68094
+0000000000000000: 00000002 00000000 00000000 0002 01 50253
+0000000000000000: 00000003 00000000 00000000 0005 03 36897
+0000000000000000: 00000003 00000000 00000000 0005 03 48134
+0000000000000000: 00000003 00000000 00000000 0001 03 39432
+0000000000000000: 00000002 00000000 00000000 0002 01 35956
+0000000000000000: 00000002 00000000 00000000 0002 01 30953
+0000000000000000: 00000003 00000000 00000000 0005 03 48101
+0000000000000000: 00000003 00000000 00000000 0005 03 68158
+0000000000000000: 00000003 00000000 00000000 0005 03 52922
+0000000000000000: 00000003 00000000 00000000 0005 03 37040 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 33582
+0000000000000000: 00000003 00000000 00000000 0005 03 49286
+0000000000000000: 00000003 00000000 00000000 0002 01 42473
+0000000000000000: 00000003 00000000 00000000 0005 03 46520
+0000000000000000: 00000003 00000000 00000000 0005 03 40879
+0000000000000000: 00000002 00000000 00000000 0002 01 34042
+0000000000000000: 00000002 00000000 00000000 0002 01 39406
+0000000000000000: 00000002 00000000 00000000 0002 01 34711
+0000000000000000: 00000003 00000000 00000000 0005 03 60384
+0000000000000000: 00000002 00000000 00000000 0002 01 31035
+0000000000000000: 00000002 00000000 00000000 0002 01  1712
+0000000000000000: 00000003 00000000 00000000 0001 03 872282
+0000000000000000: 00000002 00000000 00000000 0002 01 50666
+0000000000000000: 00000003 00000000 00000000 0005 03 64289
+0000000000000000: 00000003 00000000 00000000 0001 03 872279
+0000000000000000: 00000003 00000000 00000000 0005 03 66569
+0000000000000000: 00000003 00000000 00000000 0005 03 51103
+0000000000000000: 00000003 00000000 00000000 0005 03 44342
+0000000000000000: 00000003 00000000 00000000 0005 03 50167
+0000000000000000: 00000002 00000000 00000000 0002 01 35266
+0000000000000000: 00000003 00000000 00000000 0001 03 34472
+0000000000000000: 00000002 00000000 00000000 0002 01 32401
+0000000000000000: 00000003 00000000 00000000 0005 03 69887
+0000000000000000: 00000002 00000000 00000000 0002 01 36837
+0000000000000000: 00000002 00000000 00000000 0002 01 35860
+0000000000000000: 00000002 00000000 00000000 0002 01 41463
+0000000000000000: 00000002 00000000 00000000 0002 01 37100
+0000000000000000: 00000003 00000000 00000000 0001 03 39375 /dev/socket/mdns
+0000000000000000: 00000003 00000000 00000000 0005 03 40588
+0000000000000000: 00000002 00000000 00000000 0002 01 33995
+0000000000000000: 00000003 00000000 00000000 0005 03 46522
+0000000000000000: 00000003 00000000 00000000 0005 03 41778
+0000000000000000: 00000003 00000000 00000000 0005 03 51104
+0000000000000000: 00000002 00000000 00000000 0002 01 43303
+0000000000000000: 00000003 00000000 00000000 0005 03 42169
+0000000000000000: 00000003 00000000 00000000 0001 03 35538 /dev/socket/traced_producer
+0000000000000000: 00000003 00000000 00000000 0005 03 68996
+0000000000000000: 00000003 00000000 00000000 0005 03 61067
+0000000000000000: 00000003 00000000 00000000 0001 03 39374
+0000000000000000: 00000003 00000000 00000000 0005 03 48133
+0000000000000000: 00000002 00000000 00000000 0002 01 36896
+0000000000000000: 00000002 00000000 00000000 0002 01 72714
+0000000000000000: 00000002 00000000 00000000 0002 01 26286
+0000000000000000: 00000003 00000000 00000000 0005 03 68412
+0000000000000000: 00000003 00000000 00000000 0001 03 64286
+0000000000000000: 00000003 00000000 00000000 0005 03 49233
+0000000000000000: 00000002 00000000 00000000 0002 01 40273
+0000000000000000: 00000002 00000000 00000000 0002 01 39607
+0000000000000000: 00000003 00000000 00000000 0005 03 40880 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 31023
+0000000000000000: 00000002 00000000 00000000 0002 01  1770
+0000000000000000: 00000003 00000000 00000000 0005 03 68157
+0000000000000000: 00000003 00000000 00000000 0005 03 49292
+0000000000000000: 00000002 00000000 00000000 0002 01 35167
+0000000000000000: 00000003 00000000 00000000 0005 03 46519
+0000000000000000: 00000003 00000000 00000000 0001 03 61776
+0000000000000000: 00000002 00000000 00000000 0002 01 61602
+0000000000000000: 00000003 00000000 00000000 0005 03 37316
+0000000000000000: 00000002 00000000 00000000 0002 01 42371
+0000000000000000: 00000003 00000000 00000000 0005 03 41769
+0000000000000000: 00000002 00000000 00000000 0002 01 35948
+0000000000000000: 00000002 00000000 00000000 0002 01 30908
+0000000000000000: 00000003 00000000 00000000 0001 03 46871
+0000000000000000: 00000002 00000000 00000000 0002 01 25522
+0000000000000000: 00000002 00000000 00000000 0002 01 33919
+0000000000000000: 00000003 00000000 00000000 0005 03 67943
+0000000000000000: 00000003 00000000 00000000 0001 03 61777
+0000000000000000: 00000003 00000000 00000000 0002 01 42426
+0000000000000000: 00000003 00000000 00000000 0005 03 47643
+0000000000000000: 00000002 00000000 00000000 0002 01 37118
+0000000000000000: 00000002 00000000 00000000 0002 01 40492
+0000000000000000: 00000002 00000000 00000000 0002 01  1576
+0000000000000000: 00000002 00000000 00000000 0002 01 27638
+0000000000000000: 00000003 00000000 00000000 0005 03 42304
+0000000000000000: 00000003 00000000 00000000 0001 03 40065
+0000000000000000: 00000003 00000000 00000000 0005 03 50135
+0000000000000000: 00000002 00000000 00000000 0002 01 68098
+0000000000000000: 00000003 00000000 00000000 0001 03 872280
+0000000000000000: 00000003 00000000 00000000 0005 03 833404
+0000000000000000: 00000003 00000000 00000000 0005 03 71110 /dev/socket/logdr
+0000000000000000: 00000002 00000000 00000000 0002 01 46909
+0000000000000000: 00000002 00000000 00000000 0002 01 40518
+0000000000000000: 00000002 00000000 00000000 0002 01 41053
+0000000000000000: 00000003 00000000 00000000 0002 01 43060
+0000000000000000: 00000003 00000000 00000000 0005 03 41748
+0000000000000000: 00000002 00000000 00000000 0002 01 36328
+0000000000000000: 00000003 00000000 00000000 0005 03 66089
+0000000000000000: 00000002 00000000 00000000 0002 01 34096
+0000000000000000: 00000003 00000000 00000000 0005 03 35554
+0000000000000000: 00000002 00000000 00000000 0002 01 31085
+0000000000000000: 00000002 00000000 00000000 0002 01 49167
+0000000000000000: 00000003 00000000 00000000 0002 01 43062
+0000000000000000: 00000003 00000000 00000000 0005 03 42360 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 41577
+0000000000000000: 00000003 00000000 00000000 0005 03 66090
+0000000000000000: 00000003 00000000 00000000 0005 03 47640
+0000000000000000: 00000002 00000000 00000000 0002 01  5053
+0000000000000000: 00000002 00000000 00000000 0002 01 29436
+0000000000000000: 00000002 00000000 00000000 0002 01 35871
+0000000000000000: 00000003 00000000 00000000 0005 03 46908 /dev/socket/adbd
+0000000000000000: 00000002 00000000 00000000 0002 01 44192
+0000000000000000: 00000002 00000000 00000000 0002 01 44020
+0000000000000000: 00000002 00000000 00000000 0002 01 37248
+0000000000000000: 00000002 00000000 00000000 0002 01 40381
+0000000000000000: 00000002 00000000 00000000 0002 01 34372
+0000000000000000: 00000003 00000000 00000000 0001 03 61600
+0000000000000000: 00000003 00000000 00000000 0005 03 69888
+0000000000000000: 00000003 00000000 00000000 0005 03 35547
+0000000000000000: 00000002 00000000 00000000 0002 01 29564
+0000000000000000: 00000003 00000000 00000000 0005 03 61065
+0000000000000000: 00000003 00000000 00000000 0005 03 42415 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 34260
+0000000000000000: 00000002 00000000 00000000 0002 01 51031
+0000000000000000: 00000002 00000000 00000000 0002 01 49168
+0000000000000000: 00000003 00000000 00000000 0005 03 42359
+0000000000000000: 00000003 00000000 00000000 0005 03 40380 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000003 00000000 00000000 0001 03 31879
+0000000000000000: 00000003 00000000 00000000 0001 03 66566
+0000000000000000: 00000003 00000000 00000000 0005 03 35553
+0000000000000000: 00000003 00000000 00000000 0001 03 37246
+0000000000000000: 00000002 00000000 00000000 0002 01 40644
+0000000000000000: 00000002 00000000 00000000 0002 01 32727
+0000000000000000: 00000002 00000000 00000000 0002 01 33256
+0000000000000000: 00000002 00000000 00000000 0002 01 44163
+0000000000000000: 00000003 00000000 00000000 0005 03 61068
+0000000000000000: 00000003 00000000 00000000 0001 03 39433 @com.android.internal.os.WebViewZygoteInit/a2009ea1-f4e2-4ab0-a318-f0eaee2fda54
+0000000000000000: 00000002 00000000 00000000 0002 01 36835
+0000000000000000: 00000003 00000000 00000000 0005 03 27494
+0000000000000000: 00000002 00000000 00000000 0002 01 68873
+0000000000000000: 00000003 00000000 00000000 0005 03 39292 /dev/socket/lmkd
+0000000000000000: 00000002 00000000 00000000 0002 01 34903
+0000000000000000: 00000003 00000000 00000000 0005 03 46906
+0000000000000000: 00000003 00000000 00000000 0005 03 68993
+0000000000000000: 00000002 00000000 00000000 0002 01 41556
+0000000000000000: 00000002 00000000 00000000 0002 01 66100
+0000000000000000: 00000003 00000000 00000000 0005 03 47642
+0000000000000000: 00000002 00000000 00000000 0002 01 33358
+0000000000000000: 00000003 00000000 00000000 0001 03 51200
+0000000000000000: 00000003 00000000 00000000 0005 03 34327
+0000000000000000: 00000002 00000000 00000000 0002 01 31174
+0000000000000000: 00000003 00000000 00000000 0005 03 42305 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 40026
+0000000000000000: 00000002 00000000 00000000 0002 01 46675
+0000000000000000: 00000002 00000000 00000000 0002 01 33896
+0000000000000000: 00000003 00000000 00000000 0005 03 41751
+0000000000000000: 00000002 00000000 00000000 0002 01 33283
+0000000000000000: 00000003 00000000 00000000 0005 03 49364
+0000000000000000: 00000002 00000000 00000000 0002 01 49215
+0000000000000000: 00000002 00000000 00000000 0002 01  2046
+0000000000000000: 00000003 00000000 00000000 0005 03 48087
+0000000000000000: 00000003 00000000 00000000 0001 03 61790
+0000000000000000: 00000002 00000000 00000000 0002 01 37442
+0000000000000000: 00000002 00000000 00000000 0002 01 42356
+0000000000000000: 00000003 00000000 00000000 0005 03 64283
+0000000000000000: 00000003 00000000 00000000 0005 03 61504
+0000000000000000: 00000002 00000000 00000000 0002 01 44165
+0000000000000000: 00000003 00000000 00000000 0005 03 50134
+0000000000000000: 00000002 00000000 00000000 0002 01 66633
+0000000000000000: 00000003 00000000 00000000 0005 03 68881
+0000000000000000: 00000003 00000000 00000000 0005 03 64284
+0000000000000000: 00000003 00000000 00000000 0001 03 67585
+0000000000000000: 00000002 00000000 00000000 0002 01 35072
+0000000000000000: 00000002 00000000 00000000 0002 01 35957
+0000000000000000: 00000002 00000000 00000000 0002 01 30810
+0000000000000000: 00000003 00000000 00000000 0001 03 47636 /dev/socket/zygote_secondary
+0000000000000000: 00000002 00000000 00000000 0002 01 41441
+0000000000000000: 00000002 00000000 00000000 0002 01 40506
+0000000000000000: 00000003 00000000 00000000 0001 03 37247
+0000000000000000: 00000002 00000000 00000000 0002 01 33982
+0000000000000000: 00000002 00000000 00000000 0002 01 29487
+0000000000000000: 00000003 00000000 00000000 0005 03 41750
+0000000000000000: 00000003 00000000 00000000 0005 03 49287
+0000000000000000: 00000003 00000000 00000000 0001 03 51059 /dev/socket/mdnsd
+0000000000000000: 00000002 00000000 00000000 0002 01 42369
+0000000000000000: 00000002 00000000 00000000 0002 01 47122
+0000000000000000: 00000002 00000000 00000000 0002 01 29635
+0000000000000000: 00000002 00000000 00000000 0002 01 40531
+0000000000000000: 00000002 00000000 00000000 0002 01 31180
+0000000000000000: 00000002 00000000 00000000 0002 01  1774
+0000000000000000: 00000002 00000000 00000000 0002 01 25577
+0000000000000000: 00000002 00000000 00000000 0002 01 50532
+0000000000000000: 00000002 00000000 00000000 0002 01 43101
+0000000000000000: 00000003 00000000 00000000 0001 03 35537
+0000000000000000: 00000003 00000000 00000000 0005 03 68159
+0000000000000000: 00000003 00000000 00000000 0005 03 44341
+0000000000000000: 00000003 00000000 00000000 0001 03 46870
+0000000000000000: 00000003 00000000 00000000 0005 03 40589 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+0000000000000000: 00000002 00000000 00000000 0002 01 40029
+0000000000000000: 00000003 00000000 00000000 0001 03 65567
+0000000000000000: 00000002 00000000 00000000 0002 01 37237
+0000000000000000: 00000003 00000000 00000000 0005 03 833403
+0000000000000000: 00000002 00000000 00000000 0002 01 31172
+0000000000000000: 00000002 00000000 00000000 0002 01 47711
+0000000000000000: 00000002 00000000 00000000 0002 01 50606
+0000000000000000: 00000002 00000000 00000000 0002 01 35494
+0000000000000000: 00000003 00000000 00000000 0001 03 66567
+0000000000000000: 00000002 00000000 00000000 0002 01 45052
+0000000000000000: 00000002 00000000 00000000 0002 01 40191
+0000000000000000: 00000003 00000000 00000000 0001 03 39306
+0000000000000000: 00000003 00000000 00000000 0005 03 240910
+0000000000000000: 00000003 00000000 00000000 0001 03 47635
+0000000000000000: 00000002 00000000 00000000 0002 01 33759
+0000000000000000: 00000003 00000000 00000000 0005 03 61252
+0000000000000000: 00000002 00000000 00000000 0002 01 41439
+0000000000000000: 00000002 00000000 00000000 0002 01 41127
+0000000000000000: 00000003 00000000 00000000 0005 03 61076
+0000000000000000: 00000002 00000000 00000000 0002 01 36475
+0000000000000000: 00000002 00000000 00000000 0002 01 65551
+0000000000000000: 00000002 00000000 00000000 0002 01 33186
+0000000000000000: 00000003 00000000 00000000 0005 03 27533
+0000000000000000: 00000002 00000000 00000000 0002 01 70096
+0000000000000000: 00000003 00000000 00000000 0001 03 64287
+0000000000000000: 00000003 00000000 00000000 0001 03 872278
+0000000000000000: 00000003 00000000 00000000 0005 03 68156
+0000000000000000: 00000002 00000000 00000000 0002 01 40067
+0000000000000000: 00000003 00000000 00000000 0005 03 43835 /dev/socket/logdr
+0000000000000000: 00000003 00000000 00000000 0005 03 27495
+0000000000000000: 00000003 00000000 00000000 0001 03 65566
+0000000000000000: 00000002 00000000 00000000 0002 01 40957
+0000000000000000: 00000002 00000000 00000000 0002 01 35890
+0000000000000000: 00000002 00000000 00000000 0002 01 37360
+0000000000000000: 00000002 00000000 00000000 0002 01 34326
+0000000000000000: 00000003 00000000 00000000 0005 03 50166
+0000000000000000: 00000003 00000000 00000000 0001 03 61789
+0000000000000000: 00000003 00000000 00000000 0005 03 41747
+0000000000000000: 00000003 00000000 00000000 0002 01 43059
+0000000000000000: 00000003 00000000 00000000 0005 03 68093
+0000000000000000: 00000003 00000000 00000000 0001 03 46563
+0000000000000000: 00000002 00000000 00000000 0002 01 42413
+0000000000000000: 00000003 00000000 00000000 0002 01 37407
+0000000000000000: 00000002 00000000 00000000 0002 01 48716
+0000000000000000: 00000002 00000000 00000000 0002 01 25556
+0000000000000000: 00000002 00000000 00000000 0002 01 34136
+0000000000000000: 00000002 00000000 00000000 0002 01 41557
+0000000000000000: 00000003 00000000 00000000 0005 03 45561
+0000000000000000: 00000002 00000000 00000000 0002 01 68088
+0000000000000000: 00000003 00000000 00000000 0002 01 43061
+0000000000000000: 00000002 00000000 00000000 0002 01 33355
+0000000000000000: 00000003 00000000 00000000 0005 03 46907
+0000000000000000: 00000002 00000000 00000000 0002 01 42086
+0000000000000000: 00000003 00000000 00000000 0005 03 61503
+0000000000000000: 00000002 00000000 00000000 0002 01 25553
+0000000000000000: 00000002 00000000 00000000 0002 01 42358
+0000000000000000: 00000003 00000000 00000000 0005 03 34324
+0000000000000000: 00000003 00000000 00000000 0005 03 240909
+0000000000000000: 00000002 00000000 00000000 0002 01 60206
+0000000000000000: 00000002 00000000 00000000 0002 01 33231
+0000000000000000: 00000002 00000000 00000000 0002 01 27633
+0000000000000000: 00000003 00000000 00000000 0005 03 49363
+0000000000000000: 00000003 00000000 00000000 0005 03 67802
+0000000000000000: 00000002 00000000 00000000 0002 01 26308
+0000000000000000: 00000003 00000000 00000000 0005 03 68882
+
+STDERR:
+ls: /data/export: No such file or directory
+ls: /data/upgrade_test_param: No such file or directory
+ls: /system/etc/upgrade.json: No such file or directory

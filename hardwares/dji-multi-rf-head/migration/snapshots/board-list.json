@@ -1,0 +1,85 @@
+{
+  "id": "req_72095",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-09-23T03:52:10.347433Z",
+  "ok": true,
+  "result": {
+    "boards": [
+      {
+        "name": "EdgeTX主板_STM32H750",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB2",
+        "pcbUuid": "59133f422e462255",
+        "schematicName": "schematic2",
+        "schematicUuid": "945bea94ad90cbe7"
+      },
+      {
+        "name": "mLRS_TX",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB3",
+        "pcbUuid": "f89053768efa9f1e",
+        "schematicName": "schematic3",
+        "schematicUuid": "f806cebea6e51233"
+      },
+      {
+        "name": "电源小板",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB4",
+        "pcbUuid": "ac111478a23fba56",
+        "schematicName": "schematic4",
+        "schematicUuid": "f94c13ec87325fc7"
+      },
+      {
+        "name": "USB母转MX1.25",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB5",
+        "pcbUuid": "ab3d7ed12872dc6e",
+        "schematicName": "schematic5",
+        "schematicUuid": "06dade38aef5f8d9"
+      },
+      {
+        "name": "Joystick_bridge",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB6",
+        "pcbUuid": "6495f5a7539fbaf0",
+        "schematicName": "schematic6",
+        "schematicUuid": "dcedbf86d7dea003"
+      },
+      {
+        "name": "Board1",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB7",
+        "pcbUuid": "d681077e2aa4c2c9",
+        "schematicName": "schematic7",
+        "schematicUuid": "8e683ef248e4bc02"
+      },
+      {
+        "name": "查看位置的",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB7_1",
+        "pcbUuid": "d88f4d254c679760",
+        "schematicName": "schematic7_1",
+        "schematicUuid": "18734e07f025d52c"
+      },
+      {
+        "name": "大疆多协议高频头",
+        "parentProjectUuid": "29b2e707522246a38fec504cb457ef5c",
+        "pcbName": "PCB8",
+        "pcbUuid": "a6b755b4dd3530b7",
+        "schematicName": "schematic9",
+        "schematicUuid": "de9f23bc06e9e3b6"
+      }
+    ],
+    "count": 8
+  },
+  "context": {
+    "projectUuid": "29b2e707522246a38fec504cb457ef5c",
+    "projectName": "DJI RC Plus改造计划",
+    "documentUuid": "0c2c6a6f3ebfecc3",
+    "documentType": "schematic",
+    "tabId": "0c2c6a6f3ebfecc3@29b2e707522246a38fec504cb457ef5c"
+  },
+  "seq": 13572,
+  "seqAbandoned": 0
+}

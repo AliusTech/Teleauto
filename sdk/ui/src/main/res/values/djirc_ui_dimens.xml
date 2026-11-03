@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dashboard spacing tokens. ResponsiveLayoutScaler scales these at runtime. -->
+    <dimen name="djirc_ui_top_bar_height">40dp</dimen>
+    <dimen name="djirc_ui_dashboard_page_inset">16dp</dimen>
+    <dimen name="djirc_ui_dashboard_card_inset">16dp</dimen>
+    <dimen name="djirc_ui_dashboard_center_inset">8dp</dimen>
+    <dimen name="djirc_ui_dashboard_section_gap">16dp</dimen>
+    <dimen name="djirc_ui_dashboard_content_gap">4dp</dimen>
+    <dimen name="djirc_ui_dashboard_dial_to_stick_gap">11dp</dimen>
+    <dimen name="djirc_ui_dashboard_top_inset">11dp</dimen>
+    <dimen name="djirc_ui_dashboard_bottom_inset">21dp</dimen>
+    <dimen name="djirc_ui_dashboard_five_way_to_keys_gap">18dp</dimen>
+    <dimen name="djirc_ui_dashboard_logo_width">84dp</dimen>
+    <dimen name="djirc_ui_dashboard_logo_height">48dp</dimen>
+    <dimen name="djirc_ui_console_media_top_inset">20dp</dimen>
+</resources>

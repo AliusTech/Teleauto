@@ -1,0 +1,5 @@
+  ⏳ schematic.pages.list:连接器队列被上一条动作堵着(动作未发出),等 3s 后重试(已等 0s / 预算 1m30s)
+  ⏳ schematic.pages.list:连接器队列被上一条动作堵着(动作未发出),等 6s 后重试(已等 3s / 预算 1m30s)
+  ⏳ schematic.pages.list:连接器队列被上一条动作堵着(动作未发出),等 9s 后重试(已等 9s / 预算 1m30s)
+  ⏳ schematic.pages.list:连接器队列被上一条动作堵着(动作未发出),等 12s 后重试(已等 18s / 预算 1m30s)
+duplicate component cmp-C1

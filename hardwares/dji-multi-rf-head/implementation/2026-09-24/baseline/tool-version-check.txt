@@ -1,0 +1,13 @@
+easyeda-agent v1.5.2  →  latest v1.6.0
+
+  cli          behind        1.5.2 → 1.6.0        /Users/weixug/.local/bin/easyeda
+  skill:claude behind        1.5.2 → 1.6.0        /Users/weixug/.claude/skills/easyeda-agent
+  skill:codex  behind        1.5.2 → 1.6.0        /Users/weixug/.codex/skills/easyeda-agent
+  skill:agents not-installed —                    /Users/weixug/.agents/skills/easyeda-agent
+  daemon       mismatch      1.5.2                port :60832
+  connector    behind        1.5.0                1 window(s), manual .eext re-import only
+
+→ NOT READY: behind=4 mismatched=1 unverified=0 (target: exact CLI/Skills/daemon v1.6.0 + compatible connector major.minor)
+  ! daemon is still running a DIFFERENT binary — restart it with v1.6.0 (stop the current `easyeda daemon start`, then start it again)
+  ! connector 1.5.0 is not compatible with the v1.6.0 major.minor line and cannot be updated from here — re-import the .eext (https://github.com/zhoushoujianwork/easyeda-agent/releases/download/v1.6.0/easyeda-agent-connector.eext), then fully quit and relaunch EasyEDA so open windows load it
+  ! skill not installed for agents — `easyeda update --create-missing` to add /Users/weixug/.agents/skills/easyeda-agent

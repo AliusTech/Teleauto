@@ -1,0 +1,1326 @@
+{
+  "schemaVersion": "1.4",
+  "projectId": "29b2e707522246a38fec504cb457ef5c",
+  "documentId": "3afe8a86c3865049",
+  "components": [
+    {
+      "id": "cmp-C15",
+      "ref": "C15",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "33dbcd8e8b3241828899bb3c808db9eb",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 205,
+          "y": 320
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 245,
+          "y": 320
+        }
+      ],
+      "placement": {
+        "x": 225,
+        "y": 320,
+        "bbox": {
+          "minX": 214.5,
+          "minY": 311.5,
+          "maxX": 235.5,
+          "maxY": 328.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C18",
+      "ref": "C18",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "4acf8fb5deca4743a24a1f4bce4a182c",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 260,
+          "y": 220
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 300,
+          "y": 220
+        }
+      ],
+      "placement": {
+        "x": 280,
+        "y": 220,
+        "bbox": {
+          "minX": 269.5,
+          "minY": 211.5,
+          "maxX": 290.5,
+          "maxY": 228.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C19",
+      "ref": "C19",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "4acf8fb5deca4743a24a1f4bce4a182c",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 50,
+          "y": 260
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 90,
+          "y": 260
+        }
+      ],
+      "placement": {
+        "x": 70,
+        "y": 260,
+        "bbox": {
+          "minX": 59.5,
+          "minY": 251.5,
+          "maxX": 80.5,
+          "maxY": 268.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C20",
+      "ref": "C20",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "e160babda10e433b8f0f1065291bdbbf",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 495,
+          "y": 630
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 525,
+          "y": 630
+        }
+      ],
+      "placement": {
+        "x": 510,
+        "y": 630,
+        "bbox": {
+          "minX": 504.5,
+          "minY": 621.5,
+          "maxX": 515.5,
+          "maxY": 638.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C27",
+      "ref": "C27",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "e160babda10e433b8f0f1065291bdbbf",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 110,
+          "y": 240
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 140,
+          "y": 240
+        }
+      ],
+      "placement": {
+        "x": 125,
+        "y": 240,
+        "bbox": {
+          "minX": 119.5,
+          "minY": 231.5,
+          "maxX": 130.5,
+          "maxY": 248.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C29",
+      "ref": "C29",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "d082c6b1bc32c73f",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 75,
+          "y": 600
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 115,
+          "y": 600
+        }
+      ],
+      "placement": {
+        "x": 95,
+        "y": 600,
+        "bbox": {
+          "minX": 84.5,
+          "minY": 591.5,
+          "maxX": 105.5,
+          "maxY": 608.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C30",
+      "ref": "C30",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "4acf8fb5deca4743a24a1f4bce4a182c",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 695,
+          "y": 720
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 735,
+          "y": 720
+        }
+      ],
+      "placement": {
+        "x": 715,
+        "y": 720,
+        "bbox": {
+          "minX": 704.5,
+          "minY": 711.5,
+          "maxX": 725.5,
+          "maxY": 728.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C9",
+      "ref": "C9",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "33dbcd8e8b3241828899bb3c808db9eb",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 645,
+          "y": 650
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 685,
+          "y": 650
+        }
+      ],
+      "placement": {
+        "x": 665,
+        "y": 650,
+        "bbox": {
+          "minX": 654.5,
+          "minY": 641.5,
+          "maxX": 675.5,
+          "maxY": 658.5
+        }
+      }
+    },
+    {
+      "id": "cmp-L10",
+      "ref": "L10",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "8ec33ec549554ac4be8397dd3102d4db",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 270,
+          "y": 275
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 310,
+          "y": 275
+        }
+      ],
+      "placement": {
+        "x": 290,
+        "y": 275,
+        "bbox": {
+          "minX": 273.5000062498828,
+          "minY": 274.97750003124935,
+          "maxX": 306.50004999968684,
+          "maxY": 279.50004999968786
+        }
+      }
+    },
+    {
+      "id": "cmp-L9",
+      "ref": "L9",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "8ec33ec549554ac4be8397dd3102d4db",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 630,
+          "y": 700
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 670,
+          "y": 700
+        }
+      ],
+      "placement": {
+        "x": 650,
+        "y": 700,
+        "bbox": {
+          "minX": 633.5000062498829,
+          "minY": 699.9775000312488,
+          "maxX": 666.5000499996884,
+          "maxY": 704.5000499996922
+        }
+      }
+    },
+    {
+      "id": "cmp-R10",
+      "ref": "R10",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "d3c3199e497844b982be9ba308e4a805",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 125,
+          "y": 185
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 165,
+          "y": 185
+        }
+      ],
+      "placement": {
+        "x": 145,
+        "y": 185,
+        "bbox": {
+          "minX": 134.5,
+          "minY": 179.5,
+          "maxX": 155.5,
+          "maxY": 190.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R11",
+      "ref": "R11",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "779ae8808c0dc25b",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 165,
+          "y": 555
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 205,
+          "y": 555
+        }
+      ],
+      "placement": {
+        "x": 185,
+        "y": 555,
+        "bbox": {
+          "minX": 174.5,
+          "minY": 549.5,
+          "maxX": 195.5,
+          "maxY": 560.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R12",
+      "ref": "R12",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "4a559b20c694586e",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 145,
+          "y": 680
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 185,
+          "y": 680
+        }
+      ],
+      "placement": {
+        "x": 165,
+        "y": 680,
+        "bbox": {
+          "minX": 154.5,
+          "minY": 675.5,
+          "maxX": 175.5,
+          "maxY": 684.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R15",
+      "ref": "R15",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "3930012b6032e3c5",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 285,
+          "y": 630
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 325,
+          "y": 630
+        }
+      ],
+      "placement": {
+        "x": 305,
+        "y": 630,
+        "bbox": {
+          "minX": 294.5,
+          "minY": 624.5,
+          "maxX": 315.5,
+          "maxY": 635.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R3",
+      "ref": "R3",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "fb20f04a6db4649b",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 660,
+          "y": 300
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 700,
+          "y": 300
+        }
+      ],
+      "placement": {
+        "x": 680,
+        "y": 300,
+        "bbox": {
+          "minX": 669.5,
+          "minY": 294.5,
+          "maxX": 690.5,
+          "maxY": 305.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R4",
+      "ref": "R4",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "fb20f04a6db4649b",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 720,
+          "y": 300
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 760,
+          "y": 300
+        }
+      ],
+      "placement": {
+        "x": 740,
+        "y": 300,
+        "bbox": {
+          "minX": 729.5,
+          "minY": 294.5,
+          "maxX": 750.5,
+          "maxY": 305.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R5",
+      "ref": "R5",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "61abb2cd7c344c1b8e2a3cc94983cbe9",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 530,
+          "y": 570
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 570,
+          "y": 570
+        }
+      ],
+      "placement": {
+        "x": 550,
+        "y": 570,
+        "bbox": {
+          "minX": 539.5,
+          "minY": 564.5,
+          "maxX": 560.5,
+          "maxY": 575.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R7",
+      "ref": "R7",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "276035050f50414bb365eaf039f0cb75",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 510,
+          "y": 695
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 550,
+          "y": 695
+        }
+      ],
+      "placement": {
+        "x": 530,
+        "y": 695,
+        "bbox": {
+          "minX": 519.5,
+          "minY": 689.5,
+          "maxX": 540.5,
+          "maxY": 700.5
+        }
+      }
+    },
+    {
+      "id": "cmp-R9",
+      "ref": "R9",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "ba4f69f66d6e4d8da66e01a062218714",
+        "name": "={Value}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 145,
+          "y": 310
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 185,
+          "y": 310
+        }
+      ],
+      "placement": {
+        "x": 165,
+        "y": 310,
+        "bbox": {
+          "minX": 154.5,
+          "minY": 304.5,
+          "maxX": 175.5,
+          "maxY": 315.5
+        }
+      }
+    },
+    {
+      "id": "cmp-U1",
+      "ref": "U1",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "11488a79f222d198",
+        "name": "={Manufacturer Part}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 600,
+          "y": 340
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 600,
+          "y": 330
+        },
+        {
+          "number": "3",
+          "name": "3",
+          "x": 600,
+          "y": 320
+        },
+        {
+          "number": "4",
+          "name": "4",
+          "x": 600,
+          "y": 310
+        },
+        {
+          "number": "5",
+          "name": "5",
+          "x": 630,
+          "y": 290
+        },
+        {
+          "number": "6",
+          "name": "6",
+          "x": 630,
+          "y": 360
+        }
+      ],
+      "placement": {
+        "x": 620,
+        "y": 320,
+        "bbox": {
+          "minX": 609.5,
+          "minY": 299.5,
+          "maxX": 640.5,
+          "maxY": 350.5
+        }
+      }
+    },
+    {
+      "id": "cmp-U11",
+      "ref": "U11",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "67dc11ac74f34581a57cf563f0cca8d9",
+        "name": "={Manufacturer Part}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "BST",
+          "x": 170,
+          "y": 260
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "x": 170,
+          "y": 250
+        },
+        {
+          "number": "3",
+          "name": "FB",
+          "x": 170,
+          "y": 240
+        },
+        {
+          "number": "4",
+          "name": "EN",
+          "x": 240,
+          "y": 240
+        },
+        {
+          "number": "5",
+          "name": "VIN",
+          "x": 240,
+          "y": 250
+        },
+        {
+          "number": "6",
+          "name": "SW",
+          "x": 240,
+          "y": 260
+        }
+      ],
+      "placement": {
+        "x": 205,
+        "y": 250,
+        "bbox": {
+          "minX": 179.5,
+          "minY": 229.5,
+          "maxX": 230.5,
+          "maxY": 270.5
+        }
+      }
+    },
+    {
+      "id": "cmp-U13",
+      "ref": "U13",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "fe4f089d13a0b349",
+        "name": "={Manufacturer Part}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "x": 170,
+          "y": 630
+        },
+        {
+          "number": "2",
+          "name": "VOUT",
+          "x": 170,
+          "y": 620
+        },
+        {
+          "number": "3",
+          "name": "VIN1",
+          "x": 170,
+          "y": 610
+        },
+        {
+          "number": "4",
+          "name": "PR1",
+          "x": 170,
+          "y": 600
+        },
+        {
+          "number": "5",
+          "name": "MODE",
+          "x": 260,
+          "y": 600
+        },
+        {
+          "number": "6",
+          "name": "VIN2",
+          "x": 260,
+          "y": 610
+        },
+        {
+          "number": "7",
+          "name": "VOUT",
+          "x": 260,
+          "y": 620
+        },
+        {
+          "number": "8",
+          "name": "ST",
+          "x": 260,
+          "y": 630
+        }
+      ],
+      "placement": {
+        "x": 215,
+        "y": 615,
+        "bbox": {
+          "minX": 179.5,
+          "minY": 589.5,
+          "maxX": 250.5,
+          "maxY": 640.5
+        }
+      }
+    },
+    {
+      "id": "cmp-U4",
+      "ref": "U4",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "67dc11ac74f34581a57cf563f0cca8d9",
+        "name": "={Manufacturer Part}"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "BST",
+          "x": 555,
+          "y": 650
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "x": 555,
+          "y": 640
+        },
+        {
+          "number": "3",
+          "name": "FB",
+          "x": 555,
+          "y": 630
+        },
+        {
+          "number": "4",
+          "name": "EN",
+          "x": 625,
+          "y": 630
+        },
+        {
+          "number": "5",
+          "name": "VIN",
+          "x": 625,
+          "y": 640
+        },
+        {
+          "number": "6",
+          "name": "SW",
+          "x": 625,
+          "y": 650
+        }
+      ],
+      "placement": {
+        "x": 590,
+        "y": 640,
+        "bbox": {
+          "minX": 564.5,
+          "minY": 619.5,
+          "maxX": 615.5,
+          "maxY": 660.5
+        }
+      }
+    }
+  ],
+  "nets": [],
+  "connections": [],
+  "issues": [
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C15",
+      "pinNumber": "1",
+      "message": "C15 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C15",
+      "pinNumber": "2",
+      "message": "C15 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C18",
+      "pinNumber": "1",
+      "message": "C18 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C18",
+      "pinNumber": "2",
+      "message": "C18 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C19",
+      "pinNumber": "1",
+      "message": "C19 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C19",
+      "pinNumber": "2",
+      "message": "C19 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C20",
+      "pinNumber": "1",
+      "message": "C20 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C20",
+      "pinNumber": "2",
+      "message": "C20 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C27",
+      "pinNumber": "1",
+      "message": "C27 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C27",
+      "pinNumber": "2",
+      "message": "C27 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C29",
+      "pinNumber": "1",
+      "message": "C29 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C29",
+      "pinNumber": "2",
+      "message": "C29 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C30",
+      "pinNumber": "1",
+      "message": "C30 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C30",
+      "pinNumber": "2",
+      "message": "C30 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C9",
+      "pinNumber": "1",
+      "message": "C9 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-C9",
+      "pinNumber": "2",
+      "message": "C9 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-L10",
+      "pinNumber": "1",
+      "message": "L10 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-L10",
+      "pinNumber": "2",
+      "message": "L10 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-L9",
+      "pinNumber": "1",
+      "message": "L9 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-L9",
+      "pinNumber": "2",
+      "message": "L9 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R10",
+      "pinNumber": "1",
+      "message": "R10 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R10",
+      "pinNumber": "2",
+      "message": "R10 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R11",
+      "pinNumber": "1",
+      "message": "R11 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R11",
+      "pinNumber": "2",
+      "message": "R11 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R12",
+      "pinNumber": "1",
+      "message": "R12 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R12",
+      "pinNumber": "2",
+      "message": "R12 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R15",
+      "pinNumber": "1",
+      "message": "R15 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R15",
+      "pinNumber": "2",
+      "message": "R15 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R3",
+      "pinNumber": "1",
+      "message": "R3 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R3",
+      "pinNumber": "2",
+      "message": "R3 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R4",
+      "pinNumber": "1",
+      "message": "R4 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R4",
+      "pinNumber": "2",
+      "message": "R4 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R5",
+      "pinNumber": "1",
+      "message": "R5 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R5",
+      "pinNumber": "2",
+      "message": "R5 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R7",
+      "pinNumber": "1",
+      "message": "R7 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R7",
+      "pinNumber": "2",
+      "message": "R7 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R9",
+      "pinNumber": "1",
+      "message": "R9 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-R9",
+      "pinNumber": "2",
+      "message": "R9 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "1",
+      "message": "U1 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "2",
+      "message": "U1 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "3",
+      "message": "U1 pin 3 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "4",
+      "message": "U1 pin 4 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "5",
+      "message": "U1 pin 5 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U1",
+      "pinNumber": "6",
+      "message": "U1 pin 6 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "1",
+      "message": "U11 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "2",
+      "message": "U11 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "3",
+      "message": "U11 pin 3 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "4",
+      "message": "U11 pin 4 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "5",
+      "message": "U11 pin 5 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U11",
+      "pinNumber": "6",
+      "message": "U11 pin 6 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "1",
+      "message": "U13 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "2",
+      "message": "U13 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "3",
+      "message": "U13 pin 3 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "4",
+      "message": "U13 pin 4 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "5",
+      "message": "U13 pin 5 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "6",
+      "message": "U13 pin 6 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "7",
+      "message": "U13 pin 7 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U13",
+      "pinNumber": "8",
+      "message": "U13 pin 8 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "1",
+      "message": "U4 pin 1 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "2",
+      "message": "U4 pin 2 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "3",
+      "message": "U4 pin 3 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "4",
+      "message": "U4 pin 4 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "5",
+      "message": "U4 pin 5 has no net and no NC marker"
+    },
+    {
+      "code": "unconnected-pin",
+      "severity": "warning",
+      "componentId": "cmp-U4",
+      "pinNumber": "6",
+      "message": "U4 pin 6 has no net and no NC marker"
+    }
+  ]
+}

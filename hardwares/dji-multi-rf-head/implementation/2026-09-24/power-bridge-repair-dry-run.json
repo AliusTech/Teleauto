@@ -1,0 +1,59 @@
+{
+  "ok": false,
+  "failed": [
+    "C18:2"
+  ],
+  "connections": [
+    {
+      "pin": "C18:2",
+      "net": "BATTERY_5V",
+      "kind": "power",
+      "pinX": 1005,
+      "pinY": 650,
+      "selected": {
+        "direction": "down",
+        "offset": 18,
+        "endPoint": {
+          "x": 1005,
+          "y": 630
+        },
+        "score": 1000000001.8,
+        "reasons": [
+          {
+            "cost": 1.8,
+            "desc": "offset cost"
+          },
+          {
+            "cost": 1000000000,
+            "desc": "引出方向不沿引脚朝外方向（hard reject）"
+          }
+        ]
+      },
+      "rejected": [
+        {
+          "direction": "right",
+          "offset": 18,
+          "score": 1000010981.8,
+          "reason": "stub touches an existing (foreign-net) wire (hard reject)"
+        },
+        {
+          "direction": "left",
+          "offset": 18,
+          "score": 1000011501.8,
+          "reason": "引出方向不沿引脚朝外方向（hard reject）"
+        },
+        {
+          "direction": "up",
+          "offset": 18,
+          "score": 1999999991.8,
+          "reason": "stub touches an existing (foreign-net) wire (hard reject)"
+        }
+      ],
+      "dryRun": true,
+      "error": "no safe candidate: every direction/offset is unsafe (引出方向不沿引脚朝外方向（hard reject）) — resolve the layout (move the part, clear the wire, or free the title-block corner) and retry",
+      "state": "conflict",
+      "currentNet": "BATTERY",
+      "replaced": true
+    }
+  ]
+}

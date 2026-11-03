@@ -1,0 +1,690 @@
+#include "WfbngLink.hpp"
+
+#include <android/asset_manager.h>
+#include <android/asset_manager_jni.h>
+#include <android/log.h>
+#include <jni.h>
+
+#include "RxFrame.h"
+#include "SignalQualityCalculator.h"
+#include "TxFrame.h"
+#include "devourer/src/RxPacket.h"
+#include "devourer/src/UsbOpen.h"
+#include "libusb.h"
+#include "wfb-ng/src/wifibroadcast.hpp"
+
+#include <arpa/inet.h>
+#include <chrono>
+#include <cstdint>
+#include <cstring>
+#include <initializer_list>
+#include <iomanip>
+#include <iostream>
+#include <list>
+#include <map>
+#include <mutex>
+#include <netinet/in.h>
+#include <random>
+#include <span>
+#include <sstream>
+#include <string>
+#include <sys/socket.h>
+#include <thread>
+#include <unistd.h>
+
+#undef TAG
+#define TAG "pixelpilot"
+
+#define CRASH()                                                                                                        \
+    do {                                                                                                               \
+        int *i = 0;                                                                                                    \
+        *i = 42;                                                                                                       \
+    } while (0)
+
+std::string generate_random_string(size_t length) {
+    const std::string characters = "abcdefghijklmnopqrstuvwxyz";
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distrib(0, characters.size() - 1);
+
+    std::string result;
+    result.reserve(length);
+    for (size_t i = 0; i < length; ++i) {
+        result += characters[distrib(gen)];
+    }
+    return result;
+}
+
+WfbngLink::WfbngLink(JNIEnv *env, jobject context, jobject owner)
+        : current_fd(-1), adaptive_link_enabled(true), adaptive_tx_power(30) {
+    env->GetJavaVM(&java_vm);
+    java_owner = env->NewGlobalRef(owner);
+    jclass owner_class = env->GetObjectClass(owner);
+    receiver_ready_method = env->GetMethodID(owner_class, "onNativeReceiverReady", "()V");
+    env->DeleteLocalRef(owner_class);
+    jclass context_class = env->GetObjectClass(context);
+    jmethodID get_files_dir = env->GetMethodID(context_class, "getFilesDir", "()Ljava/io/File;");
+    jobject files_dir = env->CallObjectMethod(context, get_files_dir);
+    jclass file_class = env->FindClass("java/io/File");
+    jmethodID get_absolute_path = env->GetMethodID(file_class, "getAbsolutePath", "()Ljava/lang/String;");
+    auto path = static_cast<jstring>(env->CallObjectMethod(files_dir, get_absolute_path));
+    const char *path_chars = env->GetStringUTFChars(path, nullptr);
+    lockDir.assign(path_chars);
+    keyPath = lockDir + "/gs.key";
+    env->ReleaseStringUTFChars(path, path_chars);
+    env->DeleteLocalRef(path);
+    env->DeleteLocalRef(files_dir);
+    env->DeleteLocalRef(file_class);
+    env->DeleteLocalRef(context_class);
+    initAgg();
+    log = std::make_shared<Logger>(); // routes to logcat under the "devourer" tag
+    wifi_driver = std::make_unique<WiFiDriver>(log);
+}
+
+WfbngLink::~WfbngLink() {
+    if (!java_vm || !java_owner) return;
+    JNIEnv *env = nullptr;
+    bool detach = false;
+    if (java_vm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_6) != JNI_OK) {
+        if (java_vm->AttachCurrentThread(&env, nullptr) != JNI_OK) return;
+        detach = true;
+    }
+    env->DeleteGlobalRef(java_owner);
+    java_owner = nullptr;
+    if (detach) java_vm->DetachCurrentThread();
+}
+
+void WfbngLink::initAgg() {
+    std::string client_addr = "127.0.0.1";
+    uint64_t epoch = 0;
+
+    uint8_t video_radio_port = 0;
+    uint32_t video_channel_id_f = (link_id << 8) + video_radio_port;
+    video_channel_id_be = htobe32(video_channel_id_f);
+    auto udsName = std::string("my_socket");
+
+    video_aggregator = std::make_unique<AggregatorUDPv4>(client_addr, 5600, keyPath, epoch, video_channel_id_f, 0);
+
+    int mavlink_client_port = 14550;
+    uint8_t mavlink_radio_port = 0x10;
+    uint32_t mavlink_channel_id_f = (link_id << 8) + mavlink_radio_port;
+    mavlink_channel_id_be = htobe32(mavlink_channel_id_f);
+
+    mavlink_aggregator =
+        std::make_unique<AggregatorUDPv4>(client_addr, mavlink_client_port, keyPath, epoch, mavlink_channel_id_f, 0);
+
+    int udp_client_port = 8000;
+    uint8_t udp_radio_port = wfb_rx_port;
+    uint32_t udp_channel_id_f = (link_id << 8) + udp_radio_port;
+    udp_channel_id_be = htobe32(udp_channel_id_f);
+
+    udp_aggregator =
+        std::make_unique<AggregatorUDPv4>(client_addr, udp_client_port, keyPath, epoch, udp_channel_id_f, 0);
+}
+
+int WfbngLink::run(JNIEnv *env, jobject context, jint wifiChannel, jint bw,
+                   jint fd, bool rm500Rockchip) {
+    int r;
+    libusb_context *ctx = NULL;
+    txFrame = std::make_shared<TxFrame>();
+
+    r = libusb_set_option(NULL, LIBUSB_OPTION_NO_DEVICE_DISCOVERY);
+    r = libusb_init(&ctx);
+    if (r < 0) {
+        __android_log_print(ANDROID_LOG_ERROR, TAG, "Failed to init libusb.");
+        return r;
+    }
+
+    // Open adapters
+    struct libusb_device_handle *dev_handle;
+    r = libusb_wrap_sys_device(ctx, (intptr_t)fd, &dev_handle);
+    if (r < 0) {
+        libusb_exit(ctx);
+        return r;
+    }
+
+    const int wifi_interface = devourer::find_wifi_interface(dev_handle);
+    std::shared_ptr<devourer::UsbDeviceLock> usb_lock;
+    r = devourer::claim_interface_then_reset(dev_handle, wifi_interface, log,
+                                              false, usb_lock, lockDir);
+    __android_log_print(r == 0 ? ANDROID_LOG_INFO : ANDROID_LOG_ERROR, TAG,
+                        "USB prepare iface=%d reset=0 result=%s (%d), fd=%d",
+                        wifi_interface, libusb_error_name(r), r, fd);
+    if (r != 0) {
+        libusb_close(dev_handle);
+        libusb_exit(ctx);
+        return r;
+    }
+    __android_log_print(ANDROID_LOG_DEBUG, TAG, "Creating driver and device for fd=%d", fd);
+
+    devourer::DeviceConfig cfg;
+    // Video-only ground station: keep the adapter strictly RX-only. A single
+    // half-duplex adapter loses downlink airtime whenever it injects uplink
+    // frames, which presents as avoidable FEC recovery and video corruption.
+    cfg.rx.enable_with_tx = false;
+    // The per-adapter advisory lock defaults to /tmp, which doesn't exist on
+    // Android — use the app's files dir (same location as gs.key).
+    cfg.usb.lock_dir = lockDir;
+    // Keep the RX ring on plain heap buffers. The zerocopy dev-mem path
+    // (libusb_dev_mem_alloc / USBDEVFS mmap) is unvalidated on Android vendor
+    // kernels; if the mmap succeeds but the HCD's zerocopy path is broken,
+    // the heap fallback never triggers. Heap is the behavior every working
+    // Android build has shipped.
+    cfg.usb.rx_zerocopy = false;
+    cfg.rx.ready_callback = [this]() {
+        JNIEnv *callback_env = nullptr;
+        bool detach = false;
+        if (!java_vm || !java_owner || !receiver_ready_method) return;
+        if (java_vm->GetEnv(reinterpret_cast<void **>(&callback_env), JNI_VERSION_1_6) != JNI_OK) {
+            if (java_vm->AttachCurrentThread(&callback_env, nullptr) != JNI_OK) return;
+            detach = true;
+        }
+        callback_env->CallVoidMethod(java_owner, receiver_ready_method);
+        if (callback_env->ExceptionCheck()) {
+            callback_env->ExceptionDescribe();
+            callback_env->ExceptionClear();
+        }
+        if (detach) java_vm->DetachCurrentThread();
+    };
+    if (rm500Rockchip) {
+        // RK3399's Android 7 usbfs pump is periodically pre-empted long enough
+        // for inline WFB/FEC processing to drain an 8-URB ring. Keep USB reap
+        // and resubmit on the pump thread, and move parsing to a deep bounded
+        // consumer queue. RM700 retains the proven plain async configuration.
+        cfg.rx.rx_mode = devourer::RxMode::SpscFat;
+        cfg.rx.urbs = 64;
+        cfg.rx.pool_spare = 64;
+        cfg.rx.ring_ms = 1000;
+        // RM500's vendor xHCI/RTL8812 combination cannot recover from the
+        // Jaguar1 card-disable sequence without a physical USB power cycle.
+        // Activity recreation and app updates must only stop URBs and release
+        // usbfs so the same clean enumeration can be claimed again. RM700 and
+        // other platforms retain the normal powered-down teardown.
+        cfg.tuning.teardown_power_down = false;
+    }
+    std::shared_ptr<IRtlDevice> created_device =
+        wifi_driver->CreateRtlDevice(dev_handle, ctx, usb_lock, cfg);
+    if (!created_device) {
+        libusb_release_interface(dev_handle, wifi_interface);
+        libusb_close(dev_handle);
+        libusb_exit(ctx);
+        __android_log_print(ANDROID_LOG_ERROR, TAG, "CreateRtlDevice error");
+        return -1;
+    }
+    {
+        std::lock_guard<std::mutex> lock(device_mutex);
+        rtl_devices[fd] = created_device;
+    }
+
+    uint8_t *video_channel_id_be8 = reinterpret_cast<uint8_t *>(&video_channel_id_be);
+    uint8_t *udp_channel_id_be8 = reinterpret_cast<uint8_t *>(&udp_channel_id_be);
+    uint8_t *mavlink_channel_id_be8 = reinterpret_cast<uint8_t *>(&mavlink_channel_id_be);
+
+    try {
+        auto packetProcessor =
+            [this, video_channel_id_be8, mavlink_channel_id_be8, udp_channel_id_be8](const Packet &packet) {
+                RxFrame frame(packet.Data);
+                if (!frame.IsValidWfbFrame()) {
+                    return;
+                }
+                int8_t rssi[4] = {(int8_t)packet.RxAtrib.rssi[0], (int8_t)packet.RxAtrib.rssi[1], 1, 1};
+                uint32_t freq = 0;
+                int8_t noise[4] = {1, 1, 1, 1};
+                uint8_t antenna[4] = {1, 1, 1, 1};
+
+                std::lock_guard<std::mutex> lock(agg_mutex);
+                if (frame.MatchesChannelID(video_channel_id_be8)) {
+                    SignalQualityCalculator::get_instance().add_rssi(packet.RxAtrib.rssi[0], packet.RxAtrib.rssi[1]);
+                    SignalQualityCalculator::get_instance().add_snr(packet.RxAtrib.snr[0], packet.RxAtrib.snr[1]);
+
+                    video_aggregator->process_packet(packet.Data.data() + sizeof(ieee80211_header),
+                                                     packet.Data.size() - sizeof(ieee80211_header) - 4,
+                                                     0,
+                                                     antenna,
+                                                     rssi,
+                                                     noise,
+                                                     freq,
+                                                     0,
+                                                     0,
+                                                     NULL);
+                    if (should_clear_stats) {
+                        video_aggregator->clear_stats();
+                        should_clear_stats = false;
+                    }
+                } else if (frame.MatchesChannelID(mavlink_channel_id_be8)) {
+                    mavlink_aggregator->process_packet(packet.Data.data() + sizeof(ieee80211_header),
+                                                       packet.Data.size() - sizeof(ieee80211_header) - 4,
+                                                       0,
+                                                       antenna,
+                                                       rssi,
+                                                       noise,
+                                                       freq,
+                                                       0,
+                                                       0,
+                                                       NULL);
+                } else if (frame.MatchesChannelID(udp_channel_id_be8)) {
+                    udp_aggregator->process_packet(packet.Data.data() + sizeof(ieee80211_header),
+                                                   packet.Data.size() - sizeof(ieee80211_header) - 4,
+                                                   0,
+                                                   antenna,
+                                                   rssi,
+                                                   noise,
+                                                   freq,
+                                                   0,
+                                                   0,
+                                                   NULL);
+                }
+            };
+
+        // Store the current fd for later TX power updates.
+        current_fd = fd;
+
+        IRtlDevice *current_device = created_device.get();
+
+        auto bandWidth = (bw == 20 ? CHANNEL_WIDTH_20 : CHANNEL_WIDTH_40);
+        current_device->Init(packetProcessor, SelectedChannel{
+            .Channel = static_cast<uint8_t>(wifiChannel),
+            .ChannelOffset = 0,
+            .ChannelWidth = bandWidth,
+        });
+    } catch (const std::runtime_error &error) {
+        __android_log_print(ANDROID_LOG_ERROR, TAG, "runtime_error: %s", error.what());
+        txFrame->stop();
+
+        destroy_thread(usb_tx_thread);
+        stop_adaptive_link();
+        created_device->Stop();
+        {
+            std::lock_guard<std::mutex> lock(device_mutex);
+            rtl_devices.erase(fd);
+        }
+        libusb_release_interface(dev_handle, wifi_interface);
+        libusb_close(dev_handle);
+        libusb_exit(ctx);
+        return -1;
+    }
+
+    __android_log_print(ANDROID_LOG_DEBUG, TAG, "RX loop exited, releasing...");
+    txFrame->stop();
+
+    destroy_thread(usb_tx_thread);
+    stop_adaptive_link();
+
+    // Clean shutdown: halt TRX DMA and power the chip down before releasing
+    // the USB interface.
+    created_device->Stop();
+
+    r = libusb_release_interface(dev_handle, wifi_interface);
+    __android_log_print(ANDROID_LOG_DEBUG, TAG, "libusb_release_interface: %d", r);
+    {
+        std::lock_guard<std::mutex> lock(device_mutex);
+        rtl_devices.erase(fd);
+    }
+    current_fd = -1;
+    // libusb_wrap_sys_device does not own Android's original fd, but the
+    // libusb handle itself must still be closed before its context exits.
+    libusb_close(dev_handle);
+    libusb_exit(ctx);
+    return 0;
+}
+
+void WfbngLink::stop(JNIEnv *env, jobject context, jint fd) {
+    std::shared_ptr<IRtlDevice> dev;
+    {
+        std::lock_guard<std::mutex> lock(device_mutex);
+        auto it = rtl_devices.find(fd);
+        if (it != rtl_devices.end()) dev = it->second;
+    }
+    if (!dev) {
+        // Initialization may fail before the device is inserted into the map
+        // (for example a vendor USB stack returning an error from rtw_read).
+        // Stop is idempotent and must never turn that recoverable failure into
+        // a second process crash.
+        __android_log_print(ANDROID_LOG_WARN, TAG, "stop ignored for uninitialized fd=%d", fd);
+        return;
+    }
+    // Keep a shared reference while StopRxLoop runs. The RX thread may finish
+    // concurrently and erase the map entry; without this reference Android 7
+    // can call into a device whose internal mutexes have already been freed.
+    dev->StopRxLoop();
+    stop_adaptive_link();
+}
+
+//--------------------------------------JAVA bindings--------------------------------------
+inline jlong jptr(WfbngLink *wfbngLinkN) { return reinterpret_cast<intptr_t>(wfbngLinkN); }
+
+inline WfbngLink *native(jlong ptr) { return reinterpret_cast<WfbngLink *>(ptr); }
+
+inline std::list<int> toList(JNIEnv *env, jobject list) {
+    // Get the class and method IDs for java.util.List and its methods
+    jclass listClass = env->GetObjectClass(list);
+    jmethodID sizeMethod = env->GetMethodID(listClass, "size", "()I");
+    jmethodID getMethod = env->GetMethodID(listClass, "get", "(I)Ljava/lang/Object;");
+    // Method ID to get int value from Integer object
+    jclass integerClass = env->FindClass("java/lang/Integer");
+    jmethodID intValueMethod = env->GetMethodID(integerClass, "intValue", "()I");
+
+    // Get the size of the list
+    jint size = env->CallIntMethod(list, sizeMethod);
+
+    // Create a C++ list to store the elements
+    std::list<int> res;
+
+    // Iterate over the list and add elements to the C++ list
+    for (int i = 0; i < size; ++i) {
+        // Get the element at index i
+        jobject element = env->CallObjectMethod(list, getMethod, i);
+        // Convert the element to int
+        jint value = env->CallIntMethod(element, intValueMethod);
+        // Add the element to the C++ list
+        res.push_back(value);
+    }
+
+    return res;
+}
+extern "C" JNIEXPORT jlong JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeInitialize(JNIEnv *env,
+                                                                                            jclass clazz,
+                                                                                            jobject context,
+                                                                                            jobject owner) {
+    auto *p = new WfbngLink(env, context, owner);
+    return jptr(p);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeFinalize(
+    JNIEnv *env, jclass clazz, jlong wfbngLinkN) {
+    delete native(wfbngLinkN);
+}
+
+extern "C" JNIEXPORT jint JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeRun(
+    JNIEnv *env, jclass clazz, jlong wfbngLinkN, jobject androidContext,
+    jint wifiChannel, int bandWidth, jint fd, jboolean rm500Rockchip) {
+    // No C++ exception may cross a JNI boundary. Several Android vendor USB
+    // controllers report transient control-transfer failures as
+    // std::ios_base::failure during RTL initialization; leaving them uncaught
+    // invokes std::terminate and kills the whole application.
+    try {
+        return native(wfbngLinkN)->run(env, androidContext, wifiChannel,
+                                       bandWidth, fd, rm500Rockchip == JNI_TRUE);
+    } catch (const std::exception &error) {
+        __android_log_print(ANDROID_LOG_ERROR, TAG, "native receiver failed: %s", error.what());
+        return -1;
+    } catch (...) {
+        __android_log_print(ANDROID_LOG_ERROR, TAG, "native receiver failed: unknown exception");
+        return -1;
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeStartAdaptivelink(JNIEnv *env,
+                                                                                                  jclass clazz,
+                                                                                                  jlong wfbngLinkN) {
+    if (native(wfbngLinkN)->video_aggregator == nullptr) {
+        return;
+    }
+}
+
+extern "C" JNIEXPORT jint JNICALL Java_com_openipc_pixelpilot_UsbSerialService_nativeGetSignalQuality(JNIEnv *env,
+                                                                                                      jclass clazz) {
+    return SignalQualityCalculator::get_instance().calculate_signal_quality().quality;
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeStop(
+    JNIEnv *env, jclass clazz, jlong wfbngLinkN, jobject androidContext, jint fd) {
+    native(wfbngLinkN)->stop(env, androidContext, fd);
+}
+
+float map_range(float value, float inputMin, float inputMax, float outputMin, float outputMax) {
+    return outputMin + ((value - inputMin) * (outputMax - outputMin) / (inputMax - inputMin));
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeCallBack(JNIEnv *env,
+                                                                                         jclass clazz,
+                                                                                         jobject wfbStatChangedI,
+                                                                                         jlong wfbngLinkN) {
+    if (native(wfbngLinkN)->video_aggregator == nullptr) {
+        return;
+    }
+    auto aggregator = native(wfbngLinkN)->video_aggregator.get();
+    int count_all;
+    int count_dec_err;
+    int count_fec_recovered;
+    int count_lost;
+    int count_bad;
+    int count_override;
+    int count_outgoing;
+    {
+        std::lock_guard<std::mutex> lock(native(wfbngLinkN)->agg_mutex);
+        count_all = aggregator->count_p_all;
+        count_dec_err = aggregator->count_p_dec_err;
+        count_fec_recovered = aggregator->count_p_fec_recovered;
+        count_lost = aggregator->count_p_lost;
+        count_bad = aggregator->count_p_bad;
+        count_override = aggregator->count_p_override;
+        count_outgoing = aggregator->count_p_outgoing;
+        native(wfbngLinkN)->should_clear_stats = true;
+    }
+    jclass jClassExtendsIWfbStatChangedI = env->GetObjectClass(wfbStatChangedI);
+    jclass jcStats = env->FindClass("com/openipc/wfbngrtl8812/WfbNGStats");
+    if (jcStats == nullptr) {
+        return;
+    }
+    jmethodID jcStatsConstructor = env->GetMethodID(jcStats, "<init>", "(IIIIIIIII)V");
+    if (jcStatsConstructor == nullptr) {
+        return;
+    }
+    SignalQualityCalculator::get_instance().add_fec_data(
+        count_all, count_fec_recovered, count_lost);
+
+    auto quality = SignalQualityCalculator::get_instance().calculate_signal_quality();
+    uint32_t avg_rssi_int = round(map_range(quality.quality, -1024.f, 1024.f, 0.f, 100.f));
+
+    auto stats = env->NewObject(jcStats,
+                                jcStatsConstructor,
+                                (jint)count_all,
+                                (jint)count_dec_err,
+                                (jint)(count_all - count_dec_err),
+                                (jint)count_fec_recovered,
+                                (jint)count_lost,
+                                (jint)count_bad,
+                                (jint)count_override,
+                                (jint)count_outgoing,
+                                (jint)avg_rssi_int);
+    if (stats == nullptr) {
+        return;
+    }
+    jmethodID onStatsChanged = env->GetMethodID(
+        jClassExtendsIWfbStatChangedI, "onWfbNgStatsChanged", "(Lcom/openipc/wfbngrtl8812/WfbNGStats;)V");
+    if (onStatsChanged == nullptr) {
+        return;
+    }
+    env->CallVoidMethod(wfbStatChangedI, onStatsChanged, stats);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeRefreshKey(JNIEnv *env,
+                                                                                           jclass clazz,
+                                                                                           jlong wfbngLinkN) {
+    native(wfbngLinkN)->initAgg();
+}
+
+// Modified start_link_quality_thread: use adaptive_link_enabled and adaptive_tx_power
+void WfbngLink::start_link_quality_thread(int fd) {
+    auto thread_func = [this, fd]() {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+        const char *ip = "10.5.0.10";
+        int port = 9999;
+        int sockfd;
+        struct sockaddr_in server_addr;
+        // Create UDP socket
+        if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+            __android_log_print(ANDROID_LOG_ERROR, TAG, "Socket creation failed");
+            return;
+        }
+        int opt = 1;
+        setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+        memset(&server_addr, 0, sizeof(server_addr));
+        server_addr.sin_family = AF_INET;
+        server_addr.sin_port = htons(port);
+        if (inet_pton(AF_INET, ip, &server_addr.sin_addr) <= 0) {
+            __android_log_print(ANDROID_LOG_ERROR, TAG, "Invalid IP address");
+            close(sockfd);
+            return;
+        }
+
+        while (!this->adaptive_link_should_stop) {
+            auto quality = SignalQualityCalculator::get_instance().calculate_signal_quality();
+#if defined(ANDROID_DEBUG_RSSI) || true
+            __android_log_print(ANDROID_LOG_WARN, TAG, "quality %d", quality.quality);
+#endif
+            time_t currentEpoch = time(nullptr);
+            const auto map_range =
+                [](double value, double inputMin, double inputMax, double outputMin, double outputMax) {
+                    return outputMin + ((value - inputMin) * (outputMax - outputMin) / (inputMax - inputMin));
+                };
+            // map to 1000..2000
+            quality.quality = map_range(quality.quality, -1024, 1024, 1000, 2000);
+            {
+                uint32_t len;
+                char message[100];
+
+                /**
+                     1741491090:1602:1602:1:0:-70:24:num_ants:pnlt:fec_change:code
+
+                     <gs_time>:<link_score>:<link_score>:<fec>:<lost>:<rssi_dB>:<snr_dB>:<num_ants>:<noise_penalty>:<fec_change>:<idr_request_code>
+
+                    gs_time: gs clock
+                    link_score: 1000 - 2000 sent twice (already including any penalty)
+                    link_score: 1000 - 2000 sent twice (already including any penalty)
+                    fec: instantaneus fec_rec (only used by old fec_rec_pntly now disabled by default)
+                    lost: instantaneus lost (not used)
+                    rssi_dB:  best antenna rssi (for osd)
+                    snr_dB: best antenna snr_dB (for osd)
+                    num_ants: number of gs antennas (for osd)
+                    noise_penalty: penalty deducted from score due to noise (for osd)
+                    fec_change: int from 0 to 5 : how much to alter fec based on noise
+                    optional idr_request_code:  4 char unique code to request 1 keyframe (no need to send special extra
+                   packets)
+                 */
+
+                // Use the new public FEC threshold values
+                if (quality.lost_last_second > fec_lost_to_5) {
+                    fec.bump(5); // Bump to FEC 5
+                } else if (quality.recovered_last_second > fec_recovered_to_4) {
+                    fec.bump(4); // Bump to FEC 4
+                } else if (quality.recovered_last_second > fec_recovered_to_3) {
+                    fec.bump(3); // Bump to FEC 3
+                } else if (quality.recovered_last_second > fec_recovered_to_2) {
+                    fec.bump(2); // Bump to FEC 2
+                } else if (quality.recovered_last_second > fec_recovered_to_1) {
+                    fec.bump(1); // Bump to FEC 1
+                }
+
+                snprintf(message + sizeof(len),
+                         sizeof(message) - sizeof(len),
+                         "%ld:%d:%d:%d:%d:%d:%f:0:-1:%d:%s\n",
+                         static_cast<long>(currentEpoch),
+                         quality.quality,
+                         quality.quality,
+                         quality.recovered_last_second,
+                         quality.lost_last_second,
+                         quality.quality,
+                         quality.snr,
+                         fec.value(),
+                         quality.idr_code.c_str());
+                len = strlen(message + sizeof(len));
+                len = htonl(len);
+                memcpy(message, &len, sizeof(len));
+                __android_log_print(ANDROID_LOG_ERROR, TAG, " message %s", message + 4);
+                ssize_t sent = sendto(sockfd,
+                                      message,
+                                      strlen(message + sizeof(len)) + sizeof(len),
+                                      0,
+                                      (struct sockaddr *)&server_addr,
+                                      sizeof(server_addr));
+                if (sent < 0) {
+                    __android_log_print(ANDROID_LOG_ERROR, TAG, "Failed to send message");
+                    break;
+                }
+            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+        close(sockfd);
+        this->adaptive_link_should_stop = false;
+    };
+
+    init_thread(link_quality_thread, [=]() { return std::make_unique<std::thread>(thread_func); });
+    rtl_devices.at(fd)->SetTxPower(adaptive_tx_power);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetAdaptiveLinkEnabled(
+    JNIEnv *env, jclass clazz, jlong wfbngLinkN, jboolean enabled) {
+    WfbngLink *link = native(wfbngLinkN);
+    bool wasEnabled = link->adaptive_link_enabled;
+    link->adaptive_link_enabled = enabled;
+    // If we are enabling adaptive mode (and it was previously disabled)
+    if (enabled && !wasEnabled) {
+        link->stop_adaptive_link();
+        if (link->current_fd != -1) {
+            // If a previous adaptive thread exists, join it first.
+            // Restart the adaptive (link quality) thread.
+            link->start_link_quality_thread(link->current_fd);
+        }
+    }
+    // When disabling, wait for the thread to exit (if running).
+    if (!enabled && wasEnabled) {
+        link->stop_adaptive_link();
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetTxPower(JNIEnv *env,
+                                                                                           jclass clazz,
+                                                                                           jlong wfbngLinkN,
+                                                                                           jint power) {
+    WfbngLink *link = native(wfbngLinkN);
+    if (link->adaptive_tx_power == power) return;
+
+    link->adaptive_tx_power = power;
+    if (link->current_fd != -1 && link->rtl_devices.find(link->current_fd) != link->rtl_devices.end()) {
+        link->rtl_devices.at(link->current_fd)->SetTxPower(power);
+    }
+    // If adaptive mode is enabled and the adaptive thread is not running, restart it.
+    if (link->adaptive_link_enabled) {
+        link->stop_adaptive_link();
+        if (link->current_fd != -1) {
+            link->start_link_quality_thread(link->current_fd);
+        }
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetUseFec(JNIEnv *env,
+                                                                                          jclass clazz,
+                                                                                          jlong wfbngLinkN,
+                                                                                          jint use) {
+    WfbngLink *link = native(wfbngLinkN);
+    link->fec.setEnabled(use);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetUseLdpc(JNIEnv *env,
+                                                                                           jclass clazz,
+                                                                                           jlong wfbngLinkN,
+                                                                                           jint use) {
+    WfbngLink *link = native(wfbngLinkN);
+    link->ldpc_enabled = (use != 0);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetUseStbc(JNIEnv *env,
+                                                                                           jclass clazz,
+                                                                                           jlong wfbngLinkN,
+                                                                                           jint use) {
+    WfbngLink *link = native(wfbngLinkN);
+    link->stbc_enabled = (use != 0);
+}
+
+extern "C" JNIEXPORT void JNICALL Java_com_openipc_wfbngrtl8812_WfbNgLink_nativeSetFecThresholds(
+    JNIEnv *env, jclass clazz, jlong nativeInstance, jint lostTo5, jint recTo4, jint recTo3, jint recTo2, jint recTo1) {
+    WfbngLink *link = reinterpret_cast<WfbngLink *>(nativeInstance);
+    if (!link) return;
+    link->fec_lost_to_5 = lostTo5;
+    link->fec_recovered_to_4 = recTo4;
+    link->fec_recovered_to_3 = recTo3;
+    link->fec_recovered_to_2 = recTo2;
+    link->fec_recovered_to_1 = recTo1;
+}

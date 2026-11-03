@@ -1,0 +1,37 @@
+name: Publish sdk to GitHub Packages
+
+# 推送 vX.Y.Z tag 触发:验证并发布 tech.alius:teleauto-core:X.Y.Z。
+# 使用内置 GITHUB_TOKEN,无需配置任何 secrets。
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build and test SDK
+        run: ./gradlew :sdk:assembleRelease :sdk:testDebugUnitTest :sdk:ui:assembleRelease :sdk:ui:testDebugUnitTest :sdk:ui:verifyUiBoundary --stacktrace
+
+      - name: Publish to GitHub Packages
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew :sdk:publishDjircPublicationToGitHubPackagesRepository :sdk:ui:publishUiPublicationToGitHubPackagesRepository -PsdkVersion="${GITHUB_REF_NAME#v}" --stacktrace

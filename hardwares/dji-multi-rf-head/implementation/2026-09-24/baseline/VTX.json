@@ -1,0 +1,3275 @@
+{
+  "id": "req_12646",
+  "type": "response",
+  "version": "v1",
+  "createdAt": "2026-09-24T07:44:59.166764Z",
+  "ok": true,
+  "result": {
+    "components": [
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1170,
+          "maxY": 825,
+          "minX": 0,
+          "minY": 0
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "Drawing-Symbol_A4",
+          "uuid": "9e9d1a88a8e8b300"
+        },
+        "componentType": "sheet",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "9e9d1a88a8e8b300"
+        },
+        "mirror": false,
+        "net": "",
+        "pins": [],
+        "pinsAvailable": true,
+        "primitiveId": "4e17593d4e99501b",
+        "rotation": 0,
+        "subPartName": "pid8a0e77bacb214e",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 102.1692,
+          "maxY": 304.85951,
+          "minX": 67.621,
+          "minY": 299.54999
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "LQG15HS22NJ02D",
+          "uuid": "d2d9fb4d7dd4fe36"
+        },
+        "componentType": "part",
+        "designator": "L1",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "d2d9fb4d7dd4fe36"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"928d86388d67e1bd\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "L0402",
+          "uuid": "928d86388d67e1bd"
+        },
+        "manufacturer": "muRata(村田)",
+        "manufacturerId": "LQG15HS22NJ02D",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Current - Saturation (Isat)": "-",
+          "Current Rating": "350mA",
+          "DC Resistance(DCR)": "420mΩ",
+          "Datasheet": "https://item.szlcsc.com/datasheet/LQG15HS22NJ02D/13306.html",
+          "Description": "电感值:22nH;精度:±5%;额定电流:350mA;饱和电流(Isat):-;直流电阻(DCR):420mΩ;",
+          "EasyEDA Agent Component ID": "cmp-L1",
+          "Frequency - Self Resonant": "1.9GHz",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "22nH ±5%",
+          "Q @ Frequency": "8@100MHz",
+          "Supplier Footprint": "0402",
+          "Tolerance": "±5%",
+          "Value": "22nH"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "331db448131e5add-e3",
+            "rotation": 0,
+            "x": 105,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "331db448131e5add-e7",
+            "rotation": 180,
+            "x": 65,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "331db448131e5add",
+        "rotation": 0,
+        "subPartName": "LQG15HS22NJ02D.1",
+        "supplier": "LCSC",
+        "supplierId": "LQG15HS22NJ02D.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "LQG15HS22NJ02D",
+          "uuid": "334f12d93b8edc0d"
+        },
+        "uniqueId": "gge99001",
+        "x": 85,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 191.50004999968658,
+          "maxY": 304.50004999968803,
+          "minX": 158.5000062498828,
+          "minY": 299.9775000312493
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "APS252012M3R3F",
+          "uuid": "f599c49ffa670d50"
+        },
+        "componentType": "part",
+        "designator": "L3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "f599c49ffa670d50"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"7cde9685e3cfbc81\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "IND-SMD_L2.5-W2.0_APS252012M3R3F",
+          "uuid": "7cde9685e3cfbc81"
+        },
+        "manufacturer": "Coilank(驰兴电感)",
+        "manufacturerId": "APS252012M3R3F",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Current - Saturation(Isat)": "3.8A",
+          "Current Rating": "2.8A",
+          "DC Resistance(DCR)": "130mΩ",
+          "Datasheet": "https://item.szlcsc.com/datasheet/APS252012M3R3F/49538353.html",
+          "Description": "电感值:3.3uH;精度:±20%;额定电流:2.8A;饱和电流(Isat):3.8A;",
+          "EasyEDA Agent Component ID": "cmp-L3",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "3.3uH ±20% 3.8A",
+          "Supplier Footprint": "1008",
+          "Tolerance": "±20%",
+          "Value": "3.3uH"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "0f6f66310d38bcb6-e3",
+            "rotation": 0,
+            "x": 195,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "0f6f66310d38bcb6-e7",
+            "rotation": 180,
+            "x": 155,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "0f6f66310d38bcb6",
+        "rotation": 0,
+        "subPartName": "APS252012M3R3F.1",
+        "supplier": "LCSC",
+        "supplierId": "APS252012M3R3F.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "APS252012M3R3F",
+          "uuid": "86ea6266a6d2783c"
+        },
+        "uniqueId": "gge9102",
+        "x": 175,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 288.5,
+          "maxY": 310.5,
+          "minX": 254.5,
+          "minY": 289.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "AO3401A_C15127",
+          "uuid": "be4b76c123a70c32"
+        },
+        "componentType": "part",
+        "designator": "Q3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "be4b76c123a70c32"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"351288685883181e\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SOT-23_L2.9-W1.3-P1.90-LS2.4-BR",
+          "uuid": "351288685883181e"
+        },
+        "manufacturer": "AOS",
+        "manufacturerId": "AO3401A",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Current - Continuous Drain(Id)": "4A",
+          "Datasheet": "https://item.szlcsc.com/datasheet/AO3401A/15801.html",
+          "Description": "数量:1个P沟道;漏源电压(Vdss):30V;连续漏极电流(Id):4A;导通电阻(RDS(on)):47mΩ@10V；85mΩ@2.5V；60mΩ@4.5V;耗散功率(Pd):-;阈值电压(Vgs(th)):900mV;",
+          "Drain to Source Voltage": "30V",
+          "EasyEDA Agent Component ID": "cmp-Q3",
+          "Gate Charge(Qg)": "14nC@10V",
+          "Gate Threshold Voltage (Vgs(th))": "900mV",
+          "Input Capacitance(Ciss)": "645pF",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "1个P沟道 耐压:30V 电流:4A",
+          "Number": "1个P沟道",
+          "Operating Temperature": "-",
+          "Output Capacitance(Coss)": "80pF",
+          "Pd - Power Dissipation": "-",
+          "RDS(on)": "47mΩ@10V；85mΩ@2.5V；60mΩ@4.5V",
+          "Reverse Transfer Capacitance (Crss@Vds)": "55pF",
+          "Supplier Footprint": "SOT-23",
+          "Type": "-"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "D",
+            "pinNumber": "3",
+            "primitiveId": "a42ca1f428d647e6-e16",
+            "rotation": 90,
+            "x": 275,
+            "y": 320
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "G",
+            "pinNumber": "1",
+            "primitiveId": "a42ca1f428d647e6-e20",
+            "rotation": 180,
+            "x": 245,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "S",
+            "pinNumber": "2",
+            "primitiveId": "a42ca1f428d647e6-e24",
+            "rotation": 270,
+            "x": 275,
+            "y": 280
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "a42ca1f428d647e6",
+        "rotation": 0,
+        "subPartName": "AO3401A.1",
+        "supplier": "LCSC",
+        "supplierId": "AO3401A.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "AO3401A",
+          "uuid": "35eed01fde4f4dc7"
+        },
+        "uniqueId": "gge9103",
+        "x": 265,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 555.5,
+          "maxY": 320.5,
+          "minX": 514.5,
+          "minY": 279.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "40MHZ/3225/12PF/10PPM",
+          "uuid": "6fbcb2da6b686ae9"
+        },
+        "componentType": "part",
+        "designator": "X3",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "6fbcb2da6b686ae9"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"df4ae85f7d0d9ba3\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CRYSTAL-SMD_4P-L3.2-W2.5-BL",
+          "uuid": "df4ae85f7d0d9ba3"
+        },
+        "manufacturer": "CJ(江苏长电/长晶)",
+        "manufacturerId": "40MHZ/3225/12PF/10PPM",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/40MHZ%252F3225%252F12PF%252F10PPM/49277191.html",
+          "Description": "晶振类型:贴片晶振;频率:40MHz;常温频差:±10ppm;负载电容:12pF;频率稳定度:±20ppm;",
+          "EasyEDA Agent Component ID": "cmp-X3",
+          "Frequency Stability": "±20ppm",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "40MHz ±10ppm 12pF",
+          "Load Capacitance": "12pF",
+          "Normal temperature Frequency Tolerance": "±10ppm",
+          "Supplier Footprint": "SMD3225-4P",
+          "Type": "贴片晶振",
+          "Value": "40MHz"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "9821cf916590a0ce-e3",
+            "rotation": 180,
+            "x": 505,
+            "y": 290
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "3",
+            "pinNumber": "3",
+            "primitiveId": "9821cf916590a0ce-e7",
+            "rotation": 0,
+            "x": 565,
+            "y": 310
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "4",
+            "primitiveId": "9821cf916590a0ce-e11",
+            "rotation": 180,
+            "x": 505,
+            "y": 310
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "2",
+            "primitiveId": "9821cf916590a0ce-e15",
+            "rotation": 0,
+            "x": 565,
+            "y": 290
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "9821cf916590a0ce",
+        "rotation": 0,
+        "subPartName": "40MHZ/3225/12PF/10PPM.1",
+        "supplier": "LCSC",
+        "supplierId": "40MHZ/3225/12PF/10PPM.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "40MHZ/3225/12PF/10PPM",
+          "uuid": "cecbf503536155e6"
+        },
+        "uniqueId": "gge9104",
+        "x": 535,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 635.5,
+          "maxY": 308.5,
+          "minX": 614.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C17",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C17",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "6eaac3b9c9241d82-e4",
+            "rotation": 180,
+            "x": 605,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "6eaac3b9c9241d82-e10",
+            "rotation": 0,
+            "x": 645,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "6eaac3b9c9241d82",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9105",
+        "x": 625,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 725.5,
+          "maxY": 308.5,
+          "minX": 704.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CGA0603X5R105K160JT",
+          "uuid": "1d243e6d5cfb15d2"
+        },
+        "componentType": "part",
+        "designator": "C21",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "1d243e6d5cfb15d2"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"190292cc48a331cb\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603",
+          "uuid": "190292cc48a331cb"
+        },
+        "manufacturer": "HRE(芯声)",
+        "manufacturerId": "CGA0603X5R105K160JT",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CGA0603X5R105K160JT/7062555.html",
+          "Description": "容值:1uF;精度:±10%;额定电压:16V;温度系数:X5R;",
+          "EasyEDA Agent Component ID": "cmp-C21",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "1uF ±10% 16V 停产",
+          "Supplier Footprint": "0603",
+          "Temperature Coefficient": "X5R",
+          "Tolerance": "±10%",
+          "Value": "1uF",
+          "Voltage Rating": "16V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "a5659b2d3e99abf2-e4",
+            "rotation": 180,
+            "x": 695,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "a5659b2d3e99abf2-e10",
+            "rotation": 0,
+            "x": 735,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "a5659b2d3e99abf2",
+        "rotation": 0,
+        "subPartName": "CGA0603X5R105K160JT.1",
+        "supplier": "LCSC",
+        "supplierId": "CGA0603X5R105K160JT.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CGA0603X5R105K160JT",
+          "uuid": "05c874538f371a09"
+        },
+        "uniqueId": "gge9106",
+        "x": 715,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 815.5,
+          "maxY": 308.5,
+          "minX": 794.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C22",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C22",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "269146f223177569-e4",
+            "rotation": 180,
+            "x": 785,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "269146f223177569-e10",
+            "rotation": 0,
+            "x": 825,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "269146f223177569",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9107",
+        "x": 805,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 900.5,
+          "maxY": 308.5,
+          "minX": 889.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "4083cbee0d456238"
+        },
+        "componentType": "part",
+        "designator": "C23",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "4083cbee0d456238"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402JRNPO9BN100",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402JRNPO9BN100/107414.html",
+          "Description": "容值:10pF;精度:±5%;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C23",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "10pF ±5% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Tolerance": "±5%",
+          "Value": "10pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "e41f7f628ac3e4f4-e5",
+            "rotation": 180,
+            "x": 880,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "e41f7f628ac3e4f4-e9",
+            "rotation": 0,
+            "x": 910,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "e41f7f628ac3e4f4",
+        "rotation": 0,
+        "subPartName": "CC0402JRNPO9BN100.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402JRNPO9BN100.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "962f27510708ac15"
+        },
+        "uniqueId": "gge9108",
+        "x": 895,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 995.5,
+          "maxY": 308.5,
+          "minX": 974.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C24",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C24",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "cf4f9fd1b304875f-e4",
+            "rotation": 180,
+            "x": 965,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "cf4f9fd1b304875f-e10",
+            "rotation": 0,
+            "x": 1005,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "cf4f9fd1b304875f",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9109",
+        "x": 985,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 1085.5,
+          "maxY": 308.5,
+          "minX": 1064.5,
+          "minY": 291.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C25",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C25",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "d7a7fa9b26eceeb7-e4",
+            "rotation": 180,
+            "x": 1055,
+            "y": 300
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "d7a7fa9b26eceeb7-e10",
+            "rotation": 0,
+            "x": 1095,
+            "y": 300
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "d7a7fa9b26eceeb7",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9110",
+        "x": 1075,
+        "y": 300
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 95.5,
+          "maxY": 228.5,
+          "minX": 74.5,
+          "minY": 211.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C28",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C28",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "5f61895d620c0ceb-e4",
+            "rotation": 180,
+            "x": 65,
+            "y": 220
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "5f61895d620c0ceb-e10",
+            "rotation": 0,
+            "x": 105,
+            "y": 220
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "5f61895d620c0ceb",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9111",
+        "x": 85,
+        "y": 220
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 185.5,
+          "maxY": 228.5,
+          "minX": 164.5,
+          "minY": 211.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C34",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C34",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "528e556733f755f2-e4",
+            "rotation": 180,
+            "x": 155,
+            "y": 220
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "528e556733f755f2-e10",
+            "rotation": 0,
+            "x": 195,
+            "y": 220
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "528e556733f755f2",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9112",
+        "x": 175,
+        "y": 220
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 275.5,
+          "maxY": 228.5,
+          "minX": 254.5,
+          "minY": 211.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C37",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C37",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "099176359a11d119-e4",
+            "rotation": 180,
+            "x": 245,
+            "y": 220
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "099176359a11d119-e10",
+            "rotation": 0,
+            "x": 285,
+            "y": 220
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "099176359a11d119",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9113",
+        "x": 265,
+        "y": 220
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 360.5,
+          "maxY": 228.5,
+          "minX": 349.5,
+          "minY": 211.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "4083cbee0d456238"
+        },
+        "componentType": "part",
+        "designator": "C38",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "4083cbee0d456238"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402JRNPO9BN100",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402JRNPO9BN100/107414.html",
+          "Description": "容值:10pF;精度:±5%;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C38",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "10pF ±5% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Tolerance": "±5%",
+          "Value": "10pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "071d9aba7c872e9e-e5",
+            "rotation": 180,
+            "x": 340,
+            "y": 220
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "071d9aba7c872e9e-e9",
+            "rotation": 0,
+            "x": 370,
+            "y": 220
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "071d9aba7c872e9e",
+        "rotation": 0,
+        "subPartName": "CC0402JRNPO9BN100.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402JRNPO9BN100.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "962f27510708ac15"
+        },
+        "uniqueId": "gge9114",
+        "x": 355,
+        "y": 220
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 95.5,
+          "maxY": 103.5,
+          "minX": 74.5,
+          "minY": 86.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C39",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C39",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "7b60ba652edc40c4-e4",
+            "rotation": 180,
+            "x": 65,
+            "y": 95
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "7b60ba652edc40c4-e10",
+            "rotation": 0,
+            "x": 105,
+            "y": 95
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "7b60ba652edc40c4",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9115",
+        "x": 85,
+        "y": 95
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 180.5,
+          "maxY": 103.5,
+          "minX": 169.5,
+          "minY": 86.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN101",
+          "uuid": "de38960fe30c59eb"
+        },
+        "componentType": "part",
+        "designator": "C42",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "de38960fe30c59eb"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402JRNPO9BN101",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402JRNPO9BN101/107415.html",
+          "Description": "容值:100pF;精度:±5%;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C42",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "100pF ±5% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Tolerance": "±5%",
+          "Value": "100pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "db211375190b5e51-e5",
+            "rotation": 180,
+            "x": 160,
+            "y": 95
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "db211375190b5e51-e9",
+            "rotation": 0,
+            "x": 190,
+            "y": 95
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "db211375190b5e51",
+        "rotation": 0,
+        "subPartName": "CC0402JRNPO9BN101.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402JRNPO9BN101.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN101",
+          "uuid": "f1357003dbda3efb"
+        },
+        "uniqueId": "gge9116",
+        "x": 175,
+        "y": 95
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 275.5,
+          "maxY": 103.5,
+          "minX": 254.5,
+          "minY": 86.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C43",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C43",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "b0f7ad6ef302db39-e4",
+            "rotation": 180,
+            "x": 245,
+            "y": 95
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "b0f7ad6ef302db39-e10",
+            "rotation": 0,
+            "x": 285,
+            "y": 95
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "b0f7ad6ef302db39",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9117",
+        "x": 265,
+        "y": 95
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 360.5,
+          "maxY": 103.5,
+          "minX": 349.5,
+          "minY": 86.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN101",
+          "uuid": "de38960fe30c59eb"
+        },
+        "componentType": "part",
+        "designator": "C44",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "de38960fe30c59eb"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402JRNPO9BN101",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402JRNPO9BN101/107415.html",
+          "Description": "容值:100pF;精度:±5%;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C44",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "100pF ±5% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Tolerance": "±5%",
+          "Value": "100pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "c0468d03bfc86e11-e5",
+            "rotation": 180,
+            "x": 340,
+            "y": 95
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "c0468d03bfc86e11-e9",
+            "rotation": 0,
+            "x": 370,
+            "y": 95
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "c0468d03bfc86e11",
+        "rotation": 0,
+        "subPartName": "CC0402JRNPO9BN101.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402JRNPO9BN101.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN101",
+          "uuid": "f1357003dbda3efb"
+        },
+        "uniqueId": "gge9118",
+        "x": 355,
+        "y": 95
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 95.5,
+          "maxY": 23.5,
+          "minX": 74.5,
+          "minY": 6.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C45",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C45",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "14293277e199c6ca-e4",
+            "rotation": 180,
+            "x": 65,
+            "y": 15
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "14293277e199c6ca-e10",
+            "rotation": 0,
+            "x": 105,
+            "y": 15
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "14293277e199c6ca",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9119",
+        "x": 85,
+        "y": 15
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 183.5,
+          "maxY": 25.5,
+          "minX": 166.5,
+          "minY": 4.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402BRNPO9BN1R5",
+          "uuid": "fc316a56e8ec95b2"
+        },
+        "componentType": "part",
+        "designator": "C46",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "fc316a56e8ec95b2"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402BRNPO9BN1R5",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402BRNPO9BN1R5/268258.html",
+          "Description": "容值:1.5pF;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C46",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "±0.1pF 1.5pF 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Value": "1.5pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "549afef05263c50c-e4",
+            "rotation": 270,
+            "x": 175,
+            "y": -5
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "549afef05263c50c-e10",
+            "rotation": 90,
+            "x": 175,
+            "y": 35
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "549afef05263c50c",
+        "rotation": 0,
+        "subPartName": "CC0402BRNPO9BN1R5.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402BRNPO9BN1R5.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402BRNPO9BN1R5",
+          "uuid": "5119c5ab786818f5"
+        },
+        "uniqueId": "gge9120",
+        "x": 175,
+        "y": 15
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 275.5,
+          "maxY": 23.5,
+          "minX": 254.5,
+          "minY": 6.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402BRNPO9BN8R2",
+          "uuid": "dfc259a6c101223d"
+        },
+        "componentType": "part",
+        "designator": "C48",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "dfc259a6c101223d"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402BRNPO9BN8R2",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402BRNPO9BN8R2/307299.html",
+          "Description": "容值:8.2pF;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C48",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "±0.1pF 8.2pF 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Value": "8.2pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "bdd221bab33c1305-e4",
+            "rotation": 180,
+            "x": 245,
+            "y": 15
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "bdd221bab33c1305-e10",
+            "rotation": 0,
+            "x": 285,
+            "y": 15
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "bdd221bab33c1305",
+        "rotation": 0,
+        "subPartName": "CC0402BRNPO9BN8R2.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402BRNPO9BN8R2.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402BRNPO9BN8R2",
+          "uuid": "a85f3973d1929859"
+        },
+        "uniqueId": "gge9121",
+        "x": 265,
+        "y": 15
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 365.5,
+          "maxY": 23.5,
+          "minX": 344.5,
+          "minY": 6.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C50",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C50",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "df8fc2119c40a54b-e4",
+            "rotation": 180,
+            "x": 335,
+            "y": 15
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "df8fc2119c40a54b-e10",
+            "rotation": 0,
+            "x": 375,
+            "y": 15
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "df8fc2119c40a54b",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9122",
+        "x": 355,
+        "y": 15
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 95.5,
+          "maxY": -56.5,
+          "minX": 74.5,
+          "minY": -73.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A475KO8NNNC",
+          "uuid": "c372b75a9bc0b109"
+        },
+        "componentType": "part",
+        "designator": "C53",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "c372b75a9bc0b109"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"190292cc48a331cb\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0603",
+          "uuid": "190292cc48a331cb"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL10A475KO8NNNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL10A475KO8NNNC/20375.html",
+          "Description": "容值:4.7uF;精度:±10%;额定电压:16V;温度系数:X5R;",
+          "EasyEDA Agent Component ID": "cmp-C53",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "4.7uF ±10% 16V",
+          "Supplier Footprint": "0603",
+          "Temperature Coefficient": "X5R",
+          "Tolerance": "±10%",
+          "Value": "4.7uF",
+          "Voltage Rating": "16V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "b6b32ad666ef2a6a-e4",
+            "rotation": 180,
+            "x": 65,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "b6b32ad666ef2a6a-e10",
+            "rotation": 0,
+            "x": 105,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "b6b32ad666ef2a6a",
+        "rotation": 0,
+        "subPartName": "CL10A475KO8NNNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL10A475KO8NNNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL10A475KO8NNNC",
+          "uuid": "39b4fcb02d238e10"
+        },
+        "uniqueId": "gge9123",
+        "x": 85,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 185.5,
+          "maxY": -56.5,
+          "minX": 164.5,
+          "minY": -73.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CGA0805X5R226M250MT",
+          "uuid": "a379be98d9b2e490"
+        },
+        "componentType": "part",
+        "designator": "C54",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "a379be98d9b2e490"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"e91fbddb689c0996\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0805",
+          "uuid": "e91fbddb689c0996"
+        },
+        "manufacturer": "HRE(芯声)",
+        "manufacturerId": "CGA0805X5R226M250MT",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CGA0805X5R226M250MT/7062605.html",
+          "Description": "容值:22uF;精度:±20%;额定电压:25V;温度系数:X5R;",
+          "EasyEDA Agent Component ID": "cmp-C54",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "22uF ±20% 25V",
+          "Supplier Footprint": "0805",
+          "Temperature Coefficient": "X5R",
+          "Tolerance": "±20%",
+          "Value": "22uF",
+          "Voltage Rating": "25V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "fc08175849852877-e4",
+            "rotation": 180,
+            "x": 155,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "fc08175849852877-e10",
+            "rotation": 0,
+            "x": 195,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "fc08175849852877",
+        "rotation": 0,
+        "subPartName": "CGA0805X5R226M250MT.1",
+        "supplier": "LCSC",
+        "supplierId": "CGA0805X5R226M250MT.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CGA0805X5R226M250MT",
+          "uuid": "42441fb2b1010b5d"
+        },
+        "uniqueId": "gge9124",
+        "x": 175,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 275.5,
+          "maxY": -56.5,
+          "minX": 254.5,
+          "minY": -73.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "componentType": "part",
+        "designator": "C66",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "41f2b8a8ddd43828"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "SAMSUNG(三星)",
+        "manufacturerId": "CL05B104KB54PNC",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CL05B104KB54PNC/291005.html",
+          "Description": "容值:100nF;精度:±10%;额定电压:50V;温度系数:X7R;",
+          "EasyEDA Agent Component ID": "cmp-C66",
+          "JLCPCB Part Class": "Basic Part",
+          "LCSC Part Name": "100nF ±10% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "X7R",
+          "Tolerance": "±10%",
+          "Value": "100nF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "212e1d766f685b89-e4",
+            "rotation": 180,
+            "x": 245,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "212e1d766f685b89-e10",
+            "rotation": 0,
+            "x": 285,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "212e1d766f685b89",
+        "rotation": 0,
+        "subPartName": "CL05B104KB54PNC.1",
+        "supplier": "LCSC",
+        "supplierId": "CL05B104KB54PNC.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CL05B104KB54PNC",
+          "uuid": "56f6ca44d37cbd48"
+        },
+        "uniqueId": "gge9125",
+        "x": 265,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 360.5,
+          "maxY": -56.5,
+          "minX": 349.5,
+          "minY": -73.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "4083cbee0d456238"
+        },
+        "componentType": "part",
+        "designator": "C69",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "4083cbee0d456238"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"2b433cf40727952d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "C0402",
+          "uuid": "2b433cf40727952d"
+        },
+        "manufacturer": "YAGEO(国巨)",
+        "manufacturerId": "CC0402JRNPO9BN100",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/CC0402JRNPO9BN100/107414.html",
+          "Description": "容值:10pF;精度:±5%;额定电压:50V;温度系数:NP0;",
+          "EasyEDA Agent Component ID": "cmp-C69",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "10pF ±5% 50V",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "NP0",
+          "Tolerance": "±5%",
+          "Value": "10pF",
+          "Voltage Rating": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "3e9a1d5c8fb2ea30-e5",
+            "rotation": 180,
+            "x": 340,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "3e9a1d5c8fb2ea30-e9",
+            "rotation": 0,
+            "x": 370,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "3e9a1d5c8fb2ea30",
+        "rotation": 0,
+        "subPartName": "CC0402JRNPO9BN100.1",
+        "supplier": "LCSC",
+        "supplierId": "CC0402JRNPO9BN100.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "CC0402JRNPO9BN100",
+          "uuid": "962f27510708ac15"
+        },
+        "uniqueId": "gge9126",
+        "x": 355,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 455.5,
+          "maxY": -59.5,
+          "minX": 434.5,
+          "minY": -70.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0402F1003TS",
+          "uuid": "0701a521e76e53a6"
+        },
+        "componentType": "part",
+        "designator": "R18",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "0701a521e76e53a6"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"8a779b398e0ed90e\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0402",
+          "uuid": "8a779b398e0ed90e"
+        },
+        "manufacturer": "FOJAN(富捷)",
+        "manufacturerId": "FRC0402F1003TS",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/FRC0402F1003TS/3180372.html",
+          "Description": "电阻类型:厚膜电阻;阻值:100kΩ;精度:±1%;功率:62.5mW;工作电压:50V;温度系数:±100ppm/℃;",
+          "EasyEDA Agent Component ID": "cmp-R18",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "100kΩ ±1% 62.5mW 厚膜电阻",
+          "Operating Temperature": "-55℃~+155℃",
+          "Power(Watts)": "62.5mW",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "±100ppm/℃",
+          "Tolerance": "±1%",
+          "Type": "厚膜电阻",
+          "Value": "100kΩ",
+          "Voltage-Supply(Max)": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "13c8a6746c03a4e2-e4",
+            "rotation": 0,
+            "x": 465,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "13c8a6746c03a4e2-e8",
+            "rotation": 180,
+            "x": 425,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "13c8a6746c03a4e2",
+        "rotation": 0,
+        "subPartName": "FRC0402F1003TS.1",
+        "supplier": "LCSC",
+        "supplierId": "FRC0402F1003TS.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0402F1003TS",
+          "uuid": "8e3bc00842a74a27"
+        },
+        "uniqueId": "gge9127",
+        "x": 445,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 635.5,
+          "maxY": -59.5,
+          "minX": 614.5,
+          "minY": -70.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0402F1002TS",
+          "uuid": "e24f98b9c5336577"
+        },
+        "componentType": "part",
+        "designator": "R34",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Value}",
+          "uuid": "e24f98b9c5336577"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"8a779b398e0ed90e\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "R0402",
+          "uuid": "8a779b398e0ed90e"
+        },
+        "manufacturer": "FOJAN(富捷)",
+        "manufacturerId": "FRC0402F1002TS",
+        "mirror": false,
+        "name": "={Value}",
+        "net": "",
+        "otherProperty": {
+          "Datasheet": "https://item.szlcsc.com/datasheet/FRC0402F1002TS/3180374.html",
+          "Description": "电阻类型:厚膜电阻;阻值:10kΩ;精度:±1%;功率:62.5mW;工作电压:50V;温度系数:±100ppm/℃;",
+          "EasyEDA Agent Component ID": "cmp-R34",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "10kΩ ±1% 62.5mW 厚膜电阻",
+          "Operating Temperature": "-55℃~+155℃",
+          "Power(Watts)": "62.5mW",
+          "Supplier Footprint": "0402",
+          "Temperature Coefficient": "±100ppm/℃",
+          "Tolerance": "±1%",
+          "Type": "厚膜电阻",
+          "Value": "10kΩ",
+          "Voltage-Supply(Max)": "50V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "2",
+            "pinNumber": "2",
+            "primitiveId": "99b5ee0af9773dcf-e4",
+            "rotation": 0,
+            "x": 645,
+            "y": -65
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "99b5ee0af9773dcf-e8",
+            "rotation": 180,
+            "x": 605,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "99b5ee0af9773dcf",
+        "rotation": 0,
+        "subPartName": "FRC0402F1002TS.1",
+        "supplier": "LCSC",
+        "supplierId": "FRC0402F1002TS.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "FRC0402F1002TS",
+          "uuid": "f6e741ace18ce0d2"
+        },
+        "uniqueId": "gge9128",
+        "x": 625,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 737.4484354352887,
+          "maxY": -45.13899450934285,
+          "minX": 714.5,
+          "minY": -65.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "Test-Point",
+          "uuid": "129738ee6883da5c"
+        },
+        "componentType": "part",
+        "designator": "TP2",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "",
+          "uuid": "129738ee6883da5c"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"6b1d7e3474ad72d7\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "Test-Point-0.5mm",
+          "uuid": "6b1d7e3474ad72d7"
+        },
+        "manufacturer": "",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "",
+        "net": "",
+        "otherProperty": {
+          "Description": "Test Point 测试点",
+          "EasyEDA Agent Component ID": "cmp-TP2"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "1",
+            "pinNumber": "1",
+            "primitiveId": "a86a3765a1807463-e24",
+            "rotation": 270,
+            "x": 715,
+            "y": -65
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "a86a3765a1807463",
+        "rotation": 0,
+        "subPartName": "Test-Point.1",
+        "supplier": "",
+        "supplierId": "Test-Point.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "Test-Point",
+          "uuid": "f4e24bf3f756d832"
+        },
+        "uniqueId": "gge9129",
+        "x": 715,
+        "y": -65
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "bbox": {
+          "maxX": 280.5,
+          "maxY": 770.5,
+          "minX": 39.5,
+          "minY": 369.5
+        },
+        "component": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RTL8812AU-CG",
+          "uuid": "df88a762c7039054"
+        },
+        "componentType": "part",
+        "designator": "U21",
+        "device": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "={Manufacturer Part}",
+          "uuid": "df88a762c7039054"
+        },
+        "deviceIdentityError": "incomplete identity evidence for 16-hex instance footprint; instance footprint uuid=\"9343f42db2dd595d\", libraryUuid=\"0819f05c4eef4c71ace90d822a990e87\"; instance/library UUID domains require native META.source plus exact LCSC/model and official asset-library evidence",
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "QFN-76_L9.0-W9.0-P0.40-TL-EP",
+          "uuid": "9343f42db2dd595d"
+        },
+        "manufacturer": "REALTEK(瑞昱)",
+        "manufacturerId": "RTL8812AU-CG",
+        "mirror": false,
+        "name": "={Manufacturer Part}",
+        "net": "",
+        "otherProperty": {
+          "Applications": "WiFi",
+          "Data Rate": "866.7Mbps",
+          "Datasheet": "https://item.szlcsc.com/datasheet/RTL8812AU-CG/3258502.html",
+          "Description": "接口类型:USB;应用领域:WiFi;数据速率:866.7Mbps;典型应用频率:5GHz；2.4GHz;",
+          "EasyEDA Agent Component ID": "cmp-U21",
+          "Features": "支持FEC功能",
+          "Interface": "USB",
+          "JLCPCB Part Class": "Extended Part",
+          "LCSC Part Name": "带USB 3.0接口的单芯片IEEE 802.11a/b/g/n/ac 2T2R无线局域网控制器",
+          "Operating Temperature": "0℃~+70℃",
+          "Supplier Footprint": "QFN-76-EP(9x9)",
+          "Type": "收发器",
+          "Typical Application Frequency": "5GHz；2.4GHz",
+          "Voltage - Supply": "3V~3.6V"
+        },
+        "pins": [
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V33_SYN",
+            "pinNumber": "1",
+            "primitiveId": "d538c6491fcb484c-e5",
+            "rotation": 180,
+            "x": 30,
+            "y": 760
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V12_SYN",
+            "pinNumber": "2",
+            "primitiveId": "d538c6491fcb484c-e9",
+            "rotation": 180,
+            "x": 30,
+            "y": 750
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V12_S0",
+            "pinNumber": "3",
+            "primitiveId": "d538c6491fcb484c-e13",
+            "rotation": 180,
+            "x": 30,
+            "y": 740
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2IN_S0",
+            "pinNumber": "4",
+            "primitiveId": "d538c6491fcb484c-e17",
+            "rotation": 180,
+            "x": 30,
+            "y": 730
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2IP_S0",
+            "pinNumber": "5",
+            "primitiveId": "d538c6491fcb484c-e21",
+            "rotation": 180,
+            "x": 30,
+            "y": 720
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V33_PAD2G_S0",
+            "pinNumber": "6",
+            "primitiveId": "d538c6491fcb484c-e25",
+            "rotation": 180,
+            "x": 30,
+            "y": 710
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2ON_S0",
+            "pinNumber": "7",
+            "primitiveId": "d538c6491fcb484c-e29",
+            "rotation": 180,
+            "x": 30,
+            "y": 700
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2OP_S0",
+            "pinNumber": "8",
+            "primitiveId": "d538c6491fcb484c-e33",
+            "rotation": 180,
+            "x": 30,
+            "y": 690
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V33_PAD5G_S0",
+            "pinNumber": "9",
+            "primitiveId": "d538c6491fcb484c-e37",
+            "rotation": 180,
+            "x": 30,
+            "y": 680
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5OP_S0",
+            "pinNumber": "10",
+            "primitiveId": "d538c6491fcb484c-e41",
+            "rotation": 180,
+            "x": 30,
+            "y": 670
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33PA5G_S0",
+            "pinNumber": "11",
+            "primitiveId": "d538c6491fcb484c-e45",
+            "rotation": 180,
+            "x": 30,
+            "y": 660
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5IP_S0",
+            "pinNumber": "12",
+            "primitiveId": "d538c6491fcb484c-e49",
+            "rotation": 180,
+            "x": 30,
+            "y": 650
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5IN_S0",
+            "pinNumber": "13",
+            "primitiveId": "d538c6491fcb484c-e53",
+            "rotation": 180,
+            "x": 30,
+            "y": 640
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V12_BB_S0",
+            "pinNumber": "14",
+            "primitiveId": "d538c6491fcb484c-e57",
+            "rotation": 180,
+            "x": 30,
+            "y": 630
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LNAON_S0",
+            "pinNumber": "15",
+            "primitiveId": "d538c6491fcb484c-e61",
+            "rotation": 180,
+            "x": 30,
+            "y": 620
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "PAPE_2G_S0",
+            "pinNumber": "16",
+            "primitiveId": "d538c6491fcb484c-e65",
+            "rotation": 180,
+            "x": 30,
+            "y": 610
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "PAPE_5G_S0",
+            "pinNumber": "17",
+            "primitiveId": "d538c6491fcb484c-e69",
+            "rotation": 180,
+            "x": 30,
+            "y": 600
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "TRSW_S0",
+            "pinNumber": "18",
+            "primitiveId": "d538c6491fcb484c-e73",
+            "rotation": 180,
+            "x": 30,
+            "y": 590
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "TRSWB_S0",
+            "pinNumber": "19",
+            "primitiveId": "d538c6491fcb484c-e77",
+            "rotation": 180,
+            "x": 30,
+            "y": 580
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD12A",
+            "pinNumber": "20",
+            "primitiveId": "d538c6491fcb484c-e81",
+            "rotation": 180,
+            "x": 30,
+            "y": 570
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33A",
+            "pinNumber": "21",
+            "primitiveId": "d538c6491fcb484c-e85",
+            "rotation": 180,
+            "x": 30,
+            "y": 560
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "XI",
+            "pinNumber": "22",
+            "primitiveId": "d538c6491fcb484c-e89",
+            "rotation": 180,
+            "x": 30,
+            "y": 550
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "XO",
+            "pinNumber": "23",
+            "primitiveId": "d538c6491fcb484c-e93",
+            "rotation": 180,
+            "x": 30,
+            "y": 540
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "CK_BT",
+            "pinNumber": "24",
+            "primitiveId": "d538c6491fcb484c-e97",
+            "rotation": 180,
+            "x": 30,
+            "y": 530
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "ANTSW",
+            "pinNumber": "25",
+            "primitiveId": "d538c6491fcb484c-e101",
+            "rotation": 180,
+            "x": 30,
+            "y": 520
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "ANTSWB",
+            "pinNumber": "26",
+            "primitiveId": "d538c6491fcb484c-e105",
+            "rotation": 180,
+            "x": 30,
+            "y": 510
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD12D",
+            "pinNumber": "27",
+            "primitiveId": "d538c6491fcb484c-e109",
+            "rotation": 180,
+            "x": 30,
+            "y": 500
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33D",
+            "pinNumber": "28",
+            "primitiveId": "d538c6491fcb484c-e113",
+            "rotation": 180,
+            "x": 30,
+            "y": 490
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[4]/WL_ACT",
+            "pinNumber": "29",
+            "primitiveId": "d538c6491fcb484c-e117",
+            "rotation": 180,
+            "x": 30,
+            "y": 480
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[5]/BT_FREQ/BT_EN",
+            "pinNumber": "30",
+            "primitiveId": "d538c6491fcb484c-e121",
+            "rotation": 180,
+            "x": 30,
+            "y": 470
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[6]/BT_STATE",
+            "pinNumber": "31",
+            "primitiveId": "d538c6491fcb484c-e125",
+            "rotation": 180,
+            "x": 30,
+            "y": 460
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[7]/BT_PRI",
+            "pinNumber": "32",
+            "primitiveId": "d538c6491fcb484c-e129",
+            "rotation": 180,
+            "x": 30,
+            "y": 450
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LED2/GPIO[8]",
+            "pinNumber": "33",
+            "primitiveId": "d538c6491fcb484c-e133",
+            "rotation": 180,
+            "x": 30,
+            "y": 440
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LED1/GPIO[9]",
+            "pinNumber": "34",
+            "primitiveId": "d538c6491fcb484c-e137",
+            "rotation": 180,
+            "x": 30,
+            "y": 430
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LED0/GPIO[10]",
+            "pinNumber": "35",
+            "primitiveId": "d538c6491fcb484c-e141",
+            "rotation": 180,
+            "x": 30,
+            "y": 420
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[11]/PDn",
+            "pinNumber": "36",
+            "primitiveId": "d538c6491fcb484c-e145",
+            "rotation": 180,
+            "x": 30,
+            "y": 410
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[0]/BT_Suspend",
+            "pinNumber": "37",
+            "primitiveId": "d538c6491fcb484c-e149",
+            "rotation": 180,
+            "x": 30,
+            "y": 400
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[1]",
+            "pinNumber": "38",
+            "primitiveId": "d538c6491fcb484c-e153",
+            "rotation": 180,
+            "x": 30,
+            "y": 390
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[2]",
+            "pinNumber": "39",
+            "primitiveId": "d538c6491fcb484c-e157",
+            "rotation": 180,
+            "x": 30,
+            "y": 380
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GPIO[3]",
+            "pinNumber": "40",
+            "primitiveId": "d538c6491fcb484c-e161",
+            "rotation": 0,
+            "x": 290,
+            "y": 380
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "41",
+            "primitiveId": "d538c6491fcb484c-e165",
+            "rotation": 0,
+            "x": 290,
+            "y": 390
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSDP",
+            "pinNumber": "42",
+            "primitiveId": "d538c6491fcb484c-e169",
+            "rotation": 0,
+            "x": 290,
+            "y": 400
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSDM",
+            "pinNumber": "43",
+            "primitiveId": "d538c6491fcb484c-e173",
+            "rotation": 0,
+            "x": 290,
+            "y": 410
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD12S",
+            "pinNumber": "44",
+            "primitiveId": "d538c6491fcb484c-e177",
+            "rotation": 0,
+            "x": 290,
+            "y": 420
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33S",
+            "pinNumber": "45",
+            "primitiveId": "d538c6491fcb484c-e181",
+            "rotation": 0,
+            "x": 290,
+            "y": 430
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RREF",
+            "pinNumber": "46",
+            "primitiveId": "d538c6491fcb484c-e185",
+            "rotation": 0,
+            "x": 290,
+            "y": 440
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VDDTX",
+            "pinNumber": "47",
+            "primitiveId": "d538c6491fcb484c-e189",
+            "rotation": 0,
+            "x": 290,
+            "y": 450
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSON",
+            "pinNumber": "48",
+            "primitiveId": "d538c6491fcb484c-e193",
+            "rotation": 0,
+            "x": 290,
+            "y": 460
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSOP",
+            "pinNumber": "49",
+            "primitiveId": "d538c6491fcb484c-e197",
+            "rotation": 0,
+            "x": 290,
+            "y": 470
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "50",
+            "primitiveId": "d538c6491fcb484c-e201",
+            "rotation": 0,
+            "x": 290,
+            "y": 480
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSIN",
+            "pinNumber": "51",
+            "primitiveId": "d538c6491fcb484c-e205",
+            "rotation": 0,
+            "x": 290,
+            "y": 490
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "HSIP",
+            "pinNumber": "52",
+            "primitiveId": "d538c6491fcb484c-e209",
+            "rotation": 0,
+            "x": 290,
+            "y": 500
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VDDRX",
+            "pinNumber": "53",
+            "primitiveId": "d538c6491fcb484c-e213",
+            "rotation": 0,
+            "x": 290,
+            "y": 510
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "54",
+            "primitiveId": "d538c6491fcb484c-e217",
+            "rotation": 0,
+            "x": 290,
+            "y": 520
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LX_SPS0",
+            "pinNumber": "55",
+            "primitiveId": "d538c6491fcb484c-e221",
+            "rotation": 0,
+            "x": 290,
+            "y": 530
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LX_SPS0",
+            "pinNumber": "56",
+            "primitiveId": "d538c6491fcb484c-e225",
+            "rotation": 0,
+            "x": 290,
+            "y": 540
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VDSPS33",
+            "pinNumber": "57",
+            "primitiveId": "d538c6491fcb484c-e229",
+            "rotation": 0,
+            "x": 290,
+            "y": 550
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "FB_SPS",
+            "pinNumber": "58",
+            "primitiveId": "d538c6491fcb484c-e233",
+            "rotation": 0,
+            "x": 290,
+            "y": 560
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33D",
+            "pinNumber": "59",
+            "primitiveId": "d538c6491fcb484c-e237",
+            "rotation": 0,
+            "x": 290,
+            "y": 570
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD12D",
+            "pinNumber": "60",
+            "primitiveId": "d538c6491fcb484c-e241",
+            "rotation": 0,
+            "x": 290,
+            "y": 580
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "TRSWB_S1",
+            "pinNumber": "61",
+            "primitiveId": "d538c6491fcb484c-e245",
+            "rotation": 0,
+            "x": 290,
+            "y": 590
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "TRSW_S1",
+            "pinNumber": "62",
+            "primitiveId": "d538c6491fcb484c-e249",
+            "rotation": 0,
+            "x": 290,
+            "y": 600
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "PAPE_5G_S1",
+            "pinNumber": "63",
+            "primitiveId": "d538c6491fcb484c-e253",
+            "rotation": 0,
+            "x": 290,
+            "y": 610
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "PAPE_2G_S1",
+            "pinNumber": "64",
+            "primitiveId": "d538c6491fcb484c-e257",
+            "rotation": 0,
+            "x": 290,
+            "y": 620
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "LNAON_S1",
+            "pinNumber": "65",
+            "primitiveId": "d538c6491fcb484c-e261",
+            "rotation": 0,
+            "x": 290,
+            "y": 630
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V12_BB_S1",
+            "pinNumber": "66",
+            "primitiveId": "d538c6491fcb484c-e265",
+            "rotation": 0,
+            "x": 290,
+            "y": 640
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2IN_S1",
+            "pinNumber": "67",
+            "primitiveId": "d538c6491fcb484c-e269",
+            "rotation": 0,
+            "x": 290,
+            "y": 650
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2IP_S1",
+            "pinNumber": "68",
+            "primitiveId": "d538c6491fcb484c-e273",
+            "rotation": 0,
+            "x": 290,
+            "y": 660
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V33_PAD2G_S1",
+            "pinNumber": "69",
+            "primitiveId": "d538c6491fcb484c-e277",
+            "rotation": 0,
+            "x": 290,
+            "y": 670
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2ON_S1",
+            "pinNumber": "70",
+            "primitiveId": "d538c6491fcb484c-e281",
+            "rotation": 0,
+            "x": 290,
+            "y": 680
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF2OP_S1",
+            "pinNumber": "71",
+            "primitiveId": "d538c6491fcb484c-e285",
+            "rotation": 0,
+            "x": 290,
+            "y": 690
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "V33_PAD5G_S1",
+            "pinNumber": "72",
+            "primitiveId": "d538c6491fcb484c-e289",
+            "rotation": 0,
+            "x": 290,
+            "y": 700
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5OP_S1",
+            "pinNumber": "73",
+            "primitiveId": "d538c6491fcb484c-e293",
+            "rotation": 0,
+            "x": 290,
+            "y": 710
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "VD33PA5G_S1",
+            "pinNumber": "74",
+            "primitiveId": "d538c6491fcb484c-e297",
+            "rotation": 0,
+            "x": 290,
+            "y": 720
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5IP_S1",
+            "pinNumber": "75",
+            "primitiveId": "d538c6491fcb484c-e301",
+            "rotation": 0,
+            "x": 290,
+            "y": 730
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "RF5IN_S1",
+            "pinNumber": "76",
+            "primitiveId": "d538c6491fcb484c-e305",
+            "rotation": 0,
+            "x": 290,
+            "y": 740
+          },
+          {
+            "net": "",
+            "noConnected": false,
+            "pinName": "GND",
+            "pinNumber": "77",
+            "primitiveId": "d538c6491fcb484c-e309",
+            "rotation": 0,
+            "x": 290,
+            "y": 750
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "d538c6491fcb484c",
+        "rotation": 0,
+        "subPartName": "RTL8812AU-CG.1",
+        "supplier": "LCSC",
+        "supplierId": "RTL8812AU-CG.1",
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "RTL8812AU-CG",
+          "uuid": "8720db1f78478c34"
+        },
+        "uniqueId": "gge9130",
+        "x": 160,
+        "y": 570
+      }
+    ],
+    "connectivitySummary": {
+      "buses": 0,
+      "netflags": 0,
+      "netlabels": 0,
+      "netports": 0,
+      "scope": "activePage",
+      "shortSymbols": 0,
+      "wires": 0
+    },
+    "count": 31,
+    "wires": [],
+    "wiresAvailable": true
+  },
+  "context": {
+    "projectUuid": "c15f2ba144e644eca844ab18ebaf753e",
+    "projectName": "遥控器射频板",
+    "documentUuid": "364c5031568c17c2",
+    "documentType": "schematic",
+    "tabId": "364c5031568c17c2@c15f2ba144e644eca844ab18ebaf753e"
+  },
+  "seq": 5824,
+  "seqAbandoned": 0
+}
